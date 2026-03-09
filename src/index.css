@@ -90,7 +90,7 @@
 
 /* Dot grid pattern */
 .dot-pattern {
-  background-image: radial-gradient(circle, hsl(var(--gold) / 0.15) 1px, transparent 1px);
+  background-image: radial-gradient(circle, hsl(var(--card) / 0.11) 2px, transparent 1px);
   background-size: 24px 24px;
 }
 
@@ -98,3 +98,5 @@
   background-image: radial-gradient(circle, hsl(var(--muted-foreground) / 0.1) 1px, transparent 1px);
   background-size: 24px 24px;
 }
+
+
