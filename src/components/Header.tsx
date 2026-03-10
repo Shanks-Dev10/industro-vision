@@ -60,10 +60,10 @@ const Header = () => {
           <div className="mt-2 rounded-2xl bg-card p-6 shadow-lg lg:hidden">
             <ul className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase()}`} className="text-sm font-medium text-foreground/70">
-                    {item}
-                  </a>
+                <li key={item.label}>
+                  <Link to={item.href} className="text-sm font-medium text-foreground/70" onClick={() => setMobileOpen(false)}>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
