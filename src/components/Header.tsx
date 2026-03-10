@@ -1,8 +1,16 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
 
-const navItems = ["Home", "Pages", "Services", "Projects", "News", "Contact"];
+const navItems = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Projects", href: "/#projects" },
+  { label: "News", href: "/#news" },
+  { label: "Contact", href: "/#contact" },
+];
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -12,20 +20,20 @@ const Header = () => {
       <div className="mx-auto max-w-7xl">
         <nav className="flex items-center justify-between rounded-full bg-card px-6 py-3 shadow-md">
           {/* Logo */}
-          <a href="#" className="text-xl font-extrabold tracking-tight text-primary">
+          <Link to="/" className="text-xl font-extrabold tracking-tight text-primary">
             METAL<span className="text-secondary">X</span>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <ul className="hidden items-center gap-8 lg:flex">
             {navItems.map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
+              <li key={item.label}>
+                <Link
+                  to={item.href}
                   className="text-sm font-medium text-foreground/70 transition-colors hover:text-primary"
                 >
-                  {item}
-                </a>
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -52,10 +60,10 @@ const Header = () => {
           <div className="mt-2 rounded-2xl bg-card p-6 shadow-lg lg:hidden">
             <ul className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase()}`} className="text-sm font-medium text-foreground/70">
-                    {item}
-                  </a>
+                <li key={item.label}>
+                  <Link to={item.href} className="text-sm font-medium text-foreground/70" onClick={() => setMobileOpen(false)}>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
