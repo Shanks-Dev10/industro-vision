@@ -71,10 +71,7 @@ const ImpactSection = () => {
     <section className="bg-background py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-secondary">
-            Our Impact
-          </span>
-          <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
+          <h2 className="mt-3 text-3xl font-extrabold text-secondary md:text-4xl">
             Our Impact
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">

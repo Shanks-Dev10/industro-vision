@@ -3,15 +3,15 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import slider1 from "@/assets/slider_1.jpg";
 import slider2 from "@/assets/slider_2.jpg";
-
+import slider3 from "@/assets/railmet-banner-04.webp";
 
 const slides = [
   {
-    label: "Excellence in Every Aspect",
+    label: "Trust & Precision Focused",
     heading: (
       <>
-        Innovative metal solutions for{" "}
-        <span className="text-secondary">industries</span>
+        Precision Weighing Solutions for Modern
+        <span className="text-secondary">Railways</span>
       </>
     ),
     description:
@@ -20,11 +20,10 @@ const slides = [
     alt: "Female industrial engineer with tablet in factory",
   },
   {
-    label: "Precision & Quality",
+    label: "Innovation Focused",
     heading: (
       <>
-        Expert <span className="text-secondary">welding</span> & fabrication
-        services
+        Innovating <span className="text-secondary">Rail Weighing</span> for a Smarter Future
       </>
     ),
     description:
@@ -33,28 +32,16 @@ const slides = [
     alt: "Professional welder working with sparks in factory",
   },
   {
-    label: "Future of Manufacturing",
+    label: "Efficiency & Performance Focused",
     heading: (
       <>
-        Advanced <span className="text-secondary">robotics</span> & automation
+        <span className="text-secondary">Weighing Solutions</span> That Keep Railways Moving Forward
       </>
     ),
     description:
       "Leveraging state-of-the-art robotic systems to maximize efficiency and precision in production lines.",
-    image: slider1,
+    image: slider3,
     alt: "Robotic arm in automated manufacturing facility",
-  },
-  {
-    label: "Building Tomorrow",
-    heading: (
-      <>
-        Structural <span className="text-secondary">engineering</span> solutions
-      </>
-    ),
-    description:
-      "From blueprints to construction, we provide end-to-end structural engineering for large-scale industrial projects.",
-    image: slider2,
-    alt: "Engineer examining blueprints at construction site",
   },
 ];
 

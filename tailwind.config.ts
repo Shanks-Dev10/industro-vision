@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['"Plus Jakarta Sans"', 'sans-serif'],
-        body: ['"Plus Jakarta Sans"', 'sans-serif'],
+        heading: ['"poppins"', 'sans-serif'],
+        body: ['"poppins"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

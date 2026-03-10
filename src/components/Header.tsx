@@ -8,7 +8,7 @@ const navItems = [
   { href: "/about", item: "About Us" },
   { href: "/service", item: "Services" },
   { href: "/product", item: "Products" },
-  { href: "/", item: "Contact Us" },
+  { href: "/contact", item: "Contact Us" },
 ];
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
           {/* Logo */}
           <Link to={"/"}>
             <p className="text-xl font-extrabold tracking-tight text-primary">
-              METAL<span className="text-secondary">X</span>
+              Rail<span className="text-secondary uppercase">Met</span>
             </p>
           </Link>
 
@@ -42,15 +42,15 @@ const Header = () => {
           {/* Right */}
           <div className="hidden items-center gap-4 lg:flex">
             <a
-              href="tel:+084123456888"
+              href="tel:+919003253007" target="_blank"
               className="flex items-center gap-2 text-sm font-medium text-foreground/70"
             >
               <Phone className="h-4 w-4 text-secondary" />
-              +084 123 456 888
+              +91 90032 53007
             </a>
 
             <Button variant="gold" size="lg" className="rounded-full">
-              Request A Quote
+              <Link to={"/contact"}>Request A Quote</Link>
             </Button>
           </div>
 
@@ -85,11 +85,12 @@ const Header = () => {
 
             <div className="mt-4 flex flex-col gap-3">
               <a
-                href="tel:+084123456888"
+                href="tel:+919003253007"
+                target="_blank"
                 className="flex items-center gap-2 text-sm font-medium text-foreground/70"
               >
                 <Phone className="h-4 w-4 text-secondary" />
-                +084 123 456 888
+                +91 90032 53007
               </a>
 
               <Button variant="gold" className="rounded-full">
