@@ -1,8 +1,16 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
 
-const navItems = ["Home", "Pages", "Services", "Projects", "News", "Contact"];
+const navItems = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Projects", href: "/#projects" },
+  { label: "News", href: "/#news" },
+  { label: "Contact", href: "/#contact" },
+];
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
