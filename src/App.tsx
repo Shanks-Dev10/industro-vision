@@ -8,6 +8,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Service from "./pages/Service";
+import Product from "./pages/Product";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +32,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="/service" element={<Service />} />
+            <Route path="/product" element={<Product />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
