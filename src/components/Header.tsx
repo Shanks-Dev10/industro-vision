@@ -20,20 +20,20 @@ const Header = () => {
       <div className="mx-auto max-w-7xl">
         <nav className="flex items-center justify-between rounded-full bg-card px-6 py-3 shadow-md">
           {/* Logo */}
-          <a href="#" className="text-xl font-extrabold tracking-tight text-primary">
+          <Link to="/" className="text-xl font-extrabold tracking-tight text-primary">
             METAL<span className="text-secondary">X</span>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <ul className="hidden items-center gap-8 lg:flex">
             {navItems.map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
+              <li key={item.label}>
+                <Link
+                  to={item.href}
                   className="text-sm font-medium text-foreground/70 transition-colors hover:text-primary"
                 >
-                  {item}
-                </a>
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>
