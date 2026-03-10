@@ -98,5 +98,8 @@
   background-image: radial-gradient(circle, hsl(var(--muted-foreground) / 0.1) 1px, transparent 1px);
   background-size: 24px 24px;
 }
+html,body{
+  overflow-x: hidden;
+}
 
 

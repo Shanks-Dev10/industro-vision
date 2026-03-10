@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const navItems = [
   { href: "/", item: "Home" },
@@ -18,23 +19,22 @@ const Header = () => {
       <div className="mx-auto max-w-7xl">
         <nav className="flex items-center justify-between rounded-full bg-card px-6 py-3 shadow-md">
           {/* Logo */}
-          <a
-            href="#"
-            className="text-xl font-extrabold tracking-tight text-primary"
-          >
-            METAL<span className="text-secondary">X</span>
-          </a>
+          <Link to={"/"}>
+            <p className="text-xl font-extrabold tracking-tight text-primary">
+              METAL<span className="text-secondary">X</span>
+            </p>
+          </Link>
 
           {/* Desktop Nav */}
           <ul className="hidden items-center gap-8 lg:flex">
             {navItems.map((items) => (
               <li key={items.item}>
-                <a
-                  href={items.href}
+                <Link
+                  to={items.href}
                   className="text-sm font-medium text-foreground/70 transition-colors hover:text-primary"
                 >
                   {items.item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -73,12 +73,12 @@ const Header = () => {
             <ul className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <li key={item.item}>
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="text-sm font-medium text-foreground/70"
                   >
                     {item.item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
