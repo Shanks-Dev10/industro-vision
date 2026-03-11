@@ -8,50 +8,42 @@ import { Autoplay } from "swiper/modules";
 
 const projects = [
   {
-    num: "01",
-    title: "Revolutionizing renewable energy",
+    title: "Advanced weighing innovation",
     category: "Renewable Energy",
     image: product1,
   },
   {
-    num: "02",
-    title: "Aerospace structural solutions",
+    title: "Precisload monitoring",
     category: "Aerospace",
     image: product2,
   },
   {
-    num: "03",
-    title: "Revolutionizing renewable energy",
+    title: "Railway weighing and automation",
     category: "Renewable Energy",
     image: product3,
   },
   {
-    num: "04",
-    title: "Aerospace structural solutions",
+    title: "Precisload monitoring",
     category: "Aerospace",
     image: product2,
   },
   {
-    num: "01",
-    title: "Revolutionizing renewable energy",
+    title: "Advanced weighing innovation",
     category: "Renewable Energy",
     image: product1,
   },
   {
-    num: "02",
-    title: "Aerospace structural solutions",
+    title: "Precisload monitoring",
     category: "Aerospace",
     image: product2,
   },
   {
-    num: "03",
-    title: "Revolutionizing renewable energy",
+    title: "Railway weighing and automation",
     category: "Renewable Energy",
     image: product3,
   },
   {
-    num: "04",
-    title: "Aerospace structural solutions",
+    title: "Precisload monitoring",
     category: "Aerospace",
     image: product2,
   },
@@ -63,7 +55,7 @@ const ProjectsSection = () => {
       <div className="w-full px-6">
         <div className="mb-16 text-center">
           <h2 className="mt-3 text-3xl font-extrabold text-secondary md:text-4xl lg:text-5xl">
-            Projects
+            Products
           </h2>
           <p className="mt-4  text-muted-foreground text-center">
             Our work blends innovation with practical engineering solutions.
@@ -88,7 +80,7 @@ const ProjectsSection = () => {
             }}
           >
             {projects.map((p) => (
-              <SwiperSlide key={p.num}>
+              <SwiperSlide key={p.title}>
                 <div className="group relative h-[500px] overflow-hidden rounded-3xl cursor-pointer">
                   <a href="#">
                     <img
@@ -104,9 +96,6 @@ const ProjectsSection = () => {
                           {p.category}
                         </span>
                       </div>
-                      <h3 className="text-2xl font-bold text-primary-foreground">
-                        Project {p.num}
-                      </h3>
                       <p className="mt-1 text-primary-foreground/80">
                         {p.title}
                       </p>

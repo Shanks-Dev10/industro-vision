@@ -17,25 +17,25 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const projects = [
   {
     num: "01",
-    title: "Revolutionizing renewable energy",
+    title: "Advanced weighing innovation",
     category: "Renewable Energy",
     image: product1,
   },
   {
     num: "02",
-    title: "Aerospace structural solutions",
+    title: "Precisload monitoring",
     category: "Aerospace",
     image: product2,
   },
   {
     num: "03",
-    title: "Revolutionizing renewable energy",
+    title: "Railway weighing and automation",
     category: "Renewable Energy",
     image: product3,
   },
   {
     num: "04",
-    title: "Aerospace structural solutions",
+    title: "Precisload monitoring",
     category: "Aerospace",
     image: product2,
   },
