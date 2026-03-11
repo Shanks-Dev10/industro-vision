@@ -1,118 +1,148 @@
+import metalCutting from "@/assets/metal-cutting.webp";
 import { ArrowRight } from "lucide-react";
-import metalImg from "@/assets/metal-cutting.jpg";
-import oilImg from "@/assets/oil-platform.jpg";
-import greenImg from "@/assets/greenhouse.jpg";
-import windImg from "@/assets/wind-turbines.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { Autoplay } from "swiper/modules";
-
-const services = [
-  {
-    title: "Metal Engineering",
-    desc: "Precision metal fabrication and engineering for complex industrial applications.",
-    image: metalImg,
-  },
-  {
-    title: "Oil & Gas Recovery",
-    desc: "Advanced recovery and processing solutions for the petroleum industry.",
-    image: oilImg,
-  },
-  {
-    title: "Agricultural Automation",
-    desc: "Smart greenhouse and farming automation for higher yield and efficiency.",
-    image: greenImg,
-  },
-  {
-    title: "Power & Energy",
-    desc: "Sustainable energy solutions including wind, solar, and power grid infrastructure.",
-    image: windImg,
-  },
-  {
-    title: "Metal Engineering",
-    desc: "Precision metal fabrication and engineering for complex industrial applications.",
-    image: metalImg,
-  },
-  {
-    title: "Oil & Gas Recovery",
-    desc: "Advanced recovery and processing solutions for the petroleum industry.",
-    image: oilImg,
-  },
-  {
-    title: "Agricultural Automation",
-    desc: "Smart greenhouse and farming automation for higher yield and efficiency.",
-    image: greenImg,
-  },
-  {
-    title: "Power & Energy",
-    desc: "Sustainable energy solutions including wind, solar, and power grid infrastructure.",
-    image: windImg,
-  },
-];
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="bg-muted py-24">
-      <div className="w-full px-6">
-        <div className="mb-16 text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-secondary">
-            What We Offer
-          </span>
-          <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl lg:text-5xl">
-            Industry Services
-          </h2>
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Top Row */}
+        <div className="flex flex-col lg:flex-row justify-between items-start mb-20 gap-10">
+
+          <div>
+            <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
+              Tailored solutions for industry growth
+            </p>
+
+            <h2 className="text-6xl font-extrabold text-black flex items-end gap-3">
+              Services
+              <span className="w-3 h-3 bg-[#FBE87E]"></span>
+            </h2>
+          </div>
+
+          <div className="max-w-md">
+            <p className="text-gray-600 mb-6">
+              Together, we identify the industrial data automation project's
+              general scope and the components needed to produce.
+            </p>
+
+            <button className="flex items-center gap-3 bg-[#FBE87E] px-6 py-3 rounded-full font-semibold">
+              All Services
+              <span className="flex items-center justify-center w-8 h-8 rounded-full bg-black text-white">
+                <ArrowRight size={16} />
+              </span>
+            </button>
+          </div>
+
         </div>
 
-        <div className="relative">
-          <Swiper
-            modules={[Autoplay]}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            spaceBetween={10}
-            slidesPerView={4}
-            loop={true}
-            breakpoints={{
-              320: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 4 },
-            }}
-          >
-            {services.map((s) => (
-              <SwiperSlide key={s.title}>
-                <div className="group relative h-[480px] overflow-hidden rounded-3xl cursor-pointer">
-                  <img
-                    src={s.image}
-                    alt={s.title}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
-                  />
+        {/* Services */}
+        <div className="space-y-24 sticky top-[300px]">
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent transition-all duration-300 group-hover:from-primary/95" />
+          {/* Service 1 */}
+          <div className="sticky top-24 sticky top-[300px]">
+            <div className="relative rounded-3xl overflow-hidden">
 
-                  <div className="absolute inset-x-0 bottom-0 p-6 translate-y-4 transition-transform duration-300 group-hover:translate-y-0">
-                    <h3 className="text-xl font-bold text-primary-foreground">
-                      {s.title}
-                    </h3>
+              <img
+                src={metalCutting}
+                alt="Metal Engineering"
+                className="w-full h-[550px] object-cover"
+              />
 
-                    <p className="mt-2 text-sm text-primary-foreground/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                      {s.desc}
-                    </p>
+              <div className="absolute left-10 top-10 bg-white rounded-2xl rounded-tr-[90px] p-8 max-w-sm shadow-xl group cursor-pointer">
 
-                    <a
-                      href="#"
-                      className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-secondary opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                    >
-                      Find Out More <ArrowRight className="h-4 w-4" />
-                    </a>
-                  </div>
+                {/* Icon */}
+                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-6 
+  group-hover:bg-[#FBE87E] transition">
+                  ⚙️
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+
+                <h3 className="text-3xl font-bold mb-6">
+                  Metal <br /> Engineering
+                </h3>
+
+                <p className="text-gray-500 text-sm mb-8">
+                  We focus on delivering high-quality designs, efficient
+                  project management, and cutting-edge solutions.
+                </p>
+
+                <div className="flex items-center justify-between border-t pt-5">
+
+                  <span className="font-semibold text-sm">
+                    Find Out More
+                  </span>
+
+                  {/* Arrow */}
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full border 
+    group-hover:bg-[#FBE87E] group-hover:border-[#FBE87E] transition">
+
+                    <ArrowRight
+                      size={16}
+                      className="group-hover:text-black transition"
+                    />
+
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          {/* Service 2 */}
+          <div className="sticky top-24 sticky top-[300px]">
+            <div className="relative rounded-3xl overflow-hidden">
+
+              <img
+                src={metalCutting}
+                alt="Metal Engineering"
+                className="w-full h-[550px] object-cover"
+              />
+
+              <div className="absolute left-10 top-10 bg-white rounded-2xl rounded-tr-[90px] p-8 max-w-sm shadow-xl group cursor-pointer">
+
+                {/* Icon */}
+                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-6 
+  group-hover:bg-[#FBE87E] transition">
+                  ⚙️
+                </div>
+
+                <h3 className="text-3xl font-bold mb-6">
+                  Metal <br /> Engineering
+                </h3>
+
+                <p className="text-gray-500 text-sm mb-8">
+                  We focus on delivering high-quality designs, efficient
+                  project management, and cutting-edge solutions.
+                </p>
+
+                <div className="flex items-center justify-between border-t pt-5">
+
+                  <span className="font-semibold text-sm">
+                    Find Out More
+                  </span>
+
+                  {/* Arrow */}
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full border 
+    group-hover:bg-[#FBE87E] group-hover:border-[#FBE87E] transition">
+
+                    <ArrowRight
+                      size={16}
+                      className="group-hover:text-black transition"
+                    />
+
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
         </div>
+
       </div>
     </section>
   );
