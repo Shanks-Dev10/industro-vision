@@ -12,6 +12,7 @@ import Service from "./pages/Service";
 import Product from "./pages/Product";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import AsymmetricLoadMeasuringSystem from "./pages/AsymmetricLoadMeasuringSystem";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,10 @@ const App = () => {
             <Route path="/service" element={<Service />} />
             <Route path="/product" element={<Product />} />
             <Route path="/contact" element={<Contact />} />
+            <Route
+              path="/service/asymmetric-load-measuring-system"
+              element={<AsymmetricLoadMeasuringSystem />}
+            />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
