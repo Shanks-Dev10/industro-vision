@@ -29,7 +29,7 @@ const services = [
     title: "KIMAX2 AIR",
     desc: "We focus on real-time load monitoring, accurate axle weight measurement, and overload alerts to ensure safer and more efficient transport operations.",
     image: metalImg,
-    link: "/service/asymmetric-load-measuring-system",
+    link: "/service/k2-truck-onboard-scale-system",
   },
   {
     num: "04",
@@ -75,29 +75,29 @@ const Services = () => {
         />
         <div className="absolute inset-0 bg-primary/80" />
         <div className="absolute inset-0 dot-pattern opacity-30" />
-        <div className="relative z-10 mx-auto flex h-full max-w-7xl items-end px-6 pb-16">
+        <div className="relative z-10 mx-auto flex h-full max-w-7xl items-end px-6 pb-2">
           <div data-aos="fade-up">
-            <div className="mb-4 flex items-center gap-2 text-sm text-primary-foreground/60">
-              <span>Home Page</span>
-              <ChevronRight className="h-3 w-3" />
-              <span className="text-secondary">Services</span>
-            </div>
             <h1 className="text-5xl font-extrabold text-primary-foreground md:text-6xl">
               Services
             </h1>
+            <div className="my-4 flex items-center gap-2 text-sm text-primary-foreground/60">
+              <Link to={"/"}>Home</Link>
+              <ChevronRight className="h-3 w-3" />
+              <span className="text-secondary">Services</span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Work Process */}
       <section className="py-24 ">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-full 2xl:max-w-7xl px-6">
           <div
             className="mb-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
             data-aos="fade-up"
           >
             <div>
-              <h2 className="mt-3 text-4xl font-semibold text-foreground ">
+              <h2 className="mt-3 text-xl md:text-4xl font-semibold text-foreground ">
                 Tailored solutions for industry growth
               </h2>
             </div>
@@ -155,9 +155,9 @@ const Services = () => {
 
       {/* Services List */}
       <section className="py-24">
-        <div className="mx-auto max-w-7xl px-3 md:px-6">
+        <div className="mx-auto max-w-full 2xl:max-w-7xl px-3 md:px-6">
           <div className="mb-16 text-center" data-aos="fade-up">
-            <h2 className="text-3xl font-semibold text-foreground md:text-4xl ">
+            <h2 className="text-xl font-semibold text-foreground md:text-4xl ">
               Industrial solutions designed for quality and trust
             </h2>
           </div>
@@ -177,8 +177,8 @@ const Services = () => {
                       style={{ backgroundImage: `url(${s.image})` }}
                     ></div>
                   </div>
-                  <div className="flex justify-between items-center w-full">
-                    <h3 className="shrink-0 text-xl font-semibold text-foreground md:w-48">
+                  <div className="flex  justify-between items-center w-full">
+                    <h3 className="shrink-0 text-xl font-semibold text-foreground md:w-48 w-44">
                       {s.title}
                     </h3>
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border text-sm font-bold text-muted-foreground transition-colors group-hover:border-secondary group-hover:text-secondary">
@@ -198,19 +198,25 @@ const Services = () => {
 
       {/* Newsletter */}
       <section className="bg-primary py-20">
-        <div className="mx-auto max-w-2xl px-6 text-center" data-aos="fade-up">
+        <div
+          className="mx-auto max-w-full md:max-w-2xl px-2 md:px-6 text-center"
+          data-aos="fade-up"
+        >
           <h2 className="text-3xl font-extrabold text-primary-foreground md:text-4xl">
             Stay tuned for more updates
           </h2>
-          <div className="mx-auto mt-8 flex max-w-md">
+          <div className="mx-auto mt-8 flex max-w-full md:max-w-md ">
             <input
               type="email"
               placeholder="Email address"
               className="flex-1 rounded-l-xl bg-primary-foreground/10 px-5 py-3 text-sm text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none"
             />
-            <Button variant="gold" className="rounded-l-none rounded-r-xl px-6">
+            <Link
+              to={"/"}
+              className="rounded-l-none rounded-r-xl py-3 bg-[#F9C31F] px-2 md:px-6"
+            >
               Subscribe
-            </Button>
+            </Link>
           </div>
           <p className="mt-4 text-xs text-primary-foreground/50">
             By signing up, you agree to the Privacy Policy.

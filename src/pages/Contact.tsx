@@ -66,7 +66,7 @@ const Contact = () => {
           {/* Top heading */}
           <div className="flex flex-wrap gap-2 justify-between items-center border-b pb-7">
             <h3 className="text-[#8C8C8C] text-[14px] font-medium uppercase">
-              Let's Talk About Next Adventure
+              Let’s Build the Future of Railways
             </h3>
 
             <h4 className="text-[#8C8C8C] text-[14px] font-medium uppercase">
@@ -79,9 +79,9 @@ const Contact = () => {
             {/* Left text */}
             <div className="pr-[10px] pt-3 flex flex-col gap-10 my-2">
               <div>
-                <h3 className="text-black text-xl lg:text-4xl font-semibold leading-tight">
-                  Feel free to reach out for collaborations or just to say
-                  hello!
+                <h3 className="text-black text-xl lg:text-2xl font-semibold leading-tight">
+                  Reach out to us for enquiries, collaborations, or any
+                  assistance. Our team is always ready to help you
                 </h3>
               </div>
 
@@ -90,13 +90,22 @@ const Contact = () => {
                   <p className="text-[#8C8C8C] text-[14px] font-medium ">
                     How Can We Help?
                   </p>
-                  <a
-                    href="tel:919003253007"
-                    target="_blank"
-                    className="text-black font-medium underline underline-offset-[5px]"
-                  >
-                    +91 90032 53007
-                  </a>
+                  <div className="flex flex-col gap-2 py-2">
+                    <a
+                      href="tel:918939821722"
+                      target="_blank"
+                      className="text-black font-medium underline underline-offset-[5px]"
+                    >
+                      +91 89398 21722
+                    </a>
+                    <a
+                      href="tel:918939821709"
+                      target="_blank"
+                      className="text-black font-medium underline underline-offset-[5px]"
+                    >
+                      +91 89398 21709
+                    </a>
+                  </div>
                 </div>
                 <div>
                   <p className="text-[#8C8C8C] text-[14px] font-medium ">

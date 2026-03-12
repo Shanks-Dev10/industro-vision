@@ -12,9 +12,12 @@ import Service from "./pages/Service";
 import Product from "./pages/Product";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import AsymmetricLoadMeasuringSystem from "./pages/AsymmetricLoadMeasuringSystem";
-import OverloadControlSystem from "./pages/OverloadControlSystem";
-import ProjectDetails from "./pages/ProjectDetails";
+import AsymmetricLoadMeasuringSystem from "./pages/service/AsymmetricLoadMeasuringSystem";
+import OverloadControlSystem from "./pages/service/OverloadControlSystem";
+import AdvancedLoadMonitoringSystem from "./pages/products/AdvancedLoadMonitoringSystem";
+import OverloadControlSystemProduct from "./pages/products/OverloadControlSystemProduct";
+import TruckOnboardScaleSystem from "./pages/products/TruckOnboardScaleSystem";
+import K2TruckOnboardScaleSystem from "./pages/service/K2TruckOnboardScaleSystem";
 
 const queryClient = new QueryClient();
 
@@ -49,7 +52,22 @@ const App = () => {
               path="/service/over-load-control-system"
               element={<OverloadControlSystem />}
             />
-            <Route path="/product/product-details" element={<ProjectDetails/>} />
+            <Route
+              path="/service/k2-truck-onboard-scale-system"
+              element={<K2TruckOnboardScaleSystem />}
+            />
+            <Route
+              path="/product/overload-Control-System-product"
+              element={<OverloadControlSystemProduct />}
+            />
+            <Route
+              path="/product/advanced-load-monitoring-system"
+              element={<AdvancedLoadMonitoringSystem />}
+            />
+            <Route
+              path="/product/truck-onboard-scale-system"
+              element={<TruckOnboardScaleSystem />}
+            />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

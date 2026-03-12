@@ -5,14 +5,37 @@ import {
   Instagram,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+  const NavLinks = [
+    {
+      item: "Home",
+      href: "/",
+    },
+    {
+      item: "About Us",
+      href: "/about",
+    },
+    {
+      item: "Services",
+      href: "/service",
+    },
+    {
+      item: "Products",
+      href: "/product",
+    },
+    {
+      item: "Contact Us",
+      href: "/contact",
+    },
+  ];
 
   return (
     <footer className="bg-primary border-t border-primary-foreground/10">
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto 2xl:max-w-7xl max-w-full px-6 py-16">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
             <a
@@ -33,18 +56,16 @@ const Footer = () => {
               Pages
             </h4>
             <ul className="space-y-3">
-              {["Services", "Projects", "Awards", "Core Values", "Blog"].map(
-                (l) => (
-                  <li key={l}>
-                    <a
-                      href="#"
-                      className="text-sm text-primary-foreground/60 hover:text-secondary transition-colors"
-                    >
-                      {l}
-                    </a>
-                  </li>
-                ),
-              )}
+              {NavLinks.map((nav, index) => (
+                <li key={index}>
+                  <Link
+                    to={nav.href}
+                    className="text-sm text-primary-foreground/60 hover:text-secondary transition-colors"
+                  >
+                    {nav.item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -99,7 +120,7 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 md:flex-row">
           <p className="text-xs text-primary-foreground/50">
-            © <span >{year}</span> RailMet. All rights reserved.
+            © <span>{year}</span> RailMet. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a

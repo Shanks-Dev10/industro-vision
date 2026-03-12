@@ -18,12 +18,12 @@ const ServiceDetails = ({
       name: "Overload Control System",
       link: "/service/over-load-control-system",
     },
-    { name: "KIMAX2 AIR", link: "/" },
+    { name: "KIMAX2 AIR", link: "/service/k2-truck-onboard-scale-system" },
     { name: "Asymmetric Load Measuring System", link: "/" },
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-4 md:px-8">
+    <section className="2xl:max-w-7xl max-w-full mx-auto px-4 md:px-8">
       {/* Top Image */}
       <img src={serviceImage} alt="service" className="w-full rounded-xl" />
 
@@ -32,7 +32,7 @@ const ServiceDetails = ({
         <div className="lg:w-[70%]">
           {/* Description */}
           <h4 className="md:text-[34px] text-[22px] font-semibold mb-4">
-            Service Description
+            Description
           </h4>
 
           <p className="text-[#555] leading-7 mb-10">{serviceDescription}</p>
