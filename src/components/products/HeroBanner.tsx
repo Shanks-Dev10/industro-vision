@@ -21,10 +21,10 @@ const HeroBanner = ({ title }) => {
             </Link>
             <span className="mx-2">/</span>
             <Link
-              to={"/service"}
+              to={"/product"}
               className="hover:text-secondary transition-colors"
             >
-              Service
+              Product
             </Link>
             <span className="mx-2">/</span>
             <span className="text-secondary">{title}</span>

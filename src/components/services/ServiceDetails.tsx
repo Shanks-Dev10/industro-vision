@@ -1,245 +1,144 @@
-import serviceImg from "@/assets/service_6.jpg";
-import product1 from "@/assets/Lead-Image-Train-Weighing-System-Hire.webp";
-import product2 from "@/assets/railmet-banner-05.jpg.webp";
-import { ArrowRight, Building, Mail, Phone } from "lucide-react";
+import { ArrowRight, Building, Mail, Phone, Check } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
-const ServiceDetails = () => {
+const ServiceDetails = ({
+  serviceImage,
+  serviceDescription,
+  descriptionPoints,
+  whatInclude,
+  productimg1,
+  productimg2,
+}) => {
   const services = [
     {
-      serviceName: "Metal Engineering",
+      name: "Asymmetric Load Measuring System",
       link: "/service/asymmetric-load-measuring-system",
     },
     {
-      serviceName: "Metal Engineering",
-      link: "/",
+      name: "Overload Control System",
+      link: "/service/over-load-control-system",
     },
-    {
-      serviceName: "Metal Engineering",
-      link: "/",
-    },
-    {
-      serviceName: "Metal Engineering",
-      link: "/",
-    },
-    {
-      serviceName: "Metal Engineering",
-      link: "/",
-    },
+    { name: "KIMAX2 AIR", link: "/" },
+    { name: "Asymmetric Load Measuring System", link: "/" },
   ];
 
   return (
-    <section className="xl:max-w-7xl max-w-full px-4 md:px-8 mx-auto">
-      <div>
-        <img
-          src={serviceImg}
-          alt="serviceImg"
-          className="w-full h-full rounded-xl "
-        />
-      </div>
+    <section className="max-w-7xl mx-auto px-4 md:px-8">
+      {/* Top Image */}
+      <img src={serviceImage} alt="service" className="w-full rounded-xl" />
 
-      <div className="flex lg:flex-row flex-col gap-10 py-10 ">
-        {/* Left Content */}
-        <div className="lg:w-[70%] w-full">
-          <div>
-            <h4 className="text-[34px] text-black font-semibold mb-[15px]">
-              Service description
-            </h4>
-            <p className="text-[#555555] text-[16px] leading-6 mb-[30px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
-              sed officia mollitia eaque quas commodi aliquam magnam nesciunt
-              aliquid ex id natus recusandae soluta velit distinctio ratione
-              cupiditate illo quo.
-            </p>
-            <p className="text-[#555555] text-[16px] leading-6 mb-[30px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
-              sed officia mollitia eaque quas commodi aliquam magnam nesciunt
-              aliquid ex id natus recusandae soluta velit distinctio ratione
-              cupiditate illo quo.
-            </p>
+      <div className="flex flex-col lg:flex-row gap-10 py-10">
+        {/* LEFT SIDE */}
+        <div className="lg:w-[70%]">
+          {/* Description */}
+          <h4 className="md:text-[34px] text-[22px] font-semibold mb-4">
+            Service Description
+          </h4>
+
+          <p className="text-[#555] leading-7 mb-10">{serviceDescription}</p>
+
+          {/* Feature Points */}
+          <div className="grid md:grid-cols-2 gap-10 border-b pb-8">
+            {descriptionPoints.map((item, index) => (
+              <div key={index} className="flex flex-col gap-3">
+                <div className="flex items-center gap-3">
+                  <Building />
+                  <h5 className="md:text-xl font-bold  text-[18px]">
+                    {item.heading}
+                  </h5>
+                </div>
+
+                <p className="text-[#555]">{item.description}</p>
+              </div>
+            ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-5 border-b-[1px] border-[#DCE0E3]">
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-4">
-                <Building />
-                <p className="text-[24px] font-bold text-black">
-                  Quality & Reliable
-                </p>
-              </div>
-              <div>
-                <p className="text-[#555555] text-[16px] leading-6 mb-[30px]">
-                  Smart design galvanizes people to think, interact, and succeed
-                  for work, play and life.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-4">
-                <Building />
-                <p className="text-[24px] font-bold text-black">
-                  Quality & Reliable
-                </p>
-              </div>
-              <div>
-                <p className="text-[#555555] text-[16px] leading-6 mb-[30px]">
-                  Smart design galvanizes people to think, interact, and succeed
-                  for work, play and life.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-4">
-                <Building />
-                <p className="text-[24px] font-bold text-black">
-                  Quality & Reliable
-                </p>
-              </div>
-              <div>
-                <p className="text-[#555555] text-[16px] leading-6 mb-[30px]">
-                  Smart design galvanizes people to think, interact, and succeed
-                  for work, play and life.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-4">
-                <Building />
-                <p className="text-[24px] font-bold text-black">
-                  Quality & Reliable
-                </p>
-              </div>
-              <div>
-                <p className="text-[#555555] text-[16px] leading-6 mb-[30px]">
-                  Smart design galvanizes people to think, interact, and succeed
-                  for work, play and life.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-[34px] text-black font-semibold mb-[15px]">
-              What’s included
+          {/* Included Section */}
+          <div className="py-10">
+            <h4 className="md:text-[34px ] text-[22px] font-semibold mb-4">
+              What's Included
             </h4>
-            <p className="text-[#555555] text-[16px] leading-6 mb-[30px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
-              sed officia mollitia eaque quas commodi aliquam magnam nesciunt
-              aliquid ex id natus recusandae soluta velit distinctio ratione
-              cupiditate illo quo.
-            </p>
-            <ul>
-              <li className="text-[#555555] text-[16px]  my-4">
-                <span className="text-black font-medium pr-3">✔</span>
-                <span className="text-black font-bold">
-                  In-Depth Consultations
-                </span>
-                to understand your project goals, lifestyle, and preferences.
-              </li>
-              <li className="text-[#555555] text-[16px] my-4">
-                <span className="text-black font-medium pr-3">✔</span>
-                <span className="text-black font-bold">
-                  In-Depth Consultations
-                </span>
-                to understand your project goals, lifestyle, and preferences.
-              </li>
-              <li className="text-[#555555] text-[16px] my-4">
-                <span className="text-black font-medium pr-3">✔</span>
-                <span className="text-black font-bold">
-                  In-Depth Consultations
-                </span>
-                to understand your project goals, lifestyle, and preferences.
-              </li>
-              <li className="text-[#555555] text-[16px] my-4">
-                <span className="text-black font-medium pr-3">✔</span>
-                <span className="text-black font-bold">
-                  In-Depth Consultations
-                </span>
-                to understand your project goals, lifestyle, and preferences.
-              </li>
+
+            <p className="text-[#555] mb-6">{whatInclude.description}</p>
+
+            <ul className="space-y-3">
+              {whatInclude.lists.map((item, index) => (
+                <li key={index} className="flex items-start  gap-3 text-[#555]">
+                  <Check className="w-10 h-10 md:w-5 md:h-5 lg:w-6 lg:h-6 md:mt-1 mt-0 text-green-600" />
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-5">
+          {/* Images */}
+          <div className="grid md:grid-cols-2 gap-5">
             <img
-              src={product1}
-              alt="product1"
-              className="w-full xl:h-[300px] h-[250px] rounded-xl "
+              src={productimg1}
+              alt="product"
+              className="rounded-xl h-[250px] object-cover w-full"
             />
             <img
-              src={product2}
-              alt="product2"
-              className="w-full xl:h-[300px] h-[250px] rounded-xl"
+              src={productimg2}
+              alt="product"
+              className="rounded-xl h-[250px] object-cover w-full"
             />
           </div>
         </div>
 
-        {/* Right Content */}
-        <div className="lg:w-[30%] w-full self-start flex flex-col gap-8">
-          <div className="xl:px-[40px] xl:py-[50px] p-[20px] bg-[#F2F5FB] rounded-xl ">
-            <h4 className="text-[24px] text-black font-semibold mb-[15px]">
-              More Services
-            </h4>
-            {services.map((s) => (
-              <NavLink key={s.serviceName} to={s.link}>
+        {/* RIGHT SIDEBAR */}
+        <div className="lg:w-[30%] flex flex-col gap-8">
+          {/* More Services */}
+          <div className="bg-[#F2F5FB] py-8 px-5 rounded-xl">
+            <h4 className="text-xl font-semibold mb-5">More Services</h4>
+
+            {services.map((service) => (
+              <NavLink key={service.name} to={service.link}>
                 {({ isActive }) => (
                   <div
-                    className={`p-[20px] rounded-lg group hover:bg-white ${
-                      isActive
-                        ? "bg-white border-transparent"
-                        : " bg-transparent border-b-[1px]"
-                    }`}
+                    className={`p-4 rounded-lg flex justify-between items-center  mb-2 transition font-semibold group
+                    ${isActive ? "bg-white" : "hover:bg-white border-b-[1px] border-yellow-50"}`}
                   >
-                    <div className="flex justify-between items-center text-[16px] font-bold">
-                      {s.serviceName}
+                    {service.name}
 
-                      <span
-                        className={`w-[30px] h-[30px] flex justify-center items-center rounded-full group-hover:bg-yellow-400 group-hover:border-transparent transition transform duration-300 ${
-                          isActive
-                            ? "bg-yellow-400 text-black"
-                            : "bg-transparent border border-[#DCE0E3]"
-                        }`}
-                      >
-                        <ArrowRight size={16} />
-                      </span>
-                    </div>
+                    <span
+                      className={`w-8 h-8 flex items-center justify-center rounded-full border group-hover:bg-[#F9C31F] ${isActive ? "bg-[#F9C31F]" : ""}`}
+                    >
+                      <ArrowRight size={16} />
+                    </span>
                   </div>
                 )}
               </NavLink>
             ))}
           </div>
 
-          <div className="xl:px-[40px] xl:py-[50px] p-[20px] rounded-xl bg-[#0B2B3F] ">
-            <div className="border-b-[1px] border-[#8C8C8C]">
-              <h3 className="flex justify-between items-center text-[16px] font-bold text-white mb-[20px]">
-                How Can We Help
-              </h3>
-              <p className="mb-[20px] text-[#8C8C8C]">
-                If you need any helps, please feel free to contact us.
-              </p>
-            </div>
-            <div className="pt-[20px]">
-              <div className="flex gap-3 py-5">
-                <div className="w-14 h-14 flex justify-center items-center bg-[#FBE87E] rounded-md">
-                  <Phone size={26} />
-                </div>
-                <div >
-                  <p className="text-[#8C8C8C] text-[14px] uppercase font-bold">
-                    Call Us
-                  </p>
-                  <p className="text-[18px] font-semibold text-white pt-1">(180) - 800 668 75</p>
-                </div>
+          {/* Contact Card */}
+          <div className="bg-[#0B2B3F] p-8 rounded-xl text-white">
+            <h4 className="font-bold mb-3">How Can We Help</h4>
+
+            <p className="text-gray-400 mb-6">
+              If you need any help, please contact us.
+            </p>
+
+            <div className="space-y-5">
+              <div className="flex gap-3 items-center">
+                <span className="w-14 h-14 flex justify-center items-center bg-[#FBE87E]  rounded-md">
+                  <Phone size={22} color="black" />
+                </span>
+                <a
+                  href="tel:+919003253007"
+                  target="_blank"
+                  className="hover:underline-offset-1 hover:decoration-white"
+                >
+                  +91 90032 53007
+                </a>
               </div>
-              <div className="flex gap-3 py-5">
-                <div className="w-14 h-14 flex justify-center items-center bg-[#FBE87E] rounded-md">
-                  <Mail size={26} />
-                </div>
-                <div >
-                  <p className="text-[#8C8C8C] text-[14px] uppercase font-bold">
-                    Email
-                  </p>
-                  <p className="text-[18px] font-semibold text-white pt-1">support@gmail.com</p>
-                </div>
+
+              <div className="flex gap-3 items-center">
+                <span className="w-14 h-14 flex justify-center items-center bg-[#FBE87E] rounded-md">
+                  <Mail size={22} color="black" />
+                </span>
+                <span>support@gmail.com</span>
               </div>
             </div>
           </div>
@@ -248,4 +147,5 @@ const ServiceDetails = () => {
     </section>
   );
 };
+
 export default ServiceDetails;

@@ -42,7 +42,8 @@ const Header = () => {
           {/* Right */}
           <div className="hidden items-center gap-4 lg:flex">
             <a
-              href="tel:+919003253007" target="_blank"
+              href="tel:+919003253007"
+              target="_blank"
               className="flex items-center gap-2 text-sm font-medium text-foreground/70"
             >
               <Phone className="h-4 w-4 text-secondary" />
@@ -93,9 +94,11 @@ const Header = () => {
                 +91 90032 53007
               </a>
 
-              <Button variant="gold" className="rounded-full">
-                Request A Quote
-              </Button>
+              <Link to={'/contact'}>
+                <Button variant="gold" className="rounded-full">
+                  Request A Quote
+                </Button>
+              </Link>
             </div>
           </div>
         )}

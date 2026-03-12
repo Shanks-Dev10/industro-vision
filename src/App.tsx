@@ -13,6 +13,8 @@ import Product from "./pages/Product";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AsymmetricLoadMeasuringSystem from "./pages/AsymmetricLoadMeasuringSystem";
+import OverloadControlSystem from "./pages/OverloadControlSystem";
+import ProjectDetails from "./pages/ProjectDetails";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +45,11 @@ const App = () => {
               path="/service/asymmetric-load-measuring-system"
               element={<AsymmetricLoadMeasuringSystem />}
             />
+            <Route
+              path="/service/over-load-control-system"
+              element={<OverloadControlSystem />}
+            />
+            <Route path="/product/product-details" element={<ProjectDetails/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

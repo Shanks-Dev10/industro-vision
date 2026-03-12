@@ -12,29 +12,29 @@ import { Link } from "react-router-dom";
 const services = [
   {
     num: "01",
-    title: "Metal Engineering",
-    desc: "We focus on delivering high-quality designs, efficient project management, and cutting-edge industrial solutions.",
+    title: "Asymmetric Load Measuring System",
+    desc: "We focus on intelligent wagon load monitoring, proactive imbalance detection, and safer railway operations through advanced weighing innovation.",
     image: metalImg,
     link: "/service/asymmetric-load-measuring-system",
   },
   {
     num: "02",
-    title: "Oil & Gas Recovery",
-    desc: "Our team ensures creative designs, precise planning, and superior technical expertise.",
+    title: "Overload Control System",
+    desc: "OCLS ensures precise load monitoring, intelligent analytics, and superior safety performance across every railway rake.",
     image: oilImg,
-    link: "/service/asymmetric-load-measuring-system",
+    link: "/service/over-load-control-system",
   },
   {
     num: "03",
-    title: "Agricultural Automation",
-    desc: "We provide innovative concepts, seamless execution, and outstanding project delivery.",
+    title: "KIMAX2 AIR",
+    desc: "We focus on real-time load monitoring, accurate axle weight measurement, and overload alerts to ensure safer and more efficient transport operations.",
     image: metalImg,
     link: "/service/asymmetric-load-measuring-system",
   },
   {
     num: "04",
-    title: "Power & Energy",
-    desc: "Delivering smart solutions, reliable coordination, and exceptional engineering quality.",
+    title: "Asymmetric Load Measuring System",
+    desc: "Railmet is a railway technology company that provides advanced ALMS solutions to customers, delivering intelligent wagon load monitoring and real-time safer rail operations.",
     image: oilImg,
     link: "/service/asymmetric-load-measuring-system",
   },
@@ -97,7 +97,7 @@ const Services = () => {
             data-aos="fade-up"
           >
             <div>
-              <h2 className="mt-3 text-4xl font-extrabold text-foreground ">
+              <h2 className="mt-3 text-4xl font-semibold text-foreground ">
                 Tailored solutions for industry growth
               </h2>
             </div>
@@ -119,7 +119,7 @@ const Services = () => {
               className="space-y-0 flex flex-col gap-10"
               data-aos="fade-right"
             >
-              <p className=" text-xl text-black font-bold leading-relaxed ">
+              <p className=" text-xl text-black font-semibold leading-relaxed ">
                 We offer a comprehensive range of services tailored to meet the
                 unique needs of businesses in the manufacturing, construction,
                 and industrial sectors.
@@ -157,7 +157,7 @@ const Services = () => {
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-3 md:px-6">
           <div className="mb-16 text-center" data-aos="fade-up">
-            <h2 className="text-3xl font-extrabold text-foreground md:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-semibold text-foreground md:text-4xl ">
               Industrial solutions designed for quality and trust
             </h2>
           </div>
@@ -167,25 +167,25 @@ const Services = () => {
               <div key={s.num}>
                 <Link
                   to={s.link}
-                  className="group flex flex-col items-center justify-between gap-6 py-8  md:gap-8 h-[644px]"
+                  className="group flex flex-col items-center  gap-6 py-8  md:gap-8 h-[644px]"
                   data-aos="fade-up"
                   data-aos-delay={i * 80}
                 >
-                  <div className="h-[400px] w-full overflow-hidden rounded-md rounded-tr-[40px]">
+                  <div className="h-[350px] w-full overflow-hidden rounded-md ">
                     <div
                       className="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-125"
                       style={{ backgroundImage: `url(${s.image})` }}
                     ></div>
                   </div>
                   <div className="flex justify-between items-center w-full">
-                    <h3 className="shrink-0 text-xl font-bold text-foreground md:w-48">
+                    <h3 className="shrink-0 text-xl font-semibold text-foreground md:w-48">
                       {s.title}
                     </h3>
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border text-sm font-bold text-muted-foreground transition-colors group-hover:border-secondary group-hover:text-secondary">
                       {s.num}
                     </div>
                   </div>
-                  <p className="flex-1 text-sm text-muted-foreground leading-relaxed">
+                  <p className="flex-1 text-sm text-muted-foreground leading-relaxed ">
                     {s.desc}
                   </p>
                 </Link>

@@ -1,6 +1,6 @@
 import { Shield } from "lucide-react";
 
-const HeadingSection = () => {
+const HeadingSection = ({heading,description}) => {
   return (
     <section className="py-[100px] lg:max-w-7xl md:max-w-full  px-4 mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
@@ -9,15 +9,14 @@ const HeadingSection = () => {
             <Shield size={48} />
           </div>
           <div>
-            <h2 className="text-black text-[26px] lg:text-[40px] font-bold leading-[50px]">
-              Asymmetric Load Measuring System
+            <h2 className="text-black text-[18px] leading-[30px] lg:text-[30px] font-bold md:leading-[50px]">
+              {heading}
             </h2>
           </div>
         </div>
         <div>
-          <p className="text-[18px] leading-8 text-black max-w-[500px]">
-            A service industry is a business that provides services or
-            intangible product to customers, rather than manufacturing goods.
+          <p className="md:text-[18px] text-[16px] leading-8 text-black max-w-[500px]">
+            {description}
           </p>
         </div>
       </div>

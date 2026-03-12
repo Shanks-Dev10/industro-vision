@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import product1 from '@/assets/Lead-Image-Train-Weighing-System-Hire.webp'
 import product2 from '@/assets/railmet-banner-05.jpg.webp'
 import product3 from '@/assets/VRS241.webp'
+import product4 from '@/assets/railmet-product-06.webp'
 import {
   Card,
   CardContent,
@@ -37,7 +38,7 @@ const projects = [
     num: "04",
     title: "Precisload monitoring",
     category: "Aerospace",
-    image: product2,
+    image: product4,
   },
 ];
 
