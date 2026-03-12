@@ -28,10 +28,10 @@ const WorkProcess = () => {
       {/* dotted background */}
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle,_#ffffff_1px,_transparent_1px)] [background-size:22px_22px]"></div>
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-full mx-auto px-6">
 
         {/* Top header */}
-        <div className="grid lg:grid-cols-2 gap-16 mb-20">
+        <div className="grid lg:grid-cols-2 gap-16 mb-20 border-b-[1px] p-5">
 
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-300 mb-4">
@@ -45,17 +45,19 @@ const WorkProcess = () => {
           </div>
 
           <div className="flex flex-col justify-center">
-            <div className="border-l-2 border-[#FBE87E] pl-6 mb-6 text-gray-200">
+            <div className="border-l-4 border-[#FBE87E] pl-6 mb-6 text-gray-200">
               We start by understanding your needs and conducting a
               comprehensive solutions to assess.
             </div>
 
-            <button className="flex items-center gap-3 bg-white text-black px-5 py-2 rounded-full w-fit font-semibold">
-              View All Members
-              <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#FBE87E]">
-                →
-              </span>
-            </button>
+            <div className="px-5">
+              <button className="flex items-center gap-3 bg-white text-black px-5 py-2 rounded-full w-fit font-semibold">
+                View All Members
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#FBE87E]">
+                  →
+                </span>
+              </button>
+            </div>
           </div>
 
         </div>
@@ -71,9 +73,9 @@ const WorkProcess = () => {
 
                 <div className="flex justify-center items-end w-28 h-28 bg-[#FBE87E] rounded-md rounded-tr-[30px]">
 
-                <span className=" text-6xl font-extrabold text-black">
-                  {step.num}
-                </span>
+                  <span className=" text-6xl font-extrabold text-black">
+                    {step.num}
+                  </span>
                 </div>
 
               </div>

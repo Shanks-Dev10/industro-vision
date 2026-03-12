@@ -27,10 +27,10 @@ const posts = [
 const NewsSection = () => {
   return (
     <section className="py-24 bg-[#F5F5F5]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-full mx-auto px-6">
 
         {/* Top small labels */}
-        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6">
+        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] p-5">
           <span>Explore additional insights from us</span>
           <span>[ Our Blog ]</span>
         </div>

@@ -1,46 +1,93 @@
 import { Award } from "lucide-react";
 
 const awards = [
-  { year: "2019", title: "International Design Awards" },
-  { year: "2021", title: "Excellence in Sustainability" },
-  { year: "2024", title: "Community Impact Award" },
+  {
+    year: "2019",
+    title: "International Design Awards",
+    desc: "Celebrates 15 years with a retrospective showcase of the company's most iconic projects and milestones.",
+  },
+  {
+    year: "2021",
+    title: "Excellence in Sustainability",
+    desc: "Wins a prestigious national design award for an innovative mixed-use development project.",
+  },
+  {
+    year: "2024",
+    title: "Community Impact Award",
+    desc: "Participates in a national expo, showcasing innovative concepts and gaining industry recognition.",
+  },
 ];
 
 const Awards = () => {
   return (
-    <section className="bg-background py-24">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-12 text-center" data-aos="fade-up">
-          <span className="text-sm font-semibold uppercase tracking-widest text-secondary">
-            Awards
-          </span>
-          <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
-            We are a developer invested in our customers' success
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            and improving the communities we serve.
-          </p>
+    <section className="py-24 bg-[#F5F5F5]">
+      <div className="max-w-full mx-auto px-6">
+
+        {/* Top Labels */}
+        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] p-5">
+          <span>Keeping good company</span>
+          <span>[ Recognitions we got ]</span>
         </div>
-        <div className="grid gap-8 sm:grid-cols-3">
-          {awards.map((award, i) => (
+
+        {/* Title Row */}
+        <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
+
+          <h2 className="text-7xl font-extrabold flex items-end gap-3">
+            Awards
+            <span className="w-3 h-3 bg-[#FBE87E]"></span>
+          </h2>
+
+          <div className="flex gap-6 max-w-md">
+            <span className="w-[7px] bg-[#FBE87E]"></span>
+
+            <p className="text-lg text-gray-600 leading-relaxed">
+              We are a developer invested in our customers’ success and
+              improving the communities we serve.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Award Cards */}
+        <div className="grid md:grid-cols-3 gap-8">
+
+          {awards.map((award, index) => (
             <div
-              key={i}
-              className="group flex flex-col items-center rounded-3xl bg-muted p-10 text-center shadow-sm transition-shadow hover:shadow-lg"
-              data-aos="fade-up"
-              data-aos-delay={i * 150}
+              key={index}
+              className="bg-[#EDEDED] rounded-md rounded-tl-[40px] p-8 border border-gray-200 relative"
             >
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-secondary/10">
-                <Award className="h-8 w-8 text-secondary" />
+
+              {/* Top Row */}
+              <div className="flex justify-between items-start mb-12">
+
+                <span className="text-sm text-gray-500 font-semibold">
+                  {award.year}
+                </span>
+
+                <Award className="w-10 h-10 text-gray-300" />
+
               </div>
-              <p className="mb-2 text-3xl font-extrabold text-foreground">
-                {award.year}
+
+              {/* Divider */}
+              <div className="border-t border-gray-300 mb-6"></div>
+
+              {/* Content */}
+              <h3 className="text-xl font-bold mb-3">
+                {award.title}
+              </h3>
+
+              <p className="text-sm text-gray-600 leading-relaxed">
+                {award.desc}
               </p>
-              <p className="text-muted-foreground">{award.title}</p>
+
             </div>
           ))}
+
         </div>
+
       </div>
     </section>
   );
 };
+
 export default Awards;

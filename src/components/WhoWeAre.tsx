@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 const WhoWeAre = () => {
     return (
         <section className="bg-white py-24">
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-full mx-auto px-6">
 
                 {/* Top Small Labels */}
                 <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6">
@@ -13,11 +13,10 @@ const WhoWeAre = () => {
                 </div>
 
                 {/* Main Heading */}
-                <h2 className="text-6xl font-extrabold text-black mb-14 flex items-end gap-1">
+                <h2 className="text-6xl font-extrabold text-black mb-14 flex items-end gap-1 border-b-[1px] p-5">
                     Who we are
                     <span className="w-4 h-4 bg-[#FBE87E] inline-block"></span>
                 </h2>
-
                 {/* Layout */}
                 <div className="grid lg:grid-cols-[1fr_1.2fr_1fr] gap-12 items-start">
 
@@ -76,7 +75,7 @@ const WhoWeAre = () => {
                     </div>
 
                 </div>
-            </div>
+                </div>
         </section>
     );
 };

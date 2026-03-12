@@ -1,97 +1,127 @@
-import testimonialImg from "@/assets/testimonial-workers.jpg";
-import { Quote } from "lucide-react";
+import engineersImg from "@/assets/engineers-discussing.webp";
+import { Star, ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 
-const Testimonal = () => {
+const TestimonialSection = () => {
   return (
-    <section className="bg-muted py-24">
-      <div className="mx-auto grid grid-cols-1 max-w-7xl flex-col items-center gap-12 px-6 lg:grid-cols-2">
-        <div className="flex-1 space-y-8" data-aos="fade-right">
-          <span className="text-sm font-semibold uppercase tracking-widest text-secondary">
-            Testimonial
-          </span>
+    <section className="py-24 bg-[#F5F5F5]">
+      <div className="max-w-full mx-auto px-6">
 
-          <Swiper
-            modules={[Autoplay,Pagination]}
-            pagination={{clickable:true}}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            spaceBetween={10}
-            slidesPerView={1}
-            loop={true}
-          >
-            <SwiperSlide className="w-full flex flex-col gap-4">
-              <Quote className="h-10 w-10 text-secondary/30" />
-              <blockquote className="text-2xl font-bold leading-relaxed text-foreground md:text-3xl">
-                "The professionalism and response time left me speechless. The
-                quality was amazing and I got exactly what I wanted."
-              </blockquote>
-              <div>
-                <p className="font-bold text-foreground">Ralph Adams</p>
-                <p className="text-sm text-muted-foreground">
-                  Construction Admin
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="rounded-full bg-secondary/10 px-3 py-1 text-xs font-semibold text-secondary">
-                  ★ 5.0
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="w-full flex flex-col gap-4">
-              <Quote className="h-10 w-10 text-secondary/30" />
-              <blockquote className="text-2xl font-bold leading-relaxed text-foreground md:text-3xl">
-                "The professionalism and response time left me speechless. The
-                quality was amazing and I got exactly what I wanted."
-              </blockquote>
-              <div>
-                <p className="font-bold text-foreground">Ralph Adams</p>
-                <p className="text-sm text-muted-foreground">
-                  Construction Admin
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="rounded-full bg-secondary/10 px-3 py-1 text-xs font-semibold text-secondary">
-                  ★ 5.0
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="w-full flex flex-col gap-4">
-              <Quote className="h-10 w-10 text-secondary/30" />
-              <blockquote className="text-2xl font-bold leading-relaxed text-foreground md:text-3xl">
-                "The professionalism and response time left me speechless. The
-                quality was amazing and I got exactly what I wanted."
-              </blockquote>
-              <div>
-                <p className="font-bold text-foreground">Ralph Adams</p>
-                <p className="text-sm text-muted-foreground">
-                  Construction Admin
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="rounded-full bg-secondary/10 px-3 py-1 text-xs font-semibold text-secondary">
-                  ★ 5.0
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+        {/* Top labels */}
+        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] p-5">
+          <span>OUR HAPPY CLIENTS</span>
+          <span>[ WHAT CLIENTS SAY ]</span>
         </div>
-        <div className="flex-1" data-aos="fade-left">
-          <img
-            src={testimonialImg}
-            alt="Factory engineers reviewing data"
-            className="w-full rounded-3xl object-cover shadow-xl"
-            loading="lazy"
-          />
+
+        {/* Layout */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+          {/* Left */}
+          <div className="space-y-10">
+
+            {/* Quote */}
+            <Swiper
+              modules={[Autoplay, Pagination]}
+              pagination={{ clickable: true }}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              spaceBetween={10}
+              slidesPerView={1}
+              loop={true}
+            >
+              <SwiperSlide className="w-full flex flex-col gap-4">
+              <blockquote className="text-4xl font-extrabold leading-tight">
+                “Their precision engineering and attention to detail have
+                significantly improved our production line. We highly recommend
+                them to any business.”
+              </blockquote>
+
+              {/* Client */}
+              <div>
+                <p className="font-bold text-lg">Charles Clark</p>
+                <p className="text-sm text-gray-500">
+                  Assistant Project Manager
+                </p>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide className="w-full flex flex-col gap-4">
+              <blockquote className="text-4xl font-extrabold leading-tight">
+                “Their precision engineering and attention to detail have
+                significantly improved our production line. We highly recommend
+                them to any business.”
+              </blockquote>
+
+              {/* Client */}
+              <div>
+                <p className="font-bold text-lg">Charles Clark</p>
+                <p className="text-sm text-gray-500">
+                  Assistant Project Manager
+                </p>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide className="w-full flex flex-col gap-4">
+              <blockquote className="text-4xl font-extrabold leading-tight">
+                “Their precision engineering and attention to detail have
+                significantly improved our production line. We highly recommend
+                them to any business.”
+              </blockquote>
+
+              {/* Client */}
+              <div>
+                <p className="font-bold text-lg">Charles Clark</p>
+                <p className="text-sm text-gray-500">
+                  Assistant Project Manager
+                </p>
+              </div>
+              </SwiperSlide>
+              </Swiper>
+
+              {/* Pagination */}
+              <div className="flex items-center justify-between border-b-[1px] pt-20">
+
+              </div>
+
+              {/* Bottom row */}
+              <div className="flex items-center justify-between">
+
+                {/* Rating */}
+                <div className="flex items-center gap-2 bg-[#FBE87E] px-5 py-2 rounded-full text-sm font-semibold">
+                  <Star className="w-4 h-4 fill-black text-black" />
+                  4.9 Rating From 12k+ Reviews
+                </div>
+
+                {/* Button */}
+                <button className="flex items-center gap-3 font-semibold">
+                  View All Reviews
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#FBE87E]">
+                    <ArrowRight size={16} />
+                  </span>
+                </button>
+
+              </div>
+
+          </div>
+
+          {/* Right */}
+          <div className="rounded-md rounded-tr-[50px] overflow-hidden">
+            <img
+              src={engineersImg}
+              alt="Engineers discussing"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
         </div>
+
       </div>
     </section>
   );
 };
-export default Testimonal;
+
+export default TestimonialSection;
