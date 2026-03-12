@@ -1,10 +1,12 @@
 import ctaBg from "@/assets/cta-background.webp";
 import { ArrowRight } from "lucide-react";
+import { Marquee } from "@/components/ui/marquee"
+
 
 const CTASection = () => {
   return (
     <section className="py-28 bg-[#F5F5F5]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-full mx-auto px-6">
 
         {/* CTA Container */}
         <div className="relative rounded-2xl overflow-hidden">
@@ -44,30 +46,33 @@ const CTASection = () => {
           {/* Partner Strip */}
           <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm py-6 overflow-hidden">
 
-            <div className="flex items-center gap-16 whitespace-nowrap animate-marquee px-12">
+            <div className="flex items-center gap-16 px-12">
 
               <span className="text-xs uppercase tracking-widest text-white/60">
                 Trusted partners and satisfied clients
               </span>
 
-              <span className="text-lg font-semibold text-white/80">:ex</span>
-              <span className="text-lg font-semibold text-white/80">studio45</span>
-              <span className="text-lg font-semibold text-white/80">SRBITZ</span>
-              <span className="text-lg font-semibold text-white/80">cameo</span>
-              <span className="text-lg font-semibold text-white/80">DYNATECH</span>
+              <Marquee pauseOnHover repeat={4} className="flex-1 ">
+                <span className="text-lg font-semibold text-white/80 mx-4">:ex</span>
+                <span className="text-lg font-semibold text-white/80 mx-4">studio45</span>
+                <span className="text-lg font-semibold text-white/80 mx-4">SRBITZ</span>
+                <span className="text-lg font-semibold text-white/80 mx-4">cameo</span>
+                <span className="text-lg font-semibold text-white/80 mx-4">DYNATECH</span>
 
-              {/* Duplicate for smooth loop */}
-              <span className="text-lg font-semibold text-white/80">:ex</span>
-              <span className="text-lg font-semibold text-white/80">studio45</span>
-              <span className="text-lg font-semibold text-white/80">SRBITZ</span>
-              <span className="text-lg font-semibold text-white/80">cameo</span>
-              <span className="text-lg font-semibold text-white/80">DYNATECH</span>
+                {/* duplicate */}
+                <span className="text-lg font-semibold text-white/80 mx-4">:ex</span>
+                <span className="text-lg font-semibold text-white/80 mx-4">studio45</span>
+                <span className="text-lg font-semibold text-white/80 mx-4">SRBITZ</span>
+                <span className="text-lg font-semibold text-white/80 mx-4">cameo</span>
+                <span className="text-lg font-semibold text-white/80 mx-4">DYNATECH</span>
+              </Marquee>
 
             </div>
 
           </div>
 
         </div>
+
 
       </div>
     </section>

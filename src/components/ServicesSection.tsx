@@ -4,10 +4,10 @@ import { ArrowRight } from "lucide-react";
 const ServicesSection = () => {
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-full mx-auto px-6">
 
         {/* Top Row */}
-        <div className="flex flex-col lg:flex-row justify-between items-start mb-20 gap-10">
+        <div className="flex flex-col lg:flex-row justify-between items-start mb-20  border-b-[1px] p-5">
 
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
@@ -21,7 +21,7 @@ const ServicesSection = () => {
           </div>
 
           <div className="max-w-md">
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6 border-l-[4px] p-4 border-[#FBE87E]">
               Together, we identify the industrial data automation project's
               general scope and the components needed to produce.
             </p>

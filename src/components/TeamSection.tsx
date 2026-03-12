@@ -16,7 +16,7 @@ const members = [
 const TeamSection = () => {
   return (
     <section className="py-28 bg-[#F5F5F5]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-full mx-auto px-6">
 
         {/* Top Labels */}
         <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6">
@@ -25,7 +25,7 @@ const TeamSection = () => {
         </div>
 
         {/* Title + Description */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
+        <div className="grid lg:grid-cols-2 gap-16 items-start mb-16 border-b-[1px] p-5">
 
           <h2 className="text-7xl font-extrabold flex items-end gap-3">
             The team
@@ -33,7 +33,7 @@ const TeamSection = () => {
           </h2>
 
           <div className="flex gap-6">
-            <span className="w-[2px] bg-[#FBE87E]"></span>
+            <span className="w-[4px] bg-[#FBE87E]"></span>
 
             <p className="text-gray-600 text-lg leading-relaxed max-w-md">
               Our team brings together licensed contractors and experts who
@@ -55,7 +55,7 @@ const TeamSection = () => {
               <img
                 src={m.img}
                 alt={m.name}
-                className="w-full h-[260px] object-cover group-hover:scale-110 transition duration-500"
+                className="w-full h-[350px] object-cover group-hover:scale-110 transition duration-500"
               />
 
               {/* Overlay */}

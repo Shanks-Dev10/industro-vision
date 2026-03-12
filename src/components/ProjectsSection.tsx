@@ -39,7 +39,7 @@ const stats = [
 const ProductsSection = () => {
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-full mx-auto px-6">
 
         {/* Header */}
         <div className="grid lg:grid-cols-2 gap-16 items-center pb-16 border-b mb-8">
@@ -50,7 +50,7 @@ const ProductsSection = () => {
           </h2>
 
           <div className="flex items-start gap-6">
-            <span className="w-[2px] h-16 bg-[#FBE87E]"></span>
+            <span className="w-[4px] h-20 bg-[#FBE87E]"></span>
 
             <p className="text-gray-600 text-lg leading-relaxed max-w-md">
               Our work is a blend of innovative thinking and practical

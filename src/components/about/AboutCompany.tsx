@@ -1,84 +1,103 @@
 import aboutEngineerImg from "@/assets/about-engineer.jpg";
 import { ArrowRight, MapPin, Users, DollarSign, Calendar } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const stats = [
   {
     icon: Calendar,
-    label: "Years of Experience",
+    title: "Years of experience",
     value: "30",
-    highlight: true,
+    desc: "leaders in industrial manufacturing & technology",
+    bg: "bg-[#FBE87E]",
+    text: "text-black",
   },
-  { icon: MapPin, label: "Global Locations", value: "75", highlight: false },
-  { icon: Users, label: "Total Employees", value: "1.2K", highlight: false },
-  { icon: DollarSign, label: "Annual Revenue", value: "15B", highlight: false },
+  {
+    icon: MapPin,
+    title: "Global locations",
+    value: "75",
+    desc: "countries where the Group has built at least one project",
+    bg: "bg-white",
+    text: "text-black",
+  },
+  {
+    icon: Users,
+    title: "Total employee",
+    value: "1.2K",
+    desc: "direct and indirect employees working on our projects",
+    bg: "bg-white",
+    text: "text-black",
+  },
+  {
+    icon: DollarSign,
+    title: "Annual revenue",
+    value: "15B",
+    desc: "total project value of all time",
+    bg: "bg-[#0F2F45]",
+    text: "text-white",
+  },
 ];
 
 const AboutCompany = () => {
   return (
-    <section className="bg-background py-24">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="flex flex-col items-start gap-16 lg:flex-row">
-          {/* Left - Image + Stats */}
-          <div className="relative flex-1" data-aos="fade-right">
+    <section className="py-24 bg-[#FFFF]">
+      <div className="max-w-full mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
+
+        {/* LEFT SIDE */}
+        <div>
+
+          <div className="rounded-md rounded-tr-[100px] overflow-hidden mb-8">
             <img
               src={aboutEngineerImg}
-              alt="Engineer working with machinery"
-              className="w-full rounded-3xl object-cover shadow-xl aspect-[4/5]"
-              loading="lazy"
+              alt="Engineer"
+              className="w-full h-[380px] object-cover"
             />
-            <div className="absolute -bottom-8 -right-4 grid grid-cols-2 gap-3 md:-right-12">
-              {stats.map((stat, i) => (
-                <div
-                  key={i}
-                  className={`rounded-2xl px-5 py-4 shadow-lg ${
-                    stat.highlight
-                      ? "bg-secondary text-secondary-foreground"
-                      : "bg-card text-card-foreground"
-                  }`}
-                  data-aos="zoom-in"
-                  data-aos-delay={i * 100}
-                >
-                  <stat.icon
-                    className={`mb-1 h-5 w-5 ${stat.highlight ? "text-secondary-foreground" : "text-secondary"}`}
-                  />
-                  <p className="text-2xl font-extrabold">{stat.value}</p>
-                  <p
-                    className={`text-xs font-medium ${stat.highlight ? "text-secondary-foreground/80" : "text-muted-foreground"}`}
-                  >
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
 
-          {/* Right - Content */}
-          <div className="flex-1 space-y-8 lg:pt-8" data-aos="fade-left">
-            <span className="text-sm font-semibold uppercase tracking-widest text-secondary">
-              About Us
+          <h2 className="text-4xl font-extrabold leading-tight mb-6">
+            Pushing the boundaries of technology and manufacturing to build a
+            stronger, smarter tomorrow
+          </h2>
+
+          <button className="flex items-center gap-3 bg-[#FBE87E] px-6 py-3 rounded-full font-semibold">
+            Request A Quote
+            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-black text-white">
+              <ArrowRight size={16} />
             </span>
-            <h2 className="text-3xl font-extrabold text-foreground md:text-4xl lg:text-5xl leading-tight">
-              Pushing the boundaries of technology and manufacturing to build a
-              stronger, smarter tomorrow
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We combine innovative technology with deep industry expertise to
-              deliver efficient and reliable engineering services that empower
-              businesses worldwide.
-            </p>
-            <Button
-              variant="gold"
-              size="lg"
-              className="rounded-full gap-2 px-8"
-            >
-              Request A Quote <ArrowRight className="h-5 w-5" />
-            </Button>
-          </div>
+          </button>
+
         </div>
+
+        {/* RIGHT SIDE STATS */}
+        <div className="grid grid-cols-2 gap-6">
+
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className={`${stat.bg} ${stat.text} rounded-md rounded-tr-[90px] p-6 border border-gray-200 h-[320px] flex flex-col justify-between`}
+            >
+
+              <p className="text-[20px] font-extrabold">
+                {stat.title}
+              </p>
+
+              <div className="flex items-center justify-between">
+                <stat.icon className="w-7 h-7 opacity-80" />
+                <span className="text-[80px] font-extrabold">
+                  {stat.value}
+                </span>
+              </div>
+
+              <div className="border-t border-black/10 pt-3 text-sm opacity-80">
+                {stat.desc}
+              </div>
+
+            </div>
+          ))}
+
+        </div>
+
       </div>
     </section>
   );
 };
 
-export default AboutCompany
+export default AboutCompany;

@@ -8,10 +8,10 @@ import { Autoplay, Pagination } from "swiper/modules";
 const TestimonialSection = () => {
   return (
     <section className="py-24 bg-[#F5F5F5]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-full mx-auto px-6">
 
         {/* Top labels */}
-        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-8">
+        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] p-5">
           <span>OUR HAPPY CLIENTS</span>
           <span>[ WHAT CLIENTS SAY ]</span>
         </div>
@@ -83,7 +83,7 @@ const TestimonialSection = () => {
               </Swiper>
 
               {/* Pagination */}
-              <div className="flex items-center justify-between border-t pt-6">
+              <div className="flex items-center justify-between border-b-[1px] pt-20">
 
               </div>
 
@@ -109,7 +109,7 @@ const TestimonialSection = () => {
           </div>
 
           {/* Right */}
-          <div className="rounded-2xl overflow-hidden">
+          <div className="rounded-md rounded-tr-[50px] overflow-hidden">
             <img
               src={engineersImg}
               alt="Engineers discussing"
