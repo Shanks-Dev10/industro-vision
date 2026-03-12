@@ -19,17 +19,17 @@ const TeamSection = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top Labels */}
-        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6">
+        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] pb-8">
           <span>THE FACES BEHIND INDUSTRY</span>
           <span>[ MEET OUR EXPERTS ]</span>
         </div>
 
         {/* Title + Description */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-16 border-b-[1px] p-5">
+        <div className="grid lg:grid-cols-2 gap-16 items-start mb-16  p-5">
 
           <h2 className="text-2xl md:text-5xl lg:text-7xl font-semibold flex items-end gap-3">
             The team
-            <span className="w-2 h-2 md:w-3 h-3 lg:w-3 h-3 bg-[#FBE87E]"></span>
+            <span className="w-2 h-2 md:w-3  lg:w-3  bg-[#FBE87E]"></span>
           </h2>
 
           <div className="flex gap-6">
