@@ -15,8 +15,8 @@ const members = [
 
 const TeamSection = () => {
   return (
-    <section className="py-28 bg-[#F5F5F5]">
-      <div className="max-w-full mx-auto px-6">
+    <section className="py-5 md:py-28 lg:py-28 bg-[#F5F5F5]">
+      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top Labels */}
         <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6">
@@ -27,24 +27,23 @@ const TeamSection = () => {
         {/* Title + Description */}
         <div className="grid lg:grid-cols-2 gap-16 items-start mb-16 border-b-[1px] p-5">
 
-          <h2 className="text-7xl font-extrabold flex items-end gap-3">
+          <h2 className="text-2xl md:text-5xl lg:text-7xl font-semibold flex items-end gap-3">
             The team
-            <span className="w-3 h-3 bg-[#FBE87E]"></span>
+            <span className="w-2 h-2 md:w-3 h-3 lg:w-3 h-3 bg-[#FBE87E]"></span>
           </h2>
 
           <div className="flex gap-6">
             <span className="w-[4px] bg-[#FBE87E]"></span>
 
             <p className="text-gray-600 text-lg leading-relaxed max-w-md">
-              Our team brings together licensed contractors and experts who
-              work to help you achieve your goals.
+              We integrate hands-on understanding with clever planning to ensure each challenge runs easily, remains on track, and grants exactly what you imagined
             </p>
           </div>
 
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {members.map((m, index) => (
             <div

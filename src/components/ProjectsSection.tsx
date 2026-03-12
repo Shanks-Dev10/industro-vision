@@ -4,19 +4,19 @@ import construction from "@/assets/metal-cutting.webp";
 
 const products = [
   {
-    title: "Revolutionizing renewable energy",
+    title: "ALMS(Asymmetric Load Measuring System)",
     category: "Environmental",
     year: "2015",
     image: wind,
   },
   {
-    title: "Aerospace structural solutions",
+    title: "OCLS (Overload Control System)",
     category: "Machinery",
     year: "2015",
     image: construction,
   },
   {
-    title: "Driving the future of clean energy",
+    title: "K2(KIMAX2 AIR)",
     category: "Energy",
     year: "2018",
     image: wind,
@@ -39,18 +39,18 @@ const stats = [
 const ProductsSection = () => {
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-full mx-auto px-6">
+      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Header */}
         <div className="grid lg:grid-cols-2 gap-16 items-center pb-16 border-b mb-8">
 
-          <h2 className="text-7xl font-extrabold flex items-end gap-3">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-semibold flex items-end gap-3">
             Products
-            <span className="w-3 h-3 bg-[#FBE87E]"></span>
+            <span className="w-2 h-2 md:w-3 h-3 lg:w-3 h-3 bg-[#FBE87E]"></span>
           </h2>
 
           <div className="flex items-start gap-6">
-            <span className="w-[4px] h-20 bg-[#FBE87E]"></span>
+            <span className="w-[5px] h-20 bg-[#FBE87E]"></span>
 
             <p className="text-gray-600 text-lg leading-relaxed max-w-md">
               Our work is a blend of innovative thinking and practical
@@ -66,11 +66,11 @@ const ProductsSection = () => {
           {products.map((product, index) => (
             <div
               key={index}
-              className="group grid lg:grid-cols-[260px_1fr_200px_80px] items-center gap-10 py-10 cursor-pointer"
+              className="group grid md:grid-cols-3 lg:grid-cols-[260px_1fr_200px_80px] items-center gap-10 py-10 cursor-pointer"
             >
 
               {/* Image */}
-              <div className="rounded-xl overflow-hidden">
+              <div className="rounded-xl overflow-hidden ">
                 <img
                   src={product.image}
                   alt={product.title}

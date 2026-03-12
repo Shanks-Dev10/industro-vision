@@ -1,23 +1,23 @@
 const steps = [
   {
     num: "01",
-    title: "Consultation & Inspection",
-    desc: "Our mission is to empower clients by providing reliable, innovative, and cost-effective engineering services.",
+    title: "Consultation & inspection:",
+    desc: "Expert railway weighing consultation and inspection, ensuring accuracy, safety, and reliability.",
   },
   {
     num: "02",
-    title: "Customized Plan",
-    desc: "Based on the inspection, we provide a tailored plan with clear pricing and timelines.",
+    title: "Customized Plan:",
+    desc: "Based on inspection findings, we deliver customized plans with transparent pricing and defined project timelines, ensuring smooth execution and verified results",
   },
   {
     num: "03",
-    title: "Execution",
-    desc: "A security framework tailored for smooth operations and project success.",
+    title: "Installation:",
+    desc: "Precision-driven installation ensuring seamless integration, Maximum productivity, and Sustained railway dependability",
   },
   {
     num: "04",
-    title: "Final Check & Support",
-    desc: "We ensure everything meets our high standards before project delivery.",
+    title: "Execution:",
+    desc: "An advanced security framework designed to safeguard industrial control systems and critical operations.",
   },
 ];
 
@@ -28,7 +28,7 @@ const WorkProcess = () => {
       {/* dotted background */}
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle,_#ffffff_1px,_transparent_1px)] [background-size:22px_22px]"></div>
 
-      <div className="relative max-w-full mx-auto px-6">
+      <div className="relative max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top header */}
         <div className="grid lg:grid-cols-2 gap-16 mb-20 border-b-[1px] p-5">
@@ -38,16 +38,15 @@ const WorkProcess = () => {
               WE GET IT RIGHT THE FIRST TIME
             </p>
 
-            <h2 className="text-7xl font-extrabold gap-1">
+            <h2 className="text:3xl md:text:5xl lg:text-7xl font-semibold gap-1">
               Work process
-              <span className="w-2 h-2 bg-[#FBE87E] inline-block"></span>
+              <span className="w-1 h-1 md:w-3 md:h-3 lg:w-3 lg:h-3 bg-[#FBE87E] inline-block"></span>
             </h2>
           </div>
 
           <div className="flex flex-col justify-center">
             <div className="border-l-4 border-[#FBE87E] pl-6 mb-6 text-gray-200">
-              We start by understanding your needs and conducting a
-              comprehensive solutions to assess.
+              We start with expertise in your operational demanding situations, infrastructure setup, and performance desires to design a clever railway automation technology solution that seamlessly into your surroundings.
             </div>
 
             <div className="px-5">
