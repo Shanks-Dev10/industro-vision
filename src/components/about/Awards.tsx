@@ -21,7 +21,7 @@ const awards = [
 const Awards = () => {
   return (
     <section className="py-24 bg-[#F5F5F5]">
-      <div className="max-w-full mx-auto px-6">
+      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top Labels */}
         <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] p-5">
@@ -32,9 +32,9 @@ const Awards = () => {
         {/* Title Row */}
         <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
 
-          <h2 className="text-7xl font-extrabold flex items-end gap-3">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-semibold flex items-end gap-3">
             Awards
-            <span className="w-3 h-3 bg-[#FBE87E]"></span>
+            <span className="w-2 h-2 md:w-3 h-3 lg:w-3 h-3 bg-[#FBE87E]"></span>
           </h2>
 
           <div className="flex gap-6 max-w-md">

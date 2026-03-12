@@ -4,33 +4,33 @@ import { ArrowRight, MapPin, Users, DollarSign, Calendar } from "lucide-react";
 const stats = [
   {
     icon: Calendar,
-    title: "Years of experience",
-    value: "30",
-    desc: "leaders in industrial manufacturing & technology",
+    title: "Wagon Balance Detection",
+    value: "100%",
+    desc: "AI-Powered Load Detection",
     bg: "bg-[#FBE87E]",
     text: "text-black",
   },
   {
     icon: MapPin,
-    title: "Global locations",
-    value: "75",
-    desc: "countries where the Group has built at least one project",
+    title: "Global Presence",
+    value: "Worldwide",
+    desc: "Rail technology across borders.",
     bg: "bg-white",
     text: "text-black",
   },
   {
     icon: Users,
-    title: "Total employee",
-    value: "1.2K",
-    desc: "direct and indirect employees working on our projects",
+    title: "Railmet Team",
+    value: "Growing Strong",
+    desc: "A committed team shaping the future of wagon load technology.",
     bg: "bg-white",
     text: "text-black",
   },
   {
     icon: DollarSign,
-    title: "Annual revenue",
-    value: "15B",
-    desc: "total project value of all time",
+    title: "Annual Growth",
+    value: "Scaling",
+    desc: "Focused on expanding smart rail load technology solutions.",
     bg: "bg-[#0F2F45]",
     text: "text-white",
   },
@@ -39,7 +39,7 @@ const stats = [
 const AboutCompany = () => {
   return (
     <section className="py-24 bg-[#FFFF]">
-      <div className="max-w-full mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
+      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
 
         {/* LEFT SIDE */}
         <div>
@@ -52,7 +52,7 @@ const AboutCompany = () => {
             />
           </div>
 
-          <h2 className="text-4xl font-extrabold leading-tight mb-6">
+          <h2 className="text-2xl md:text-4xl lg:text-4xl font-semibold leading-tight mb-6">
             Pushing the boundaries of technology and manufacturing to build a
             stronger, smarter tomorrow
           </h2>
@@ -67,7 +67,7 @@ const AboutCompany = () => {
         </div>
 
         {/* RIGHT SIDE STATS */}
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
 
           {stats.map((stat, index) => (
             <div
@@ -81,7 +81,7 @@ const AboutCompany = () => {
 
               <div className="flex items-center justify-between">
                 <stat.icon className="w-7 h-7 opacity-80" />
-                <span className="text-[80px] font-extrabold">
+                <span className="text-[25px] font-extrabold">
                   {stat.value}
                 </span>
               </div>

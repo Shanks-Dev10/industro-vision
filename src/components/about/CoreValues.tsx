@@ -6,34 +6,34 @@ import valueInnovationImg from "@/assets/value-innovation.jpg";
 const values = [
   {
     num: "01.",
-    title: "Quality",
-    text: "Product quality is the cornerstone of our commitment, ensuring that every item meets rigorous standards.",
+    title: "AI-Powered Insights",
+    text: "Intelligent analysis of wagon load data to ensure balanced and accurate rail operations.",
     image: valueQualityImg,
   },
   {
     num: "02.",
-    title: "Teamwork",
-    text: "Teamwork is the foundation of our success, where collaboration and synergy drive innovation and productivity.",
+    title: "Load Precision",
+    text: "High-accuracy technology that measures wagon weight and detects load imbalance.",
     image: valueTeamworkImg,
   },
   {
     num: "03.",
-    title: "Sustainability",
-    text: "Sustainability is at the core of our operations, guiding our commitment to minimize environmental impact.",
+    title: "Railway Safety",
+    text: "Protecting rail infrastructure and operations through accurate load monitoring.",
     image: valueSustainabilityImg,
   },
   {
     num: "04.",
-    title: "Innovation",
-    text: "Innovation drives our company forward, leading to the development of cutting-edge solutions.",
+    title: "Future-Ready Innovation",
+    text: "Innovating smart systems that shape the future of wagon load management.",
     image: valueInnovationImg,
   },
 ];
 
 const CoreValues = () => {
   return (
-    <section className="py-24 bg-[#F2F5FB]">
-      <div className="max-w-full mx-auto px-6">
+    <section className="py-5 md:py-24 lg:py-24 bg-[#F2F5FB]">
+      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top labels */}
         <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] p-5">
@@ -44,16 +44,15 @@ const CoreValues = () => {
         {/* Title Row */}
         <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
 
-          <h2 className="text-7xl font-extrabold flex items-end gap-3">
-            Core values
+          <h2 className="text-3xl md:text-5xl lg:text-5xl font-semibold flex items-end gap-3">
+            What We Stand For
             <span className="w-3 h-3 bg-[#FBE87E]"></span>
           </h2>
 
           <div className="flex gap-6 max-w-md">
             <span className="w-[7px] bg-[#FBE87E]"></span>
             <p className="text-gray-600 text-lg leading-relaxed">
-              With a passion and a commitment to quality, we have been
-              empowering industries and driving progress.
+              Balancing rails with brainy tech driven by innovation and precision, we build smarter solutions for safer rail operations.
             </p>
           </div>
 
@@ -87,7 +86,7 @@ const CoreValues = () => {
               <div className="border-t border-gray-200 mb-6"></div>
 
               {/* Content */}
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
 
                 <h3 className="text-2xl font-bold">
                   {val.title}

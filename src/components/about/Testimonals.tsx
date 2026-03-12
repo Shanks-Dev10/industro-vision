@@ -7,8 +7,8 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 const TestimonialSection = () => {
   return (
-    <section className="py-24 bg-[#F5F5F5]">
-      <div className="max-w-full mx-auto px-6">
+    <section className="py-5 md:py-24 lg:py-24 bg-[#F5F5F5]">
+      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top labels */}
         <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] p-5">
@@ -17,14 +17,14 @@ const TestimonialSection = () => {
         </div>
 
         {/* Layout */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
           {/* Left */}
           <div className="space-y-10">
 
             {/* Quote */}
             <Swiper
-              modules={[Autoplay, Pagination]}
+              modules={[Autoplay]}
               pagination={{ clickable: true }}
               autoplay={{
                 delay: 2000,
@@ -36,7 +36,7 @@ const TestimonialSection = () => {
               loop={true}
             >
               <SwiperSlide className="w-full flex flex-col gap-4">
-              <blockquote className="text-4xl font-extrabold leading-tight">
+              <blockquote className="md:text-xl lg:text-4xl font-semibold leading-tight">
                 “Their precision engineering and attention to detail have
                 significantly improved our production line. We highly recommend
                 them to any business.”
@@ -51,7 +51,7 @@ const TestimonialSection = () => {
               </div>
               </SwiperSlide>
               <SwiperSlide className="w-full flex flex-col gap-4">
-              <blockquote className="text-4xl font-extrabold leading-tight">
+              <blockquote className="md:text-xl lg:text-4xl font-semibold leading-tight">
                 “Their precision engineering and attention to detail have
                 significantly improved our production line. We highly recommend
                 them to any business.”
@@ -66,7 +66,7 @@ const TestimonialSection = () => {
               </div>
               </SwiperSlide>
               <SwiperSlide className="w-full flex flex-col gap-4">
-              <blockquote className="text-4xl font-extrabold leading-tight">
+              <blockquote className="md:text-xl lg:text-4xl font-semibold leading-tight">
                 “Their precision engineering and attention to detail have
                 significantly improved our production line. We highly recommend
                 them to any business.”
@@ -91,7 +91,7 @@ const TestimonialSection = () => {
               <div className="flex items-center justify-between">
 
                 {/* Rating */}
-                <div className="flex items-center gap-2 bg-[#FBE87E] px-5 py-2 rounded-full text-sm font-semibold">
+                <div className="flex items-center gap-2 bg-[#FBE87E] md:px-1 px-5 py-2 rounded-full text-sm font-semibold">
                   <Star className="w-4 h-4 fill-black text-black" />
                   4.9 Rating From 12k+ Reviews
                 </div>
@@ -113,7 +113,7 @@ const TestimonialSection = () => {
             <img
               src={engineersImg}
               alt="Engineers discussing"
-              className="w-full h-full object-cover"
+              className="w-full md:h-[450px] h-full object-cover"
             />
           </div>
 

@@ -5,8 +5,8 @@ import { Marquee } from "@/components/ui/marquee"
 
 const CTASection = () => {
   return (
-    <section className="py-28 bg-[#F5F5F5]">
-      <div className="max-w-full mx-auto px-6">
+    <section className="py-5 md:py-28 lg:py-28 bg-[#F5F5F5]">
+      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* CTA Container */}
         <div className="relative rounded-2xl overflow-hidden">
@@ -15,7 +15,7 @@ const CTASection = () => {
           <img
             src={ctaBg}
             alt="Industrial Plant"
-            className="w-full h-full object-cover"
+            className="w-full h-[650px] md:h-[500px] lg:h-full object-cover"
           />
 
           {/* Gradient Overlay */}
@@ -24,11 +24,11 @@ const CTASection = () => {
           {/* CTA Content */}
           <div className="absolute inset-0 flex flex-col justify-center px-12 lg:px-20 text-white max-w-2xl">
 
-            <h2 className="text-5xl font-extrabold leading-tight mb-6">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
               Moving your industry manufacturing forward
             </h2>
 
-            <p className="text-lg text-white/80 mb-10">
+            <p className="text-sm md:text-lg lg:text-lg text-white/80 mb-10">
               Pushing the boundaries of technology and manufacturing to build a
               stronger, smarter tomorrow
             </p>
@@ -46,7 +46,7 @@ const CTASection = () => {
           {/* Partner Strip */}
           <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm py-6 overflow-hidden">
 
-            <div className="flex items-center gap-16 px-12">
+            <div className="flex md:flex-row flex-col items-center gap-16 px-12">
 
               <span className="text-xs uppercase tracking-widest text-white/60">
                 Trusted partners and satisfied clients

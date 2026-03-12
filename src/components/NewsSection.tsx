@@ -26,8 +26,8 @@ const posts = [
 
 const NewsSection = () => {
   return (
-    <section className="py-24 bg-[#F5F5F5]">
-      <div className="max-w-full mx-auto px-6">
+    <section className="py-5 md:py-24 lg:py-24 bg-[#F5F5F5]">
+      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top small labels */}
         <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] p-5">
@@ -38,12 +38,12 @@ const NewsSection = () => {
         {/* Title + button */}
         <div className="flex items-center justify-between mb-14">
 
-          <h2 className="text-7xl font-extrabold flex items-end gap-3">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-semibold flex items-end gap-3">
             Latest news
             <span className="w-3 h-3 bg-[#FBE87E]"></span>
           </h2>
 
-          <button className="flex items-center gap-3 bg-[#FBE87E] px-6 py-3 rounded-full font-semibold">
+          <button className="flex items-center gap-3 bg-[#FBE87E] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold">
             View All Posts
             <span className="flex items-center justify-center w-8 h-8 rounded-full bg-black text-white">
               <ArrowRight size={16} />
