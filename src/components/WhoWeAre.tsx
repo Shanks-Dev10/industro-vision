@@ -7,13 +7,13 @@ const WhoWeAre = () => {
             <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
                 {/* Top Small Labels */}
-                <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6">
+                <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] pb-8">
                     <span>Fueling progress powering the future</span>
                     <span>[ OUR STORY ]</span>
                 </div>
 
                 {/* Main Heading */}
-                <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-black mb-14 flex items-end gap-1 border-b-[1px] p-5">
+                <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-black mb-14 flex items-end gap-1  p-5">
                     Who we are
                     <span className="w-4 h-4 bg-[#FBE87E] inline-block"></span>
                 </h2>
