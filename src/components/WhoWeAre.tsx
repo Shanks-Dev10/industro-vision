@@ -13,16 +13,16 @@ const WhoWeAre = () => {
                 </div>
 
                 {/* Main Heading */}
-                <h2 className="text-2xl md:text-4xl ld:text-6xl font-semibold text-black mb-14 flex items-end gap-1 border-b-[1px] p-5">
+                <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-black mb-14 flex items-end gap-1 border-b-[1px] p-5">
                     Who we are
                     <span className="w-4 h-4 bg-[#FBE87E] inline-block"></span>
                 </h2>
                 {/* Layout */}
-                <div className="grid lg:grid-cols-[1fr_1.2fr_1fr] gap-12 items-start">
+                <div className="grid lg:grid-cols-[1fr_1.2fr_1fr] gap-12 items-center">
 
                     {/* Left Content */}
                     <div>
-                        <h3 className="text-xl md:text-2xl lg:text-5xl  font-bold  text-gray-900 mb-8">
+                        <h3 className="text-xl md:text-2xl lg:text-4xl  font-semibold  text-gray-900 mb-8">
                             Transforming Rail Operations with Advanced Weighing Technology.
                         </h3>
 
