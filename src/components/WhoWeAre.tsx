@@ -22,7 +22,7 @@ const WhoWeAre = () => {
 
                     {/* Left Content */}
                     <div>
-                        <h3 className="text-xl md:text-2xl lg:text-4xl font-bold leading-snug text-gray-900 mb-8">
+                        <h3 className="text-xl md:text-2xl lg:text-5xl  font-bold  text-gray-900 mb-8">
                             Transforming Rail Operations with Advanced Weighing Technology.
                         </h3>
 
