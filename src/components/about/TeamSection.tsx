@@ -1,16 +1,14 @@
-import team1 from "@/assets/team-1.webp";
-import team2 from "@/assets/team-2.webp";
-import team3 from "@/assets/team-3.webp";
-import team4 from "@/assets/team-4.webp";
-import team5 from "@/assets/team-5.webp";
+import team1 from "@/assets/teamimage1.webp";
+import team2 from "@/assets/teamimage2.webp";
+import team3 from "@/assets/teamimage3.webp";
+import team4 from "@/assets/teamimage4.webp";
 import { Plus } from "lucide-react";
 
 const members = [
-  { name: "Leslie Alexander", role: "Operations Manager", img: team1 },
-  { name: "Robert Fox", role: "Construction Manager", img: team2 },
-  { name: "Marvin Jones", role: "Executive Admin", img: team3 },
-  { name: "Ralph Edwards", role: "Business Development", img: team4 },
-  { name: "Guy Hawkins", role: "Chief Marketing", img: team5 },
+  { name: "Sundar Pichai", role: "CEO of Google", img: team1 },
+  { name: "Ratan Naval Tata", role: "CEO of TCS", img: team2 },
+  { name: "Sridhar Vembu", role: "CEO of Zoho", img: team3 },
+  { name: "Shiv Nadar", role: "CEO of HCL", img: team4 },
 ];
 
 const TeamSection = () => {
@@ -54,7 +52,7 @@ const TeamSection = () => {
               <img
                 src={m.img}
                 alt={m.name}
-                className="w-full h-[350px] object-cover group-hover:scale-110 transition duration-500"
+                className="w-full h-[300px] object-cover group-hover:scale-110 transition duration-500"
               />
 
               {/* Overlay */}

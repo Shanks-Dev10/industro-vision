@@ -18,7 +18,7 @@ const Partners = () => {
 
           <h2 className="text-3xl md:text-5xl lg:text-7xl font-semibold flex items-end gap-3">
             Partners
-            <span className="w-2 h-2 md:w-3 h-3 lg:w-3 h-3 bg-[#FBE87E]"></span>
+            <span className="w-2 h-2 md:w-3 md:h-3 bg-[#FBE87E]"></span>
           </h2>
 
           <div className="flex gap-6 max-w-md">

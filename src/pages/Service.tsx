@@ -197,7 +197,7 @@ const Services = () => {
       </section>
 
       {/* Newsletter */}
-      <section className="bg-primary py-20">
+      {/* <section className="bg-primary py-20">
         <div
           className="mx-auto max-w-full md:max-w-2xl px-2 md:px-6 text-center"
           data-aos="fade-up"
@@ -222,7 +222,7 @@ const Services = () => {
             By signing up, you agree to the Privacy Policy.
           </p>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
