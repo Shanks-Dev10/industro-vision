@@ -9,7 +9,7 @@ const steps = [
   {
     num: "02",
     title: "Customized Plan:",
-    desc: "Based on inspection findings, we deliver customized plans with transparent pricing and defined project timelines, ensuring smooth execution and verified results",
+    desc: "Based on inspection findings, we deliver customized plans with transparent pricing and defined project timelines and verified results",
   },
   {
     num: "03",
@@ -29,7 +29,7 @@ const WorkProcess = () => {
       {/* dotted background */}
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle,_#ffffff_1px,_transparent_1px)] [background-size:22px_22px]"></div>
 
-      <div className="relative max-w-full 2xl:max-w-screen-xl mx-auto p-0 md:px-6">
+      <div className="relative max-w-full 2xl:max-w-screen-xl mx-auto px-4 md:px-6">
         {/* Top header */}
         <div className="flex flex-col mb-20">
           <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
@@ -69,9 +69,9 @@ const WorkProcess = () => {
         </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
+        <div className="grid grid-cols-1 items-center md:grid-cols-2  lg:grid-cols-4 gap-16 lg:gap-6 xl:gap-16">
           {steps.map((step) => (
-            <div key={step.num}>
+            <div key={step.num} className=" px-2">
               {/* number box */}
               <div className="relative mb-6">
                 <div className="flex justify-center items-end w-28 h-28 bg-[#FBE87E] rounded-md rounded-tr-[30px]">
@@ -83,7 +83,7 @@ const WorkProcess = () => {
 
               <h3 className="text-lg font-bold mb-3">{step.title}</h3>
 
-              <p className="text-sm text-gray-300 leading-relaxed">
+              <p className="text-sm text-gray-300 leading-relaxed text-start">
                 {step.desc}
               </p>
             </div>

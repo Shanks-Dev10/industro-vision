@@ -93,7 +93,7 @@ const products = [
 const stats = [
   { value: 30, label: "Years of experience",suffix:'+' },
   { value: 75, label: "Global Locations",suffix:'+' },
-  { value: 1, label: "Total Employee",suffix:'K+' },
+  { value: 500, label: "Total Employee",suffix:'+' },
   { value: 5, label: "Annual Revenue",suffix:'B+' },
 ];
 
@@ -107,7 +107,7 @@ const ProductsSection = () => {
           <span>[ our work ]</span>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16 pt-2 pb-16 border-b mb-8">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start  pt-2 pb-16 border-b mb-8">
 
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             Products

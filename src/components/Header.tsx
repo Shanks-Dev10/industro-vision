@@ -8,6 +8,8 @@ const navItems = [
   { href: "/about", item: "About Us" },
   { href: "/service", item: "Services" },
   { href: "/product", item: "Products" },
+  { href: "/", item: "Clients" },
+  { href: "/", item: "Carrers" },
   { href: "/contact", item: "Contact Us" },
 ];
 
@@ -94,7 +96,7 @@ const Header = () => {
                 +91 90032 53007
               </a>
 
-              <Link to={'/contact'}>
+              <Link to={"/contact"}>
                 <Button variant="gold" className="rounded-full">
                   Request A Quote
                 </Button>

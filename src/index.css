@@ -121,3 +121,12 @@ html,body{
   animation: marquee var(--duration, 4s) linear infinite;
 }
 
+.custom-pagination .swiper-pagination-bullet {
+  background: #0B2B3F;
+  opacity: 1; 
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background: #FBE87E;
+}
+

@@ -1,6 +1,10 @@
 import metalCutting from "@/assets/metal-cutting.webp";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
 
 const ServicesSection = () => {
   const serviceBox = [
@@ -34,28 +38,27 @@ const ServicesSection = () => {
     <section className="py-5 md:py-24 lg:py-24 bg-white">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-4 md:px-6">
         {/* Top Row */}
-        <div className="flex flex-col  mb-20 ">
+        <div className="flex flex-col  mb-10 ">
           <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
             <span>Tailored solutions for industry growth</span>
             <span>[ our solutions ]</span>
           </div>
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
-
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
               Services
               <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
             </h2>
 
             <div className="flex flex-col gap-8">
-             <div className="flex gap-8">
-               <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#FBE87E]"></span>
+              <div className="flex gap-8">
+                <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#FBE87E]"></span>
 
-              <p className="text-gray-600 text-lg leading-relaxed max-w-md">
-                Our team evaluates operational requirements, site conditions,
-                and data integration needs to design and implement advanced
-                railway weighing and automation solutions.
-              </p>
-             </div>
+                <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+                  Our team evaluates operational requirements, site conditions,
+                  and data integration needs to design and implement advanced
+                  railway weighing and automation solutions.
+                </p>
+              </div>
               <div className="flex md:items-center pl-0 md:pl-8">
                 <button className="flex items-center justify-end w-fit gap-3 bg-[#FBE87E] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#0B2B3F] hover:text-white">
                   All Services
@@ -65,56 +68,72 @@ const ServicesSection = () => {
                 </button>
               </div>
             </div>
-
           </div>
         </div>
 
         {/* Services */}
-        <div className="space-y-24 ">
-          {/* Service Box */}
-          {serviceBox.map((item, index) => (
-            <Link
-              to={item.href}
-              className="relative rounded-3xl overflow-hidden flex items-center justify-start "
-            >
-              <img
-                src={metalCutting}
-                alt="Metal Engineering"
-                className="w-full h-[500px] lg:h-[550px] object-cover"
-              />
-
-              <div className="absolute m-4  md:ml-[40px] bg-white rounded-2xl rounded-tr-[50px] p-5 md:p-8 ld:p-8 max-w-full md:max-w-sm lg:max-w-sm shadow-xl group cursor-pointer">
-                {/* Icon */}
-                <div
-                  className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-6 
-  group-hover:bg-[#FBE87E] transition"
+        <div>
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            pagination={{ clickable: true, el: ".custom-pagination" }}
+            autoplay={{
+              delay: 2000,
+            }}
+            spaceBetween={20}
+            slidesPerView={1}
+            loop={true}
+          >
+            {serviceBox.map((item, index) => (
+              <SwiperSlide key={index}>
+                <Link
+                  to={item.href}
+                  className="relative rounded-3xl overflow-hidden flex items-center justify-start "
                 >
-                  ⚙️
-                </div>
+                  <img
+                    src={metalCutting}
+                    alt="Metal Engineering"
+                    className="w-full h-[500px] lg:h-[550px] object-cover"
+                  />
 
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6">
-                  {item.title}
-                </h3>
+                  <div className="absolute m-4  md:ml-[40px] bg-white rounded-2xl rounded-tr-[50px] p-5 md:p-8 ld:p-8 max-w-full md:max-w-sm lg:max-w-sm shadow-xl group cursor-pointer">
+                    {/* Icon */}
+                    <div
+                      className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-6 
+  group-hover:bg-[#FBE87E] transition"
+                    >
+                      ⚙️
+                    </div>
 
-                <p className="text-gray-500 text-sm mb-8">{item.description}</p>
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6">
+                      {item.title}
+                    </h3>
 
-                <div className="flex items-center justify-between border-t pt-5">
-                  <span className="font-semibold text-sm">Find Out More</span>
+                    <p className="text-gray-500 text-sm mb-8">
+                      {item.description}
+                    </p>
 
-                  {/* Arrow */}
-                  <span
-                    className="flex items-center justify-center w-8 h-8 rounded-full border 
+                    <div className="flex items-center justify-between border-t pt-5">
+                      <span className="font-semibold text-sm">
+                        Find Out More
+                      </span>
+
+                      {/* Arrow */}
+                      <span
+                        className="flex items-center justify-center w-8 h-8 rounded-full border 
     group-hover:bg-[#FBE87E] group-hover:border-[#FBE87E] transition"
-                  >
-                    <ArrowRight
-                      size={16}
-                      className="group-hover:text-black transition"
-                    />
-                  </span>
-                </div>
-              </div>
-            </Link>
-          ))}
+                      >
+                        <ArrowRight
+                          size={16}
+                          className="group-hover:text-black transition"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className="custom-pagination mt-5 flex justify-center"></div>
         </div>
       </div>
     </section>
