@@ -8,8 +8,8 @@ const navItems = [
   { href: "/about", item: "About Us" },
   { href: "/service", item: "Services" },
   { href: "/product", item: "Products" },
-  { href: "/", item: "Clients" },
-  { href: "/", item: "Carrers" },
+  { href: "/clients", item: "Clients" },
+  { href: "/", item: "Careers" },
   { href: "/contact", item: "Contact Us" },
 ];
 
@@ -28,7 +28,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <ul className="hidden items-center gap-8 lg:flex">
+          <ul className="hidden items-center gap-8 xl:flex">
             {navItems.map((items) => (
               <li key={items.item}>
                 <Link
@@ -42,7 +42,7 @@ const Header = () => {
           </ul>
 
           {/* Right */}
-          <div className="hidden items-center gap-4 lg:flex">
+          <div className="hidden items-center gap-4 xl:flex">
             <a
               href="tel:+919003253007"
               target="_blank"
@@ -59,7 +59,7 @@ const Header = () => {
 
           {/* Mobile toggle */}
           <button
-            className="lg:hidden"
+            className="xl:hidden"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? (
@@ -72,7 +72,7 @@ const Header = () => {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="mt-2 rounded-2xl bg-card p-6 shadow-lg lg:hidden">
+          <div className="mt-2 rounded-2xl bg-card p-6 shadow-lg xl:hidden">
             <ul className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <li key={item.item}>

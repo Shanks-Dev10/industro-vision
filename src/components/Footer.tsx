@@ -6,6 +6,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import Whatsapp from '@/assets/whatsapp.webp'
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -148,6 +149,14 @@ const Footer = () => {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Whatsapp icon */}
+
+      <div>
+        <a href="https://wa.me/+919003253007" target="_blank" className="w-16 h-16 fixed bottom-10 right-5 animate-bounce">
+        <img src={Whatsapp} alt="whatsapp" className="w-full h-full" />
+      </a>
       </div>
     </footer>
   );

@@ -31,18 +31,6 @@ const slides = [
     image: slider2,
     alt: "Professional welder working with sparks in factory",
   },
-  {
-    label: "Efficiency & Performance Focused",
-    heading: (
-      <>
-        <span className="text-secondary">Weighing Solutions</span> That Keep Railways Moving Forward
-      </>
-    ),
-    description:
-      "Leveraging state-of-the-art robotic systems to maximize efficiency and precision in production lines.",
-    image: slider3,
-    alt: "Robotic arm in automated manufacturing facility",
-  },
 ];
 
 const HeroSection = () => {

@@ -7,7 +7,6 @@ const CTASection = () => {
   return (
     <section className="py-5 md:py-28 lg:py-28 bg-[#F5F5F5]">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
-
         {/* CTA Container */}
         <div className="relative rounded-2xl overflow-hidden">
 
@@ -22,7 +21,7 @@ const CTASection = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0E3347]/90 to-transparent"></div>
 
           {/* CTA Content */}
-          <div className="absolute inset-0 flex flex-col justify-center px-12 lg:px-20 text-white max-w-2xl">
+          <div className="absolute inset-0 flex flex-col justify-center px-4 lg:px-20 text-white max-w-2xl">
 
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
               Moving your industry manufacturing forward
@@ -46,7 +45,7 @@ const CTASection = () => {
           {/* Partner Strip */}
           <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm py-6 overflow-hidden">
 
-            <div className="flex md:flex-row flex-col items-center gap-16 px-12">
+            <div className="flex md:flex-row flex-col items-center gap-16 px-4 md:px-12">
 
               <span className="text-xs uppercase tracking-widest text-white/60">
                 Trusted partners and satisfied clients
@@ -72,8 +71,6 @@ const CTASection = () => {
           </div>
 
         </div>
-
-
       </div>
     </section>
   );

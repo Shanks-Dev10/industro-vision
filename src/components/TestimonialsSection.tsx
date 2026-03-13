@@ -73,7 +73,7 @@ const TestimonialSection = () => {
             {/* Bottom row */}
             <div className="flex md:flex-row flex-col gap-6 items-center justify-between">
               {/* Rating */}
-              <div className="flex items-center gap-2 bg-[#FBE87E] px-1 px-5 py-2 rounded-full text-sm font-semibold">
+              <div className="flex items-center gap-2 bg-[#FBE87E]  px-5 py-2 rounded-full text-sm font-semibold">
                 <Star className="w-4 h-4 fill-black text-black" />
                 4.9 Rating From 12k+ Reviews
               </div>

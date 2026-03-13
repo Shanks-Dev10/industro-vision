@@ -18,6 +18,7 @@ import AdvancedLoadMonitoringSystem from "./pages/products/AdvancedLoadMonitorin
 import OverloadControlSystemProduct from "./pages/products/OverloadControlSystemProduct";
 import TruckOnboardScaleSystem from "./pages/products/TruckOnboardScaleSystem";
 import K2TruckOnboardScaleSystem from "./pages/service/K2TruckOnboardScaleSystem";
+import Clients from "./pages/Clients";
 
 const queryClient = new QueryClient();
 
@@ -67,6 +68,10 @@ const App = () => {
             <Route
               path="/product/truck-onboard-scale-system"
               element={<TruckOnboardScaleSystem />}
+            />
+            <Route
+              path="/clients"
+              element={<Clients />}
             />
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -35,7 +35,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-5 md:py-24 lg:py-24 bg-white">
+    <section className="py-5  md:py-24 lg:py-24 bg-white">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-4 md:px-6">
         {/* Top Row */}
         <div className="flex flex-col  mb-10 ">
@@ -60,9 +60,12 @@ const ServicesSection = () => {
                 </p>
               </div>
               <div className="flex md:items-center pl-0 md:pl-8">
-                <button className="flex items-center justify-end w-fit gap-3 bg-[#FBE87E] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#0B2B3F] hover:text-white">
+                <button className="flex items-center justify-end w-fit gap-3 group bg-[#FBE87E] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#0B2B3F] hover:text-white">
                   All Services
-                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0B2B3F] text-white">
+                  <span
+                    className="flex items-center justify-center w-8 h-8 rounded-full  border
+                   group-hover:border-white bg-[#0B2B3F] text-white border-transparent"
+                  >
                     <ArrowRight size={16} />
                   </span>
                 </button>
@@ -72,68 +75,43 @@ const ServicesSection = () => {
         </div>
 
         {/* Services */}
-        <div>
-          <Swiper
-            modules={[Autoplay, Pagination]}
-            pagination={{ clickable: true, el: ".custom-pagination" }}
-            autoplay={{
-              delay: 2000,
-            }}
-            spaceBetween={20}
-            slidesPerView={1}
-            loop={true}
-          >
-            {serviceBox.map((item, index) => (
-              <SwiperSlide key={index}>
-                <Link
-                  to={item.href}
-                  className="relative rounded-3xl overflow-hidden flex items-center justify-start "
-                >
-                  <img
-                    src={metalCutting}
-                    alt="Metal Engineering"
-                    className="w-full h-[500px] lg:h-[550px] object-cover"
-                  />
-
-                  <div className="absolute m-4  md:ml-[40px] bg-white rounded-2xl rounded-tr-[50px] p-5 md:p-8 ld:p-8 max-w-full md:max-w-sm lg:max-w-sm shadow-xl group cursor-pointer">
-                    {/* Icon */}
-                    <div
-                      className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-6 
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {serviceBox.map((item, index) => (
+            <Link
+              key={index}
+              to={item.href}
+              className=" bg-white border rounded-2xl  p-5 md:p-8 flex flex-col justify-between  shadow-xl group"
+            >
+              {/* Icon */}
+              <div
+                className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-6 
   group-hover:bg-[#FBE87E] transition"
-                    >
-                      ⚙️
-                    </div>
+              >
+                ⚙️
+              </div>
 
-                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6">
-                      {item.title}
-                    </h3>
+              <h3 className="text-xl md:text-2xl  font-bold mb-6">
+                {item.title}
+              </h3>
 
-                    <p className="text-gray-500 text-sm mb-8">
-                      {item.description}
-                    </p>
+              <p className="text-gray-500 text-sm mb-8">{item.description}</p>
 
-                    <div className="flex items-center justify-between border-t pt-5">
-                      <span className="font-semibold text-sm">
-                        Find Out More
-                      </span>
+              <div className="flex items-center justify-between border-t pt-5">
+                <span className="font-semibold text-sm">Find Out More</span>
 
-                      {/* Arrow */}
-                      <span
-                        className="flex items-center justify-center w-8 h-8 rounded-full border 
+                {/* Arrow */}
+                <span
+                  className="flex items-center justify-center w-8 h-8 rounded-full border 
     group-hover:bg-[#FBE87E] group-hover:border-[#FBE87E] transition"
-                      >
-                        <ArrowRight
-                          size={16}
-                          className="group-hover:text-black transition"
-                        />
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <div className="custom-pagination mt-5 flex justify-center"></div>
+                >
+                  <ArrowRight
+                    size={16}
+                    className="group-hover:text-black transition"
+                  />
+                </span>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

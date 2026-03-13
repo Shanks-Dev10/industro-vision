@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 const WhoWeAre = () => {
   return (
     <section className="bg-white py-24">
-      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
+      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-4 md:px-6">
         {/* Top Small Labels */}
 
         <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
