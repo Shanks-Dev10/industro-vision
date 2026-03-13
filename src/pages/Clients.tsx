@@ -26,7 +26,7 @@ import { ChevronRight } from "lucide-react";
 
 const partners = [
   {
-    cementPartners: [AdithyaBirla, Ambuja, Dalmia, Jsw, Jcb, UltraTech],
+    cementPartners: [Ambuja, Dalmia, Jsw, Jcb, UltraTech],
     title: "Cement Plants",
   },
   {
@@ -43,7 +43,7 @@ const partners = [
       BharathElectronics,
       Hindustan,
       LT,
-      RailVikas,
+      AdithyaBirla,
     ],
     title: "Other Valuable Customers",
   },
