@@ -11,13 +11,15 @@ const TestimonialSection = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top labels */}
-        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] p-5">
+
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
           <span>OUR HAPPY CLIENTS</span>
           <span>[ WHAT CLIENTS SAY ]</span>
         </div>
 
+
         {/* Layout */}
-        <div className="grid lg:grid-cols-2 grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 grid-cols-1 md:grid-cols-2 gap-16 pt-5 items-center">
 
           {/* Left */}
           <div className="space-y-10">
@@ -113,7 +115,7 @@ const TestimonialSection = () => {
             <img
               src={engineersImg}
               alt="Engineers discussing"
-              className="w-full md:h-[450px] h-full object-cover"
+              className="w-full md:h-[450px] lg:h-[550px] h-full object-cover"
             />
           </div>
 
