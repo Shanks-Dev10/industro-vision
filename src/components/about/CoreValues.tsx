@@ -36,27 +36,30 @@ const CoreValues = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top labels */}
-        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] p-5">
+
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
           <span>Fueling progress powering the future</span>
           <span>[ Why Choose Us ]</span>
         </div>
 
         {/* Title Row */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
 
-          <h2 className="text-3xl md:text-5xl lg:text-5xl font-semibold flex items-end gap-3">
-            What We Stand For
-            <span className="w-3 h-3 bg-[#FBE87E]"></span>
-          </h2>
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
 
-          <div className="flex gap-6 max-w-md">
-            <span className="w-[7px] bg-[#FBE87E]"></span>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Balancing rails with brainy tech driven by innovation and precision, we build smarter solutions for safer rail operations.
-            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold flex items-end">
+              What We Stand For
+              <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
+            </h2>
+
+            <div className="flex gap-8">
+              <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#FBE87E]"></span>
+
+              <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+                Balancing rails with brainy tech driven by innovation and precision, we build smarter solutions for safer rail operations.
+              </p>
+            </div>
+
           </div>
-
-        </div>
 
         {/* Cards */}
         <div className="grid md:grid-cols-2 gap-8">

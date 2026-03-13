@@ -24,23 +24,25 @@ const Awards = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top Labels */}
-        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] p-5">
+
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
           <span>Keeping good company</span>
           <span>[ Recognitions we got ]</span>
         </div>
 
         {/* Title Row */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
 
-          <h2 className="text-3xl md:text-5xl lg:text-7xl font-semibold flex items-end gap-3">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
+
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             Awards
-            <span className="w-2 h-2 md:w-3 h-3 lg:w-3 h-3 bg-[#FBE87E]"></span>
+            <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
           </h2>
 
-          <div className="flex gap-6 max-w-md">
-            <span className="w-[7px] bg-[#FBE87E]"></span>
+          <div className="flex gap-8">
+            <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#FBE87E]"></span>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed max-w-md">
               We are a developer invested in our customers’ success and
               improving the communities we serve.
             </p>
