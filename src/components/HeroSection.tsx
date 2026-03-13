@@ -7,29 +7,30 @@ import slider3 from "@/assets/railmet-banner-04.webp";
 
 const slides = [
   {
-    label: "Trust & Precision Focused",
-    heading: (
-      <>
-        Precision Weighing Solutions for Modern
-        <span className="text-secondary">Railways</span>
-      </>
-    ),
-    description:
-      "We deliver cutting-edge metal engineering and fabrication services trusted by leading industries worldwide.",
-    image: slider1,
-    alt: "Female industrial engineer with tablet in factory",
-  },
-  {
     label: "Innovation Focused",
     heading: (
       <>
-        Innovating <span className="text-secondary">Rail Weighing</span> for a Smarter Future
+        Innovating <span className="text-secondary">Rail Weighing</span> for a
+        Smarter Future
       </>
     ),
     description:
       "Our certified welders and technicians ensure every joint meets the highest standards of structural integrity.",
     image: slider2,
     alt: "Professional welder working with sparks in factory",
+  },
+  {
+    label: "Trust & Precision Focused",
+    heading: (
+      <>
+        Precision Weighing That Powers Rail
+        <span className="text-secondary"> Progress</span>
+      </>
+    ),
+    description:
+      "We deliver cutting-edge metal engineering and fabrication services trusted by leading industries worldwide.",
+    image: slider1,
+    alt: "Female industrial engineer with tablet in factory",
   },
 ];
 
@@ -71,7 +72,7 @@ const HeroSection = () => {
       <div className=" dot-pattern overflow-hidden absolute w-full h-full ">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 pt-32 pb-20 lg:flex-row lg:pt-40 home-bg ">
           {/* Left */}
-          <div className="flex-1 space-y-8 max-w-2xl " key={current}>
+          <div className="flex-1 space-y-8 max-w-3xl " key={current}>
             <span
               className="inline-block rounded-full border border-secondary/30 bg-secondary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-secondary"
               data-aos="fade-down"
@@ -80,7 +81,7 @@ const HeroSection = () => {
               {slide.label}
             </span>
             <h1
-              className="text-4xl font-extrabold leading-tight text-primary-foreground md:text-5xl lg:text-6xl xl:text-7xl"
+              className="text-4xl font-bold leading-loose text-primary-foreground md:text-5xl lg:text-6xl xl:text-7xl"
               data-aos="fade-up"
               data-aos-delay="200"
             >
