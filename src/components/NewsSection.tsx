@@ -30,25 +30,29 @@ const NewsSection = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top small labels */}
-        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] p-5">
+
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
           <span>Explore additional insights from us</span>
           <span>[ Our Blog ]</span>
         </div>
 
         {/* Title + button */}
-        <div className="flex items-center justify-between mb-14">
 
-          <h2 className="text-3xl md:text-5xl lg:text-7xl font-semibold flex items-end gap-3">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
+
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             Latest news
-            <span className="w-3 h-3 bg-[#FBE87E]"></span>
+            <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
           </h2>
 
-          <button className="flex items-center gap-3 bg-[#FBE87E] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold">
-            View All Posts
-            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-black text-white">
-              <ArrowRight size={16} />
-            </span>
-          </button>
+          <div className="flex justify-start md:justify-end items-center">
+            <button className="flex items-center justify-end w-fit gap-3 bg-[#FBE87E] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#0B2B3F] hover:text-white">
+              View All Posts
+              <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0B2B3F] hover:bg-[#FBE87E] text-white">
+                <ArrowRight size={16} />
+              </span>
+            </button>
+          </div>
 
         </div>
 

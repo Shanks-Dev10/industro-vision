@@ -19,21 +19,21 @@ const TeamSection = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top Labels */}
-        <div className="flex justify-between text-xs uppercase tracking-widest text-gray-400 mb-6 border-b-[1px] pb-8">
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
           <span>THE FACES BEHIND INDUSTRY</span>
           <span>[ MEET OUR EXPERTS ]</span>
         </div>
 
         {/* Title + Description */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-16  p-5">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
 
-          <h2 className="text-2xl md:text-5xl lg:text-7xl font-semibold flex items-end gap-3">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             The team
-            <span className="w-2 h-2 md:w-3  lg:w-3  bg-[#FBE87E]"></span>
+            <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
           </h2>
 
-          <div className="flex gap-6">
-            <span className="w-[4px] bg-[#FBE87E]"></span>
+          <div className="flex gap-8">
+            <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#FBE87E]"></span>
 
             <p className="text-gray-600 text-lg leading-relaxed max-w-md">
               We integrate hands-on understanding with clever planning to ensure each challenge runs easily, remains on track, and grants exactly what you imagined

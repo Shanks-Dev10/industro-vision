@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 const steps = [
   {
     num: "01",
@@ -29,40 +31,40 @@ const WorkProcess = () => {
 
       <div className="relative max-w-full 2xl:max-w-screen-xl mx-auto p-0 md:px-6">
         {/* Top header */}
-        <div className=" mb-20  p-5">
-          <div className="flex md:flex-row flex-col justify-between items-start md:items-center py-5 border-b-[1px] border-[#e0e4eb]">
-            <p className="text-xs uppercase tracking-widest text-gray-300 mb-4">
-              WE GET IT RIGHT THE FIRST TIME
-            </p>
-            <p className="text-xs uppercase tracking-widest text-gray-300 mb-4">
-              [ how we work ]
-            </p>
+        <div className="flex flex-col mb-20">
+          <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
+            <span>WE GET IT RIGHT THE FIRST TIME</span>
+            <span>[ how we work ]</span>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-6 pt-6">
-            <div>
-              <h2 className="text:3xl md:text:5xl lg:text-7xl font-semibold gap-1 ">
-                Work process
-                <span className="w-1 h-1 md:w-3 md:h-3 lg:w-3 lg:h-3 bg-[#FBE87E] inline-block"></span>
-              </h2>
-            </div>
-            <div className="flex flex-col justify-center max-w-lg mx-auto">
-              <div className="border-l-4 border-transparent md:border-[#FBE87E] p-0 md:pl-6 mb-6 text-gray-200">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
+
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
+              Work process
+              <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
+            </h2>
+
+            <div className="flex flex-col gap-8">
+             <div className="flex gap-8">
+               <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#FBE87E]"></span>
+
+              <p className="text-white-600 text-lg leading-relaxed max-w-md">
                 We start with expertise in your operational demanding
                 situations, infrastructure setup, and performance desires to
                 design a clever railway automation technology solution that
                 seamlessly into your surroundings.
-              </div>
-
-              <div className="md:px-5 px-0">
-                <button className="flex items-center gap-3 bg-white text-black px-5 py-2 rounded-full w-fit font-semibold">
+              </p>
+             </div>
+              <div className="flex md:items-center pl-0 md:pl-8">
+                <button className="flex items-center justify-end w-fit gap-3 bg-[#FFFF] text-black px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#FBE87E]">
                   View All Members
-                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#FBE87E]">
-                    →
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#FBE87E] text-black">
+                    <ArrowRight size={16} />
                   </span>
                 </button>
               </div>
             </div>
+
           </div>
         </div>
 

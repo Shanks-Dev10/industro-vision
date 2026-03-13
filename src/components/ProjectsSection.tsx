@@ -102,20 +102,27 @@ const ProductsSection = () => {
     <section className="py-24 bg-white">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
         {/* Header */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center pb-16 border-b mb-8">
-          <h2 className="text-3xl md:text-5xl lg:text-7xl font-semibold flex items-end gap-3">
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
+          <span>Showcasing our engineering expertise</span>
+          <span>[ our work ]</span>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16 pt-2 pb-16 border-b mb-8">
+
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             Products
-            <span className="w-2 h-2 md:w-3  lg:w-3 bg-[#FBE87E]"></span>
+            <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
           </h2>
 
-          <div className="flex items-start gap-6">
-            <span className="w-[5px] h-20 bg-[#FBE87E]"></span>
+          <div className="flex gap-8">
+            <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#FBE87E]"></span>
 
             <p className="text-gray-600 text-lg leading-relaxed max-w-md">
               Our work is a blend of innovative thinking and practical
               solutions, ensuring they are both unique and effective.
             </p>
           </div>
+
         </div>
 
         {/* Product Rows */}
