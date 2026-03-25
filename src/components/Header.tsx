@@ -9,7 +9,6 @@ const navItems = [
   { href: "/service", item: "Services" },
   { href: "/product", item: "Products" },
   { href: "/clients", item: "Clients" },
-  { href: "#", item: "Careers" },
   { href: "/contact", item: "Contact Us" },
 ];
 
@@ -44,12 +43,12 @@ const Header = () => {
           {/* Right */}
           <div className="hidden items-center gap-4 xl:flex">
             <a
-              href="tel:+919003253007"
+              href="tel:+918939821722"
               target="_blank"
               className="flex items-center gap-2 text-sm font-medium text-foreground/70"
             >
               <Phone className="h-4 w-4 text-secondary" />
-              +91 90032 53007
+              +91 89398 21722
             </a>
 
             <Button variant="gold" size="lg" className="rounded-full">

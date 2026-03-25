@@ -4,11 +4,21 @@ import {
   Linkedin,
   Instagram,
   ArrowRight,
+  Youtube,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import Whatsapp from '@/assets/whatsapp.webp'
+import Whatsapp from "@/assets/whatsapp.webp";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
+  const socialIcons = [
+    {
+      icon: Facebook,
+      link: "https://www.facebook.com/profile.php?id=61587870608872",
+    },
+    { icon: Youtube, link: "https://www.youtube.com/@Railmet/shorts" },
+    { icon: Instagram, link: "https://www.instagram.com/railmet_tech/" },
+  ];
   const year = new Date().getFullYear();
   const NavLinks = [
     {
@@ -46,8 +56,8 @@ const Footer = () => {
               Rail<span className="text-secondary uppercase">Met</span>
             </a>
             <p className="text-sm text-primary-foreground/60 leading-relaxed">
-              Innovative metal solutions for industries worldwide. Engineering
-              excellence since 1994.
+              Precision-engineered solutions for rail systems and industries.
+              Built for performance, trusted for excellence.
             </p>
           </div>
 
@@ -138,10 +148,11 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex gap-3">
-            {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
+            {socialIcons.map(({ icon: Icon, link }, i) => (
               <a
                 key={i}
-                href="#"
+                href={link}
+                target="_blank"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-foreground/10 text-primary-foreground/60 hover:bg-secondary hover:text-secondary-foreground transition-colors"
               >
                 <Icon className="h-4 w-4" />
@@ -154,9 +165,13 @@ const Footer = () => {
       {/* Whatsapp icon */}
 
       <div>
-        <a href="https://wa.me/+919003253007" target="_blank" className="w-16 h-16 fixed bottom-10 right-5 animate-bounce">
-        <img src={Whatsapp} alt="whatsapp" className="w-full h-full" />
-      </a>
+        <a
+          href="https://wa.me/+919003253007"
+          target="_blank"
+          className="w-16 h-16 fixed bottom-10 right-5 animate-bounce"
+        >
+          <img src={Whatsapp} alt="whatsapp" className="w-full h-full" />
+        </a>
       </div>
     </footer>
   );

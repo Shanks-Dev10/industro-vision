@@ -40,10 +40,10 @@ const projects = [
   },
   {
     num: "04",
-    title: "Precisload monitoring",
+    title: "Portable Weighing System",
     category: "Aerospace",
     image: product4,
-    link:'#'
+    link:'/product/portable-weighing-system'
   },
 ];
 

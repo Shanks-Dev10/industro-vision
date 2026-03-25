@@ -3,6 +3,7 @@ import wind from "@/assets/oil-platform.webp";
 import construction from "@/assets/metal-cutting.webp";
 import { useEffect, useState, useRef } from "react";
 import { Users, Clock, MapPin, ThumbsUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface CounterProps {
   end: number;
@@ -69,24 +70,28 @@ const products = [
     category: "Environmental",
     year: "2015",
     image: wind,
+    link:'/product/advanced-load-monitoring-system'
   },
   {
     title: "OCLS (Overload Control System)",
     category: "Machinery",
     year: "2015",
     image: construction,
+    link:'/product/overload-Control-System-product'
   },
   {
     title: "K2(KIMAX2 AIR)",
     category: "Energy",
     year: "2018",
     image: wind,
+    link:'/product/truck-onboard-scale-system'
   },
   {
     title: "Industrial equipment optimization",
     category: "Production",
     year: "2020",
     image: construction,
+    link:'/product/portable-weighing-system'
   },
 ];
 
@@ -128,7 +133,7 @@ const ProductsSection = () => {
         {/* Product Rows */}
         <div className="divide-y">
           {products.map((product, index) => (
-            <div
+            <Link to={product.link}
               key={index}
               className="group grid md:grid-cols-3 lg:grid-cols-[260px_1fr_200px_80px] items-center gap-10 py-10 cursor-pointer"
             >
@@ -161,14 +166,14 @@ const ProductsSection = () => {
               <div className="flex justify-center items-center w-12 h-12 rounded-full border transition-all duration-300 group-hover:bg-[#FBE87E] group-hover:border-[#FBE87E]">
                 <ArrowRight className="w-5 h-5 text-gray-700" />
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
         {/* Stats Inside Products */}
         <div className="grid grid-cols-2 md:grid-cols-4  gap-12 pt-16 mt-16 border-t">
           {stats.map((stat, index) => (
-            <div key={index}>
+            <div  key={index}>
               <Counter end={stat.value} suffix={stat.suffix} >
                 
               </Counter>

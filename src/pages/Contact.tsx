@@ -110,10 +110,10 @@ const Contact = () => {
                   </p>
                   <a
                     className="text-black font-medium "
-                    href="mailto:railmetdm@gmail.com"
+                    href="mailto:railmet2021@gmil.com"
                     target="_blank"
                   >
-                    railmetdm@gmail.com
+                    railmet2021@gmil.com
                   </a>
                 </div>
                 <div>
@@ -121,9 +121,7 @@ const Contact = () => {
                     Visit us
                   </p>
                   <p className="text-black font-medium ">
-                    1st floor 12th, Avenue, Corporate office 20/1,
-                    <br /> Vaigai Colony, Ashok Nagar, Chennai, Tamil Nadu
-                    600083
+                    No, 1/295, 1/308, Melathur, Somangalam, Tamil Nadu 600069
                   </p>
                 </div>
                 <div>
@@ -255,12 +253,12 @@ const Contact = () => {
                 Our Head Office
               </h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14961.623583430777!2d80.20002790961729!3d13.023714553345368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52672aca3b1a91%3A0x2532a78faa274768!2sSenlogic%20Automation%20Private%20Limited%2C%20Chennai!5e1!3m2!1sen!2sin!4v1773144886758!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62212.84844509319!2d79.96467590332033!3d12.952451216489676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f5450d2abd1f%3A0xaa30f128184e8965!2sRailmet%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1774431282727!5m2!1sen!2sin"
               className="border-0 w-full xl:h-[600px] lg:h-[450px] md:h-[340px] h-[400px]"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            ></iframe> 
           </div>
         </div>
       </section>

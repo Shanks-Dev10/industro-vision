@@ -7,17 +7,17 @@ import ProductDetail from "@/components/products/ProductDetail";
 const TruckOnboardScaleSystem = () => {
   const ProductDetails = {
     description1:
-      "A truck is designed to carry heavy loads, and an overload can cause many problems in transportation activities. Trucks with overloaded and unevenly loaded goods apply pressure to the vehicle’s suspension system, causing damage to the vehicle and safety risks. Drivers are often in a difficult position in taking the right action because of the lack of facilities in detecting overload conditions in vehicles during transit. Drivers need a system to monitor the vehicle’s load conditions in real time.",
+      "It is hard to measure the weight of a train coach or wagon unless the train stops, and external weighing machines are used. Traditional methods require specific infrastructure, such as a weighbridge, which takes a long time. There was no easy way to monitor the live conditions of the weight during operation. This made it hard to ensure safe conditions, appropriate weight distribution, and efficient transport management.",
     description2:
-      "To solve the issues of vehicle overloading and improper load distribution, Railmet has introduced the K2 Truck Onboard Scale System. It is an intelligent system designed to be mounted on the suspension system of the vehicle. It measures the pressure on the axles and calculates the load on the vehicle. It displays the weight of the load accurately and in real time through pressure sensors and a digital display. It keeps monitoring the load and alerts the driver if the weight crosses the safe limits.",
+      "Railmet offers the K2 Air System, an intelligent onboard weighing solution that measures the weight of a coach by using air suspension pressure. The system connects to the air bags (air springs) of the coach and reads the pressure through sensors. Since air pressure increases with load, the system uses this data to calculate the total weight in real time. The readings from all suspension points are processed by a central controller and displayed on a digital indicator, providing accurate and continuous weight monitoring without stopping the train.",
     description3:
-      "The implementation of the K2 Truck Onboard Scale System has the result of enhancing the accuracy and efficiency in the management of the loads carried by the vehicles. This is because the transport operators can ensure that the vehicle is loaded within the required limit through the real-time monitoring and instant alerts that the system sends when the vehicle is overloaded. This has the result of eliminating problems that could be caused by overloading the vehicles, which could cause damage to the vehicles and negatively affect their safety of the vehicles. The system also has the result of improving the efficiency of the operations carried out by the fleet operators. ",
+      "This ensures a high level of safety since there is optimal management of loads, which prevents overloading. There is also improved efficiency since there are streamlined processes, eliminating delays. There is precise weight information, which helps in informed decisions, ensuring optimal management of loads. This is very important in rail transport.",
 
     solutionsLists: [
-      "Suspension Pressure Sensors",
-      "Axle Load Monitoring",
-      "Digital Weight Display",
-      "Overload Alert System",
+      "Air Suspension Pressure Measurement",
+      "Multi-Point Sensor Data Collection",
+      "Central Weight Calculation Unit",
+      "Digital Real-Time Weight Display",
     ],
   };
   return (
