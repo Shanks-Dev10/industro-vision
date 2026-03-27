@@ -19,7 +19,10 @@ const ServiceDetails = ({
       link: "/service/over-load-control-system",
     },
     { name: "KIMAX2 AIR", link: "/service/k2-truck-onboard-scale-system" },
-    { name: "Asymmetric Load Measuring System", link: "/" },
+    {
+      name: "Portable Weighing System",
+      link: "/service/portable-weighing-system-service",
+    },
   ];
 
   return (
@@ -126,11 +129,11 @@ const ServiceDetails = ({
                   <Phone size={22} color="black" />
                 </span>
                 <a
-                  href="tel:+919003253007"
+                  href="tel:+918939821722"
                   target="_blank"
                   className="hover:underline-offset-1 hover:decoration-white"
                 >
-                  +91 90032 53007
+                  +91 89398 21722
                 </a>
               </div>
 
@@ -138,7 +141,9 @@ const ServiceDetails = ({
                 <span className="w-14 h-14 flex justify-center items-center bg-[#FBE87E] rounded-md">
                   <Mail size={22} color="black" />
                 </span>
-                <span>support@gmail.com</span>
+                <a href="mailto:railmet2021@gmil.com" target="_blank">
+                  railmet2021@gmil.com
+                </a>
               </div>
             </div>
           </div>

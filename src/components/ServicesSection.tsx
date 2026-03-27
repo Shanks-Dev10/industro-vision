@@ -1,5 +1,5 @@
 import metalCutting from "@/assets/metal-cutting.webp";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -27,10 +27,10 @@ const ServicesSection = () => {
       href: "/service/k2-truck-onboard-scale-system",
     },
     {
-      title: "OCLS (Overload Control System)",
+      title: "Portable Weighing System",
       description:
-        "OCLS ensures precise load monitoring, intelligent analytics, and superior safety performance across every railway rake.",
-      href: "#",
+        "Railmet is a technology-driven company delivering advanced portable weighing solutions that enable real-time load monitoring and precise wheel and axle weight measurement for safer and more efficient rail operations.",
+      href: "/service/portable-weighing-system-service",
     },
   ];
 
@@ -46,12 +46,12 @@ const ServicesSection = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
               Services
-              <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
+              <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
             </h2>
 
             <div className="flex flex-col gap-8">
               <div className="flex gap-8">
-                <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#FBE87E]"></span>
+                <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
 
                 <p className="text-gray-600 text-lg leading-relaxed max-w-md">
                   Our team evaluates operational requirements, site conditions,
@@ -60,11 +60,11 @@ const ServicesSection = () => {
                 </p>
               </div>
               <div className="flex md:items-center pl-0 md:pl-8">
-                <button className="flex items-center justify-end w-fit gap-3 group bg-[#FBE87E] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#0B2B3F] hover:text-white">
+                <button className="flex items-center justify-end w-fit gap-3 group bg-[#009999] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold text-[#fff]">
                   All Services
                   <span
-                    className="flex items-center justify-center w-8 h-8 rounded-full  border
-                   group-hover:border-white bg-[#0B2B3F] text-white border-transparent"
+                    className="flex items-center justify-center w-8 h-8 rounded-full  
+                   group-hover:border-white border text-white "
                   >
                     <ArrowRight size={16} />
                   </span>
@@ -85,9 +85,9 @@ const ServicesSection = () => {
               {/* Icon */}
               <div
                 className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-6 
-  group-hover:bg-[#FBE87E] transition"
+  group-hover:bg-[#009999] transition"
               >
-                ⚙️
+                <Settings className="group-hover:text-[#fff]"/>
               </div>
 
               <h3 className="text-xl md:text-2xl  font-bold mb-6">
@@ -102,11 +102,11 @@ const ServicesSection = () => {
                 {/* Arrow */}
                 <span
                   className="flex items-center justify-center w-8 h-8 rounded-full border 
-    group-hover:bg-[#FBE87E] group-hover:border-[#FBE87E] transition"
+    group-hover:bg-[#009999] group-hover:border-[#fff] transition"
                 >
                   <ArrowRight
                     size={16}
-                    className="group-hover:text-black transition"
+                    className="group-hover:text-[#fff] transition"
                   />
                 </span>
               </div>

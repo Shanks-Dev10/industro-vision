@@ -17,7 +17,7 @@ const WhoWeAre = () => {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             Who we are
-            <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
+            <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
           </h2>
         </div>
 
@@ -29,9 +29,9 @@ const WhoWeAre = () => {
               Transforming Rail Operations with Advanced Weighing Technology.
             </h3>
 
-            <button className="group flex items-center gap-4 bg-[#FBE87E] px-6 py-3 rounded-full font-semibold  transition hover:bg-[#0B2B3F] hover:text-white">
+            <button className="group flex items-center gap-4 bg-[#009999] px-6 py-3 rounded-full font-semibold text-[#fff]  transition ">
               Explore now
-              <span className="flex items-center justify-center group-hover:border group-hover:border-white  border border-transparent w-8 h-8 rounded-full bg-[#0B2B3F] text-white">
+              <span className="flex items-center justify-center group-hover:border group-hover:border-white  border  w-8 h-8 rounded-full  text-white">
                 <ArrowRight size={16} />
               </span>
             </button>
@@ -49,7 +49,7 @@ const WhoWeAre = () => {
           {/* Right Card */}
           <div className="bg-[#0F2F45] text-white rounded-2xl rounded-tr-[90px] xl:p-10 p-5  relative h-full flex flex-col justify-between">
             <div>
-              <p className="text-[#FBE87E] text-sm font-semibold mb-4">
+              <p className=" text-sm font-semibold mb-4">
                 Technology-Oriented
               </p>
 
@@ -68,7 +68,7 @@ const WhoWeAre = () => {
               </p>
             </div>
 
-            <button className="flex items-center gap-3 font-semibold mt-5 border w-fit p-3 rounded-[99px]">
+            <button className="flex items-center gap-3 font-semibold mt-5 border w-fit p-3 rounded-[99px] hover:bg-[#009999] transition duration-300">
               View Projects
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white text-black">
                 <ArrowRight size={16} />

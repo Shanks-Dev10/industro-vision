@@ -14,10 +14,10 @@ const serviceData = {
   heading: "K2 Truck Onboard Scale System",
 
   description:
-    "Railmet providesreal-time onboard weighing systems through the K2 Truck Onboard Scale System. The system measures suspension pressure to calculate axle load and total weight in real time, helping operators monitor load conditions and prevent vehicle overloading for efficient transport operations.",
+    "Railmet is a technology-driven company that provides advanced K2 System solutions, delivering real-time load monitoring and accurate axle weight measurement for safer and more efficient transport operations.",
 
   serviceDescription:
-    "The K2 Truck Onboard Scale System is a smart load monitoring solution designed to measure axle pressure and convert it into accurate weight readings. Installed directly on the suspension system, it continuously tracks the load on each axle and displays the total vehicle weight on a digital indicator.",
+    "K2 System is an intelligent onboard weighing solution that measures suspension air pressure to calculate axle load and total weight in real time. Installed directly on the suspension system, it continuously monitors load conditions during operation without the need for external weighing systems.",
 
   image: serviceImg,
 
@@ -25,34 +25,34 @@ const serviceData = {
     {
       heading: "Real-Time Weight Monitoring",
       description:
-        "Displays the total load and axle weight instantly through a digital indicator, allowing drivers to monitor vehicle load conditions during operation.",
+        "Accurate measurement of total load and axle weight with continuous real-time display.",
     },
     {
-      heading: "Overload Warning System",
+      heading: "Smart Pressure-Based Measurement",
       description:
-        "When the load crosses the limits, the LED indicators and alarms alert the driver. Which helps to prevent overloading. ",
+        "Uses suspension air pressure to calculate load with high accuracy.",
     },
     {
-      heading: "Suspension Pressure Monitoring",
+      heading: "Easy Onboard Installation",
       description:
-        "Sensors measure suspension air pressure on both sides of the axle to calculate accurate load distribution across the vehicle.",
+        "Simple setup without the need for external infrastructure or systems.",
     },
     {
-      heading: "Easy Installation & Calibration",
+      heading: "Overload Alert System",
       description:
-        "The system features a straightforward setup with sensors, wiring connections, and simple calibration to ensure reliable weight measurement.",
+        "Instant alerts to warn drivers and prevent overload-related risks.",
     },
   ],
 
   whatIncludes: {
     description:
-      "The K2 Truck Onboard Scale System is designed to provide continuous onboard weight monitoring using suspension pressure data. The system includes sensors, display units, and alarm indicators to help drivers maintain safe load limits and improve transport efficiency.",
+      "The K2 System is designed to provide continuous onboard weight monitoring using suspension pressure data. It combines sensors, display units, and alert systems to ensure safe and efficient operations.",
     lists: [
-      " Sensors installed on the suspension system measure pressure changes to determine axle load.",
-      "A 3-digit LED display shows the total vehicle weight or axle load in real time.",
-      "Extension cables, connectors, and wiring components link sensors to the indicator unit.",
-      "Visual indicators and alarm systems alert the driver when the load exceeds safe limits.",
-      "Calibration configuration ensures accurate weight measurement based on vehicle load conditions.",
+      "Measure pressure changes in the suspension system to determine axle load.",
+      "Displays real-time weight using a clear LED interface.",
+      "Complete connection system for smooth data flow between components.",
+      "Provides warning signals when load crosses safe limits.",
+      "Ensures accurate weight measurement based on operating conditions.",
     ],
   },
   product1Img: product1,

@@ -57,9 +57,9 @@ const CTASection = () => {
             </p>
 
             {/* Button */}
-            <button className="flex items-center gap-3 bg-[#FBE87E] text-black font-semibold px-6 py-3 rounded-full w-fit mb-20 hover:bg-[#0B2B3F] hover:text-white">
+            <button className="flex items-center gap-3 bg-[#009999] text-[#fff] font-semibold px-6 py-3 rounded-full w-fit mb-20 ">
               Let’s Talk
-              <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0B2B3F] text-white">
+              <span className="flex items-center justify-center w-8 h-8 rounded-full border">
                 <ArrowRight size={16} />
               </span>
             </button>

@@ -10,7 +10,7 @@ const slides = [
     label: "Innovation Focused",
     heading: (
       <>
-        Innovating <span className="text-secondary">Rail Weighing</span> for a
+        Innovating <span className="text-[#009999]">Rail Weighing</span> for a
         Smarter Future
       </>
     ),
@@ -24,7 +24,7 @@ const slides = [
     heading: (
       <>
         Precision Weighing That Powers Rail
-        <span className="text-secondary"> Progress</span>
+        <span className="text-[#009999]"> Progress</span>
       </>
     ),
     description:
@@ -74,14 +74,14 @@ const HeroSection = () => {
           {/* Left */}
           <div className="flex-1 space-y-8 max-w-3xl " key={current}>
             <span
-              className="inline-block rounded-full border border-secondary/30 bg-secondary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-secondary"
+              className="inline-block rounded-full border border-[#009999] bg-[#009999] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#fff]"
               data-aos="fade-down"
               data-aos-delay="100"
             >
               {slide.label}
             </span>
             <h1
-              className="text-4xl font-bold leading-loose text-primary-foreground md:text-5xl lg:text-6xl xl:text-7xl"
+              className=" font-bold leading-loose text-primary-foreground text-2xl md:text-5xl lg:text-6xl xl:text-7xl"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -96,9 +96,8 @@ const HeroSection = () => {
             </p>
             <div data-aos="fade-up" data-aos-delay="400">
               <Button
-                variant="gold"
                 size="lg"
-                className="rounded-full gap-2 text-base px-8 py-6"
+                className="rounded-full gap-2 text-base px-8 py-6 bg-[#009999] hover:bg-[#009999]" 
               >
                 Our Services <ArrowRight className="h-5 w-5" />
               </Button>
@@ -110,7 +109,7 @@ const HeroSection = () => {
         <div className="absolute bottom-10 left-1/2 z-20 flex -translate-x-1/2 items-center gap-6">
           <button
             onClick={prev}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-primary-foreground/20 text-primary-foreground/70 transition-colors hover:border-secondary hover:text-secondary"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#009999] text-primary-foreground/70 transition-colors hover:border-[#009999]hover:text-[#fff]"
             aria-label="Previous slide"
           >
             <ChevronLeft className="h-5 w-5" />
@@ -123,7 +122,7 @@ const HeroSection = () => {
                 onClick={() => goTo(i)}
                 className={`h-2 rounded-full transition-all duration-500 ${
                   i === current
-                    ? "w-8 bg-secondary"
+                    ? "w-8 bg-[#009999]"
                     : "w-2 bg-primary-foreground/30 hover:bg-primary-foreground/50"
                 }`}
                 aria-label={`Go to slide ${i + 1}`}
@@ -133,7 +132,7 @@ const HeroSection = () => {
 
           <button
             onClick={next}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-primary-foreground/20 text-primary-foreground/70 transition-colors hover:border-secondary hover:text-secondary"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#009999] text-primary-foreground/70 transition-colors hover:border-[#009999] hover:text-[#fff]"
             aria-label="Next slide"
           >
             <ChevronRight className="h-5 w-5" />

@@ -5,10 +5,16 @@ import {
   Instagram,
   ArrowRight,
   Youtube,
+  LocateIcon,
+  Map,
+  MapPin,
+  Mail,
+  Phone,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Whatsapp from "@/assets/whatsapp.webp";
 import { FaXTwitter } from "react-icons/fa6";
+import logo from "@/assets/railmet-logo.webp";
 
 const Footer = () => {
   const socialIcons = [
@@ -42,6 +48,24 @@ const Footer = () => {
       href: "/contact",
     },
   ];
+  const services = [
+    {
+      name: "Asymmetric Load Measuring System",
+      href: "/service/asymmetric-load-measuring-system",
+    },
+    {
+      name: "Overload Control System",
+      href: "/service/over-load-control-system",
+    },
+    {
+      name: "K2 (KIMAX2 AIR)",
+      href: "/service/k2-truck-onboard-scale-system",
+    },
+    {
+      name: "Portable Weighing System",
+      href: "/service/portable-weighing-system-service",
+    },
+  ];
 
   return (
     <footer className="bg-primary border-t border-primary-foreground/10">
@@ -49,12 +73,9 @@ const Footer = () => {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <a
-              href="#"
-              className="text-2xl font-extrabold text-primary-foreground"
-            >
-              Rail<span className="text-secondary uppercase">Met</span>
-            </a>
+            <Link to={"/"}>
+              <img src={logo} alt="logo" className="w-[150px]" />
+            </Link>
             <p className="text-sm text-primary-foreground/60 leading-relaxed">
               Precision-engineered solutions for rail systems and industries.
               Built for performance, trusted for excellence.
@@ -71,7 +92,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to={nav.href}
-                    className="text-sm text-primary-foreground/60 hover:text-secondary transition-colors"
+                    className="text-sm text-primary-foreground/60 hover:text-[#009999] transition-colors"
                   >
                     {nav.item}
                   </Link>
@@ -80,48 +101,71 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Services */}
           <div>
             <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-primary-foreground">
-              Company
+              Services
             </h4>
             <ul className="space-y-3">
-              {[
-                "About",
-                "Meet The Team",
-                "Testimonials",
-                "FAQs",
-                "Contact",
-              ].map((l) => (
-                <li key={l}>
-                  <a
-                    href="#"
-                    className="text-sm text-primary-foreground/60 hover:text-secondary transition-colors"
+              {services.map((service, index) => (
+                <li key={index}>
+                  <Link
+                    to={service.href}
+                    className="text-sm text-primary-foreground/60 hover:text-[#009999] transition-colors"
                   >
-                    {l}
-                  </a>
+                    {service.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/*Company*/}
           <div>
             <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-primary-foreground">
-              Newsletter
+              Contact Us
             </h4>
-            <p className="text-sm text-primary-foreground/60 mb-4">
-              Stay tuned for more updates
-            </p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 rounded-l-xl bg-primary-foreground/10 px-4 py-3 text-sm text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none"
-              />
-              <button className="rounded-r-xl bg-secondary px-4 text-secondary-foreground hover:bg-gold-dark transition-colors">
-                <ArrowRight className="h-5 w-5" />
-              </button>
+            <ul className="space-y-5 mb-4">
+              <li>
+                <a
+                  href="/"
+                  className="text-sm text-primary-foreground/60 hover:text-[#009999] transition-colors flex items-center gap-3"
+                >
+                  <MapPin size={30} />
+                  No, 1/295, 1/308, Melathur, Somangalam, Tamil Nadu 600069
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:railmet2021@gmil.com" target="_blank"
+                  className="text-sm text-primary-foreground/60 hover:text-[#009999] transition-colors flex items-center gap-3"
+                >
+                  <Mail size={16} />
+                  railmet2021@gmil.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+918939821722" target="_blank"
+                  className="text-sm text-primary-foreground/60 hover:text-[#009999] transition-colors flex items-center gap-3"
+                >
+                  <Phone size={16} />
+                  +91 89398 21722
+                </a>
+              </li>
+            </ul>
+
+            <div className="flex gap-3">
+              {socialIcons.map(({ icon: Icon, link }, i) => (
+                <a
+                  key={i}
+                  href={link}
+                  target="_blank"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-foreground/10 text-primary-foreground/60 hover:bg-[#009999] hover:text-[#fff] transition-colors"
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              ))}
             </div>
           </div>
         </div>
@@ -136,28 +180,16 @@ const Footer = () => {
           <div className="flex items-center gap-6">
             <a
               href="#"
-              className="text-xs text-primary-foreground/50 hover:text-secondary"
+              className="text-xs text-primary-foreground/50 hover:text-[#009999]"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="text-xs text-primary-foreground/50 hover:text-secondary"
+              className="text-xs text-primary-foreground/50 hover:text-[#009999]"
             >
               Terms & Conditions
             </a>
-          </div>
-          <div className="flex gap-3">
-            {socialIcons.map(({ icon: Icon, link }, i) => (
-              <a
-                key={i}
-                href={link}
-                target="_blank"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-foreground/10 text-primary-foreground/60 hover:bg-secondary hover:text-secondary-foreground transition-colors"
-              >
-                <Icon className="h-4 w-4" />
-              </a>
-            ))}
           </div>
         </div>
       </div>

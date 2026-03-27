@@ -20,6 +20,7 @@ import TruckOnboardScaleSystem from "./pages/products/TruckOnboardScaleSystem";
 import K2TruckOnboardScaleSystem from "./pages/service/K2TruckOnboardScaleSystem";
 import Clients from "./pages/Clients";
 import PortableWeighingSystem from "./pages/products/PortableWeighingSystem";
+import PortableWeighingSustemService from "./pages/service/PortableWeighingSystem";
 
 const queryClient = new QueryClient();
 
@@ -57,6 +58,10 @@ const App = () => {
             <Route
               path="/service/k2-truck-onboard-scale-system"
               element={<K2TruckOnboardScaleSystem />}
+            />
+            <Route
+              path="/service/portable-weighing-system-service"
+              element={<PortableWeighingSustemService />}
             />
             <Route
               path="/product/overload-Control-System-product"

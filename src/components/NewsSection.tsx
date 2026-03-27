@@ -42,13 +42,13 @@ const NewsSection = () => {
 
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             Latest news
-            <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
+            <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
           </h2>
 
           <div className="flex justify-start md:justify-end items-center">
-            <button className="flex items-center justify-end w-fit gap-3 bg-[#FBE87E] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#0B2B3F] hover:text-white">
+            <button className="flex items-center justify-end w-fit gap-3 bg-[#009999] text-[#fff] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold ">
               View All Posts
-              <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0B2B3F] hover:bg-[#FBE87E] text-white">
+              <span className="flex items-center justify-center w-8 h-8 rounded-full border text-white">
                 <ArrowRight size={16} />
               </span>
             </button>
@@ -74,7 +74,7 @@ const NewsSection = () => {
               {/* Meta */}
               <div className="flex items-center gap-3 mb-3">
 
-                <span className="bg-[#FBE87E] text-xs font-semibold px-3 py-1 rounded-full">
+                <span className="bg-[#009999] text-xs font-semibold px-3 py-1 rounded-full text-[#fff]">
                   {post.category}
                 </span>
 

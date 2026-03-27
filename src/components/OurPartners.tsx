@@ -42,11 +42,11 @@ const OurPartners = () => {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16 pb-5 pt-2">
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             Our Partners
-            <span className="w-2 h-2 bg-[#FBE87E] rounded-full ml-2"></span>
+            <span className="w-2 h-2 bg-[#009999] rounded-full ml-2"></span>
           </h2>
 
           <div className="flex gap-8">
-            <span className="hidden md:block w-[4px] bg-[#FBE87E]"></span>
+            <span className="hidden md:block w-[4px] bg-[#009999]"></span>
 
             <p className="text-gray-600 text-lg leading-relaxed max-w-md">
               We integrate hands-on understanding with clever planning to ensure

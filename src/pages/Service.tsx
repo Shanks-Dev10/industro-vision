@@ -26,17 +26,17 @@ const services = [
   },
   {
     num: "03",
-    title: "KIMAX2 AIR",
+    title: "K2 (KIMAX2 AIR)",
     desc: "We focus on real-time load monitoring, accurate axle weight measurement, and overload alerts to ensure safer and more efficient transport operations.",
     image: metalImg,
     link: "/service/k2-truck-onboard-scale-system",
   },
   {
     num: "04",
-    title: "Asymmetric Load Measuring System",
-    desc: "Railmet is a railway technology company that provides advanced ALMS solutions to customers, delivering intelligent wagon load monitoring and real-time safer rail operations.",
+    title: "Portable Weighing System",
+    desc: "Railmet is a technology-driven company delivering advanced portable weighing solutions that enable real-time load monitoring and precise wheel and axle weight measurement .",
     image: oilImg,
-    link: "/service/asymmetric-load-measuring-system",
+    link: "/service/portable-weighing-system-service",
   },
 ];
 

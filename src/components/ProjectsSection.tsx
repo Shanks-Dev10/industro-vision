@@ -116,11 +116,11 @@ const ProductsSection = () => {
 
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             Products
-            <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
+            <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
           </h2>
 
           <div className="flex gap-8">
-            <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#FBE87E]"></span>
+            <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
 
             <p className="text-gray-600 text-lg leading-relaxed max-w-md">
               Our work is a blend of innovative thinking and practical
@@ -135,7 +135,7 @@ const ProductsSection = () => {
           {products.map((product, index) => (
             <Link to={product.link}
               key={index}
-              className="group grid md:grid-cols-3 lg:grid-cols-[260px_1fr_200px_80px] items-center gap-10 py-10 cursor-pointer"
+              className="group grid md:grid-cols-3 lg:grid-cols-[260px_1fr__80px] items-center gap-10 py-10 cursor-pointer"
             >
               {/* Image */}
               <div className="rounded-xl overflow-hidden ">
@@ -152,7 +152,7 @@ const ProductsSection = () => {
               </h3>
 
               {/* Tags */}
-              <div className="flex gap-3">
+              {/* <div className="flex gap-3">
                 <span className="px-3 py-1 text-sm rounded-full border text-gray-700">
                   {product.category}
                 </span>
@@ -160,18 +160,18 @@ const ProductsSection = () => {
                 <span className="px-3 py-1 text-sm rounded-full border text-gray-700">
                   {product.year}
                 </span>
-              </div>
+              </div> */}
 
               {/* Arrow */}
-              <div className="flex justify-center items-center w-12 h-12 rounded-full border transition-all duration-300 group-hover:bg-[#FBE87E] group-hover:border-[#FBE87E]">
-                <ArrowRight className="w-5 h-5 text-gray-700" />
+              <div className="flex justify-center items-center w-12 h-12 rounded-full border transition-all duration-300 group-hover:bg-[#009999] group-hover:border-[#009999]">
+                <ArrowRight className="w-5 h-5 text-gray-700 group-hover:text-[#fff]" />
               </div>
             </Link>
           ))}
         </div>
 
         {/* Stats Inside Products */}
-        <div className="grid grid-cols-2 md:grid-cols-4  gap-12 pt-16 mt-16 border-t">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4  gap-12 pt-16 mt-16 border-t">
           {stats.map((stat, index) => (
             <div  key={index}>
               <Counter end={stat.value} suffix={stat.suffix} >
@@ -183,7 +183,7 @@ const ProductsSection = () => {
               <div className="mt-6 border-b border-gray-300"></div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

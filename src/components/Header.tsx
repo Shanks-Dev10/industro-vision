@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import Logo from "@/assets/railmet-logo.webp";
 
 const navItems = [
   { href: "/", item: "Home" },
@@ -21,21 +22,21 @@ const Header = () => {
         <nav className="flex items-center justify-between rounded-full bg-card px-6 py-3 shadow-md">
           {/* Logo */}
           <Link to={"/"}>
-            <p className="text-xl font-extrabold tracking-tight text-primary">
-              Rail<span className="text-secondary uppercase">Met</span>
-            </p>
+            <img src={Logo} alt="logo" className="w-[150px]" />
           </Link>
 
           {/* Desktop Nav */}
           <ul className="hidden items-center gap-8 xl:flex">
             {navItems.map((items) => (
               <li key={items.item}>
-                <Link
+                <NavLink
                   to={items.href}
-                  className="text-sm font-medium text-foreground/70 transition-colors hover:text-primary"
+                  className={({ isActive }) =>
+                    `text-sm font-medium  transition-colors hover:text-[#009999] ${isActive ? "text-[#009999]" : "text-foreground/70"}`
+                  }
                 >
                   {items.item}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -47,11 +48,14 @@ const Header = () => {
               target="_blank"
               className="flex items-center gap-2 text-sm font-medium text-foreground/70"
             >
-              <Phone className="h-4 w-4 text-secondary" />
+              <Phone className="h-4 w-4 text-[#009999]" />
               +91 89398 21722
             </a>
 
-            <Button variant="gold" size="lg" className="rounded-full">
+            <Button
+              size="lg"
+              className="rounded-full bg-[#009999] hover:bg-[#009999]"
+            >
               <Link to={"/contact"}>Request A Quote</Link>
             </Button>
           </div>
