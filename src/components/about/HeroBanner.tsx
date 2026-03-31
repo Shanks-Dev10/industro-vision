@@ -20,7 +20,7 @@ const HeroBanner = () => {
             <div className="my-4 flex items-center gap-2 text-sm text-primary-foreground/60">
               <Link to={"/"}>Home</Link>
               <ChevronRight className="h-3 w-3" />
-              <span className="text-secondary">About Us</span>
+              <span className="text-[#009999]">About Us</span>
             </div>
           </div>
         </div>

@@ -198,7 +198,7 @@ const Footer = () => {
 
       <div>
         <a
-          href="https://wa.me/+919003253007"
+          href="https://wa.me/+918939821722"
           target="_blank"
           className="w-16 h-16 fixed bottom-10 right-5 animate-bounce"
         >

@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const steps = [
   {
@@ -32,7 +33,7 @@ const WorkProcess = () => {
       <div className="relative max-w-full 2xl:max-w-screen-xl mx-auto px-4 md:px-6">
         {/* Top header */}
         <div className="flex flex-col mb-20">
-          <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
+          <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-[#fff] mb-8 border-b-[1px] pb-8">
             <span>WE GET IT RIGHT THE FIRST TIME</span>
             <span>[ how we work ]</span>
           </div>
@@ -56,12 +57,14 @@ const WorkProcess = () => {
               </p>
              </div>
               <div className="flex md:items-center pl-0 md:pl-8">
+                <Link to={'/about/#teams'}>
                 <button className="flex items-center justify-end w-fit gap-3 bg-[#FFFF] text-black px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#009999] hover:text-[#fff]">
                   View All Members
                   <span className="flex items-center justify-center w-8 h-8 rounded-full border">
                     <ArrowRight size={16} className="hover:text-[#fff]" />
                   </span>
                 </button>
+                </Link>
               </div>
             </div>
 

@@ -37,7 +37,7 @@ const CoreValues = () => {
 
         {/* Top labels */}
 
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
           <span>Fueling progress powering the future</span>
           <span>[ Why Choose Us ]</span>
         </div>
@@ -48,11 +48,11 @@ const CoreValues = () => {
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold flex items-end">
               What We Stand For
-              <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
+              <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
             </h2>
 
             <div className="flex gap-8">
-              <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#FBE87E]"></span>
+              <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
 
               <p className="text-gray-600 text-lg leading-relaxed max-w-md">
                 Balancing rails with brainy tech driven by innovation and precision, we build smarter solutions for safer rail operations.

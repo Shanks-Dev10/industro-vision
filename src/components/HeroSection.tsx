@@ -4,14 +4,15 @@ import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import slider1 from "@/assets/slider_1.jpg";
 import slider2 from "@/assets/slider_2.jpg";
 import slider3 from "@/assets/railmet-banner-04.webp";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
     label: "Innovation Focused",
     heading: (
       <>
-        Innovating <span className="text-[#009999]">Rail Weighing</span> for a
-        Smarter Future
+        Innovative <span className="text-[#009999]">Weighing Solutions</span>{" "}
+        for a for the Railway Industries.
       </>
     ),
     description:
@@ -23,8 +24,8 @@ const slides = [
     label: "Trust & Precision Focused",
     heading: (
       <>
-        Precision Weighing That Powers Rail
-        <span className="text-[#009999]"> Progress</span>
+        Precision Weighing That Powers
+        <span className="text-[#009999]">Rail Progress.</span>
       </>
     ),
     description:
@@ -95,12 +96,14 @@ const HeroSection = () => {
               {slide.description}
             </p>
             <div data-aos="fade-up" data-aos-delay="400">
-              <Button
-                size="lg"
-                className="rounded-full gap-2 text-base px-8 py-6 bg-[#009999] hover:bg-[#009999]" 
-              >
-                Our Services <ArrowRight className="h-5 w-5" />
-              </Button>
+              <Link to={"/service"}>
+                <Button
+                  size="lg"
+                  className="rounded-full gap-2 text-base px-8 py-6 bg-[#009999] hover:bg-[#009999]"
+                >
+                  Our Services <ArrowRight className="h-5 w-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@ import Jsw from "@/assets/partners/jsw.webp";
 import TataSteel from "@/assets/partners/tatasteel.webp";
 import UltraTech from "@/assets/partners/ultratech.webp";
 import Volvo from "@/assets/partners/volvo.webp";
+import IR from '@/assets/partners/Indian_Railways 2.webp'
 
 const partners = [
   AdithyaBirla,
@@ -18,6 +19,7 @@ const partners = [
   Dalmia,
   Hitachi,
   IndianRailway,
+  IR,
   Jcb,
   Jsw,
   TataSteel,
@@ -33,7 +35,7 @@ const OurPartners = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
 
         {/* Top Labels */}
-        <div className="flex flex-col-reverse gap-4 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b pb-8">
+        <div className="flex flex-col-reverse gap-4 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b pb-8">
           <span>THE FACES BEHIND INDUSTRY</span>
           <span>[ MEET OUR EXPERTS ]</span>
         </div>

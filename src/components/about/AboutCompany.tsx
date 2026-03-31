@@ -1,5 +1,6 @@
 import aboutEngineerImg from "@/assets/about-engineer.jpg";
 import { ArrowRight, MapPin, Users, DollarSign, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const stats = [
   {
@@ -7,8 +8,8 @@ const stats = [
     title: "Wagon Balance Detection",
     value: "100%",
     desc: "AI-Powered Load Detection",
-    bg: "bg-[#FBE87E]",
-    text: "text-black",
+    bg: "bg-[#009999]",
+    text: "text-[#fff]",
   },
   {
     icon: MapPin,
@@ -57,12 +58,14 @@ const AboutCompany = () => {
             stronger, smarter tomorrow
           </h2>
 
-          <button className="flex items-center gap-3 bg-[#FBE87E] px-6 py-3 rounded-full font-semibold">
+          <Link to={'/contact'}>
+          <button className="flex items-center gap-3 bg-[#009999] px-6 py-3 rounded-full font-semibold text-[#fff]">
             Request A Quote
-            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-black text-white">
+            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#fff] text-[#000]">
               <ArrowRight size={16} />
             </span>
           </button>
+          </Link>
 
         </div>
 

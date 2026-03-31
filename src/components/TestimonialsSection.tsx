@@ -28,11 +28,11 @@ const TestimonialSection = () => {
   ];
 
   return (
-    <section className="py-5 md:py-24 lg:py-24 bg-[#F5F5F5]">
+    <section className="py-5 md:py-24 lg:py-24 bg-[#FFF]">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
         {/* Top labels */}
 
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
           <span>OUR HAPPY CLIENTS</span>
           <span>[ WHAT CLIENTS SAY ]</span>
         </div>
@@ -73,10 +73,10 @@ const TestimonialSection = () => {
             {/* Bottom row */}
             <div className="flex md:flex-row flex-col gap-6 items-center justify-between">
               {/* Rating */}
-              <div className="flex items-center gap-2 bg-[#009999] text-[#fff]  px-5 py-2 rounded-full text-sm font-semibold">
+              {/* <div className="flex items-center gap-2 bg-[#009999] text-[#fff]  px-5 py-2 rounded-full text-sm font-semibold">
                 <Star className="w-4 h-4  text-[#fff]" />
                 4.9 Rating From 12k+ Reviews
-              </div>
+              </div> */}
 
               {/* Button */}
               <button className="flex items-center gap-3 font-semibold">

@@ -19,7 +19,7 @@ const About = () => {
       <CoreValues />
       <TeamSection />
       <Testimonal />
-      <Awards />
+      {/* <Awards /> */}
       {/* <NewsLetter /> */}
       <Footer />
     </div>

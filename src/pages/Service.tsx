@@ -83,7 +83,7 @@ const Services = () => {
             <div className="my-4 flex items-center gap-2 text-sm text-primary-foreground/60">
               <Link to={"/"}>Home</Link>
               <ChevronRight className="h-3 w-3" />
-              <span className="text-secondary">Services</span>
+              <span className="text-[#009999]">Services</span>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@ const Services = () => {
                 >
                   {/* Line */}
                   <div className="md:flex flex-col items-center hidden">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary text-sm font-bold text-secondary-foreground">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#009999] text-sm font-bold text-[#fff]">
                       {step.num}
                     </div>
                   </div>
@@ -181,7 +181,7 @@ const Services = () => {
                     <h3 className="shrink-0 text-xl font-semibold text-foreground md:w-48 w-44">
                       {s.title}
                     </h3>
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border text-sm font-bold text-muted-foreground transition-colors group-hover:border-secondary group-hover:text-secondary">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border text-sm font-bold text-muted-foreground transition-colors group-hover:border-[#009999] group-hover:text-[#009999]">
                       {s.num}
                     </div>
                   </div>

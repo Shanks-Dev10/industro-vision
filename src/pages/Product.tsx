@@ -71,7 +71,7 @@ const Product = () => {
             <div className="my-4 flex items-center gap-2 text-sm text-primary-foreground/60">
               <Link to={"/"}>Home</Link>
               <ChevronRight className="h-3 w-3" />
-              <span className="text-secondary">Products</span>
+              <span className="text-[#009999]">Products</span>
             </div>
           </div>
         </div>
@@ -84,8 +84,8 @@ const Product = () => {
           className="max-w-screen-xl mx-auto py-24 "
         >
           <TabsList className="flex justify-center gap-3 items-center my-5 bg-transparent">
-            <TabsTrigger value="all-product">All Product</TabsTrigger>
-            <TabsTrigger value="analytics">Our Process</TabsTrigger>
+            <TabsTrigger value="all-product" className="data-[state=active]:bg-[#009999] data-[state=active]:text-white">All Product</TabsTrigger>
+            {/* <TabsTrigger value="analytics" className="data-[state=active]:bg-[#009999] data-[state=active]:text-white">Our Process</TabsTrigger> */}
           </TabsList>
 
           <TabsContent value="all-product">
@@ -102,7 +102,7 @@ const Product = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
                     <div className="absolute inset-x-0 bottom-0 p-8">
                       <div className="flex items-center gap-3 mb-3">
-                        <span className="rounded-full bg-secondary/20 px-3 py-1 text-xs font-semibold text-secondary">
+                        <span className="rounded-full bg-[#009999] px-3 py-1 text-xs font-semibold text-[#fff]">
                           {p.category}
                         </span>
                       </div>
@@ -112,7 +112,7 @@ const Product = () => {
                       {/* <p className="mt-1 text-primary-foreground/80">
                         {p.title}
                       </p> */}
-                      <div className="mt-4 flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-secondary-foreground transition-transform group-hover:scale-110">
+                      <div className="mt-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#009999] text-[#fff] transition-transform group-hover:scale-110">
                         <ArrowRight className="h-5 w-5" />
                       </div>
                     </div>

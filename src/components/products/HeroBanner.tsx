@@ -16,18 +16,18 @@ const HeroBanner = ({ title }) => {
       <div className=" h-full flex items-center md:items-end justify-start px-6 md:pt-24 md:px-14  ">
         <div data-aos="fade-right">
           <p className="mb-3 text-sm text-primary-foreground/60">
-            <Link to={"/"} className="hover:text-secondary transition-colors">
+            <Link to={"/"} className="hover:text-[#009999] transition-colors">
               Home
             </Link>
             <span className="mx-2">/</span>
             <Link
               to={"/product"}
-              className="hover:text-secondary transition-colors"
+              className="hover:text-[#009999] transition-colors"
             >
               Product
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-secondary">{title}</span>
+            <span className="text-[#009999]">{title}</span>
           </p>
         </div>
       </div>

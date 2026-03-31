@@ -12,7 +12,7 @@ const TestimonialSection = () => {
 
         {/* Top labels */}
 
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
           <span>OUR HAPPY CLIENTS</span>
           <span>[ WHAT CLIENTS SAY ]</span>
         </div>
@@ -93,15 +93,15 @@ const TestimonialSection = () => {
               <div className="flex items-center justify-between">
 
                 {/* Rating */}
-                <div className="flex items-center gap-2 bg-[#FBE87E] md:px-1 px-5 py-2 rounded-full text-sm font-semibold">
+                {/* <div className="flex items-center gap-2 bg-[#FBE87E] md:px-1 px-5 py-2 rounded-full text-sm font-semibold">
                   <Star className="w-4 h-4 fill-black text-black" />
                   4.9 Rating From 12k+ Reviews
-                </div>
+                </div> */}
 
                 {/* Button */}
                 <button className="flex items-center gap-3 font-semibold">
                   View All Reviews
-                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#FBE87E]">
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#009999] text-[#fff]">
                     <ArrowRight size={16} />
                   </span>
                 </button>

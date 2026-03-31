@@ -107,7 +107,7 @@ const ProductsSection = () => {
     <section className="py-24 bg-white">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
         {/* Header */}
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
           <span>Showcasing our engineering expertise</span>
           <span>[ our work ]</span>
         </div>

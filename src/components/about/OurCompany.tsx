@@ -43,7 +43,7 @@ const OurCompany = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
         {/* Top labels */}
 
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
           <span>Fueling progress powering the future</span>
           <span>[ Our Company ]</span>
         </div>
@@ -53,7 +53,7 @@ const OurCompany = () => {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold flex items-end">
             OUR COMPANY
-            <span className="w-2 h-2 bg-[#FBE87E] rounded-full"></span>
+            <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
           </h2>
         </div>
 

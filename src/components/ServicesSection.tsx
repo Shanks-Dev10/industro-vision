@@ -39,7 +39,7 @@ const ServicesSection = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-4 md:px-6">
         {/* Top Row */}
         <div className="flex flex-col  mb-10 ">
-          <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
+          <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
             <span>Tailored solutions for industry growth</span>
             <span>[ our solutions ]</span>
           </div>
@@ -60,15 +60,17 @@ const ServicesSection = () => {
                 </p>
               </div>
               <div className="flex md:items-center pl-0 md:pl-8">
-                <button className="flex items-center justify-end w-fit gap-3 group bg-[#009999] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold text-[#fff]">
-                  All Services
-                  <span
-                    className="flex items-center justify-center w-8 h-8 rounded-full  
+                <Link to={"/service"}>
+                  <button className="flex items-center justify-end w-fit gap-3 group bg-[#009999] px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold text-[#fff]">
+                    All Services
+                    <span
+                      className="flex items-center justify-center w-8 h-8 rounded-full  
                    group-hover:border-white border text-white "
-                  >
-                    <ArrowRight size={16} />
-                  </span>
-                </button>
+                    >
+                      <ArrowRight size={16} />
+                    </span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -87,7 +89,7 @@ const ServicesSection = () => {
                 className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-6 
   group-hover:bg-[#009999] transition"
               >
-                <Settings className="group-hover:text-[#fff]"/>
+                <Settings className="group-hover:text-[#fff]" />
               </div>
 
               <h3 className="text-xl md:text-2xl  font-bold mb-6">

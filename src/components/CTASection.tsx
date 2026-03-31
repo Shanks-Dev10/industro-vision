@@ -12,6 +12,7 @@ import Jsw from "@/assets/partners/jsw.webp";
 import TataSteel from "@/assets/partners/tatasteel.webp";
 import UltraTech from "@/assets/partners/ultratech.webp";
 import Volvo from "@/assets/partners/volvo.webp";
+import { Link } from "react-router-dom";
 
 const partners = [
   AdithyaBirla,
@@ -57,16 +58,18 @@ const CTASection = () => {
             </p>
 
             {/* Button */}
+            <Link to={'/contact'}>
             <button className="flex items-center gap-3 bg-[#009999] text-[#fff] font-semibold px-6 py-3 rounded-full w-fit mb-20 ">
               Let’s Talk
               <span className="flex items-center justify-center w-8 h-8 rounded-full border">
                 <ArrowRight size={16} />
               </span>
             </button>
+            </Link>
           </div>
 
           {/* Partner Strip */}
-          <div className="absolute bottom-0 left-0 right-0 bg-white backdrop-blur-sm  overflow-hidden">
+          {/* <div className="absolute bottom-0 left-0 right-0 bg-white backdrop-blur-sm  overflow-hidden">
             <div className="flex md:flex-row flex-col items-center  gap-2 md:gap-16 px-4 md:px-12">
               <span className="text-sm font-semibold uppercase tracking-widest md:text-start text-center text-black">
                 Trusted partners and satisfied clients
@@ -87,7 +90,7 @@ const CTASection = () => {
                 ))}
               </Marquee>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import weldingImg from "@/assets/h2_img-1.webp";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const WhoWeAre = () => {
   return (
@@ -7,7 +8,7 @@ const WhoWeAre = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-4 md:px-6">
         {/* Top Small Labels */}
 
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-400 mb-8 border-b-[1px] pb-8">
+        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
           <span>Fueling progress powering the future</span>
           <span>[ OUR STORY ]</span>
         </div>
@@ -29,12 +30,14 @@ const WhoWeAre = () => {
               Transforming Rail Operations with Advanced Weighing Technology.
             </h3>
 
+            <Link to={'/about'}>
             <button className="group flex items-center gap-4 bg-[#009999] px-6 py-3 rounded-full font-semibold text-[#fff]  transition ">
               Explore now
               <span className="flex items-center justify-center group-hover:border group-hover:border-white  border  w-8 h-8 rounded-full  text-white">
                 <ArrowRight size={16} />
               </span>
             </button>
+            </Link>
           </div>
 
           {/* Image */}
@@ -68,12 +71,14 @@ const WhoWeAre = () => {
               </p>
             </div>
 
+            <Link to={'/product'}>
             <button className="flex items-center gap-3 font-semibold mt-5 border w-fit p-3 rounded-[99px] hover:bg-[#009999] transition duration-300">
               View Projects
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white text-black">
                 <ArrowRight size={16} />
               </span>
             </button>
+            </Link>
           </div>
         </div>
       </div>

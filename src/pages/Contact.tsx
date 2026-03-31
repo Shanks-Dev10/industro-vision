@@ -51,7 +51,7 @@ const Contact = () => {
             <div className="my-4 flex items-center gap-2 text-sm text-primary-foreground/60">
               <Link to={"/"}>Home</Link>
               <ChevronRight className="h-3 w-3" />
-              <span className="text-secondary">Contact Us</span>
+              <span className="text-[#009999]">Contact Us</span>
             </div>
           </div>
         </div>
@@ -229,7 +229,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="text-sm font-semibold py-3 px-8 rounded-full bg-[#FBE87E] hover:bg-yellow-300 transition"
+                  className="text-sm text-[#fff] font-semibold py-3 px-8 rounded-full bg-[#009999] hover:bg-[#00999999] transition"
                 >
                   Submit
                 </button>
