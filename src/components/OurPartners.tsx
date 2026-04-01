@@ -11,6 +11,7 @@ import TataSteel from "@/assets/partners/tatasteel.webp";
 import UltraTech from "@/assets/partners/ultratech.webp";
 import Volvo from "@/assets/partners/volvo.webp";
 import IR from '@/assets/partners/Indian_Railways 2.webp'
+import NCL from '@/assets/partners/ncl-logo.webp'
 
 const partners = [
   AdithyaBirla,
@@ -20,6 +21,7 @@ const partners = [
   Hitachi,
   IndianRailway,
   IR,
+  NCL,
   Jcb,
   Jsw,
   TataSteel,
@@ -68,7 +70,7 @@ const OurPartners = () => {
               <img
                 src={logo}
                 alt="partner logo"
-                className="max-h-24 object-contain"
+                className="max-h-20 object-contain"
               />
             </div>
           ))}

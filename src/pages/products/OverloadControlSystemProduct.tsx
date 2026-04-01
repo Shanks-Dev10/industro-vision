@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import HeadingSection from "@/components/products/HeadingSection";
 import HeroBanner from "@/components/products/HeroBanner";
 import ProductDetail from "@/components/products/ProductDetail";
+import product2 from "@/assets/railmet-banner-05.jpg.webp";
 
 const OverloadControlSystemProduct = () => {
   const ProductDetails = {
@@ -30,6 +31,7 @@ const OverloadControlSystemProduct = () => {
         description2={ProductDetails.description2}
         description3={ProductDetails.description3}
         solutionLists={ProductDetails.solutionsLists}
+        headingImg={product2}
       />
       <Footer />
     </div>

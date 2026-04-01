@@ -27,14 +27,14 @@ const services = [
   {
     num: "03",
     title: "K2 (KIMAX2 AIR)",
-    desc: "We focus on real-time load monitoring, accurate axle weight measurement, and overload alerts to ensure safer and more efficient transport operations.",
+    desc: "Railmet enables real-time load monitoring, precise axle measurement, and instant alerts for safer, smarter transport.",
     image: metalImg,
     link: "/service/k2-truck-onboard-scale-system",
   },
   {
     num: "04",
     title: "Portable Weighing System",
-    desc: "Railmet is a technology-driven company delivering advanced portable weighing solutions that enable real-time load monitoring and precise wheel and axle weight measurement .",
+    desc: "A portable weighing system lets you measure weight instantly on-site without any permanent setup.",
     image: oilImg,
     link: "/service/portable-weighing-system-service",
   },
@@ -43,21 +43,15 @@ const services = [
 const processSteps = [
   {
     num: "01",
-    title: "Consultation & Inspection",
-    desc: "Our mission is to empower clients by providing reliable, innovative, and cost-effective engineering services.",
+    title: "High Performance",
+    desc: "Our commitment is to provide reliable rail technology solutions with maximize safety, efficiency, and Lifetime railway operational stability.",
     icon: <Cog size={48} />,
   },
   {
     num: "02",
-    title: "Customized Plan & Execution",
-    desc: "Based on the inspection, we provide a tailored plan with clear pricing and timelines.",
+    title: "Personalized Strategies",
+    desc: "A tailored rail cybersecurity strategy built to secure and protect operational data, and keep railway networks Adaptive against evolving Cyber risks.",
     icon: <Shield size={48} />,
-  },
-  {
-    num: "03",
-    title: "Final Check & Support",
-    desc: "After project completion, we perform a detailed quality check to ensure everything meets our high standards.",
-    icon: <Cog size={48} />,
   },
 ];
 
@@ -98,12 +92,12 @@ const Services = () => {
           >
             <div>
               <h2 className="mt-3 text-xl md:text-4xl font-semibold text-foreground ">
-                Tailored solutions for industry growth
+                Advanced rail automation that drives safety and speed.
               </h2>
             </div>
           </div>
 
-          <div className="mt-16 grid gap-12 lg:grid-cols-2 ">
+          <div className="mt-16 grid gap-12 lg:grid-cols-2 items-center">
             {/* Image */}
             <div data-aos="fade-left">
               <img
@@ -120,9 +114,9 @@ const Services = () => {
               data-aos="fade-right"
             >
               <p className=" text-xl text-black font-semibold leading-relaxed ">
-                We offer a comprehensive range of services tailored to meet the
-                unique needs of businesses in the manufacturing, construction,
-                and industrial sectors.
+                We offer advanced rail solutions, automation, and monitoring
+                services designed to meet the needs of modern railway and
+                industrial operations.
               </p>
               {processSteps.map((step, i) => (
                 <div

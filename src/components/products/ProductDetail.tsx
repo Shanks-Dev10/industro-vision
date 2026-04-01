@@ -1,23 +1,45 @@
 import HeadingImg from "@/assets/about-hero.jpg";
 import product1 from "@/assets/Lead-Image-Train-Weighing-System-Hire.webp";
 import product2 from "@/assets/railmet-banner-05.jpg.webp";
+import { NavLink } from "react-router-dom";
+import { ArrowRight, Phone, Mail } from "lucide-react";
+
+const service = [
+  {
+    name: "ALMS (Advanced Load Monitoring System)",
+    href: "/product/advanced-load-monitoring-system",
+  },
+  {
+    name: "OCLs (Overload Control System)",
+    href: "/product/overload-Control-System-product",
+  },
+  {
+    name: "K2 Truck Onboard Scale System",
+    href: "/product/truck-onboard-scale-system",
+  },
+  {
+    name: "Portable Weighing System",
+    href: "/product/portable-weighing-system",
+  },
+];
 
 const ProductDetail = ({
   description1,
   description2,
   description3,
   solutionLists,
+  headingImg,
 }) => {
   return (
     <section>
-      <div className="pb-24 pt-4 max-w-full mx-auto 2xl:max-w-7xl px-4 md:px-5 flex flex-col-reverse md:flex-row gap-8">
+      <div className="pb-24 pt-4 max-w-full mx-auto 2xl:max-w-7xl px-4 md:px-5 flex flex-col md:flex-row gap-8">
         {/* Left Content */}
-        <div className="md:w-[75%] w-full">
+        <div className="w-full md:w-[70%]">
           <div>
             <img
-              src={HeadingImg}
+              src={headingImg}
               alt="img"
-              className="w-full h-full rounded-lg"
+              className="w-full h-[400px] object-cover rounded-lg"
             />
           </div>
           <div>
@@ -79,7 +101,7 @@ const ProductDetail = ({
         </div>
 
         {/* Right Content */}
-        <div className="md:w-[25%] w-full">
+        {/* <div className="md:w-[25%] w-full">
           <div className="flex flex-col gap-[30px]">
             <div className="pl-[30px]  border-l-[1px] border-[#DCE0E3] text-[#8C8C8C] text-[16px] font-medium">
               Date <br />
@@ -115,6 +137,65 @@ const ProductDetail = ({
                 {" "}
                 $20 Million
               </span>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="lg:w-[30%] flex flex-col gap-8">
+          {/* More Services */}
+          <div className="bg-[#F2F5FB] py-8 px-5 rounded-xl">
+            <h4 className="text-xl font-semibold mb-5">More Products</h4>
+
+            {service.map((item) => (
+              <NavLink key={item.name} to={item.href}>
+                {({ isActive }) => (
+                  <div
+                    className={`p-4 rounded-lg flex justify-between items-center  mb-2 transition font-semibold group
+                            ${isActive ? "bg-white" : "hover:bg-white border-b-[1px] border-yellow-50"}`}
+                  >
+                    {item.name}
+
+                    <span
+                      className={`w-8 h-8 flex items-center justify-center rounded-full border group-hover:bg-[#F9C31F] ${isActive ? "bg-[#F9C31F]" : ""}`}
+                    >
+                      <ArrowRight size={16} />
+                    </span>
+                  </div>
+                )}
+              </NavLink>
+            ))}
+          </div>
+
+          {/* Contact Card */}
+          <div className="bg-[#0B2B3F] p-8 rounded-xl text-white">
+            <h4 className="font-bold mb-3">How Can We Help</h4>
+
+            <p className="text-gray-400 mb-6">
+              If you need any help, please contact us.
+            </p>
+
+            <div className="space-y-5">
+              <div className="flex gap-3 items-center">
+                <span className="w-14 h-14 flex justify-center items-center bg-[#FBE87E]  rounded-md">
+                  <Phone size={22} color="black" />
+                </span>
+                <a
+                  href="tel:+918939821722"
+                  target="_blank"
+                  className="hover:underline-offset-1 hover:decoration-white"
+                >
+                  +91 89398 21722
+                </a>
+              </div>
+
+              <div className="flex gap-3 items-center">
+                <span className="w-14 h-14 flex justify-center items-center bg-[#FBE87E] rounded-md">
+                  <Mail size={22} color="black" />
+                </span>
+                <a href="mailto:railmet2021@gmil.com" target="_blank">
+                  railmet2021@gmil.com
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import HeadingSection from "@/components/products/HeadingSection";
 import HeroBanner from "@/components/products/HeroBanner";
 import ProductDetail from "@/components/products/ProductDetail";
+import product4 from "@/assets/railmet-product-06.webp";
 
 const PortableWeighingSystem = () => {
   const ProductDetails = {
@@ -30,6 +31,7 @@ const PortableWeighingSystem = () => {
         description2={ProductDetails.description2}
         description3={ProductDetails.description3}
         solutionLists={ProductDetails.solutionsLists}
+        headingImg={product4}
       />
       <Footer />
     </div>

@@ -35,12 +35,12 @@ const CTASection = () => {
     <section className="py-5 md:py-28 lg:py-28 bg-[#F5F5F5]">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
         {/* CTA Container */}
-        <div className="relative rounded-t-2xl overflow-hidden">
+        <div className="relative rounded-2xl overflow-hidden">
           {/* Background Image */}
           <img
             src={ctaBg}
             alt="Industrial Plant"
-            className="w-full h-[750px] md:h-[600px] xl:h-full object-cover"
+            className="w-full md:h-[600px] h-[400px]  object-cover"
           />
 
           {/* Gradient Overlay */}
@@ -58,13 +58,13 @@ const CTASection = () => {
             </p>
 
             {/* Button */}
-            <Link to={'/contact'}>
-            <button className="flex items-center gap-3 bg-[#009999] text-[#fff] font-semibold px-6 py-3 rounded-full w-fit mb-20 ">
-              Let’s Talk
-              <span className="flex items-center justify-center w-8 h-8 rounded-full border">
-                <ArrowRight size={16} />
-              </span>
-            </button>
+            <Link to={"/contact"}>
+              <button className="flex items-center gap-3 bg-[#009999] text-[#fff] font-semibold px-6 py-3 rounded-full w-fit mb-20 ">
+                Let’s Talk
+                <span className="flex items-center justify-center w-8 h-8 rounded-full border">
+                  <ArrowRight size={16} />
+                </span>
+              </button>
             </Link>
           </div>
 
