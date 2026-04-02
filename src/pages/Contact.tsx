@@ -110,10 +110,10 @@ const Contact = () => {
                   </p>
                   <a
                     className="text-black font-medium "
-                    href="mailto:railmet2021@gmil.com"
+                    href="mailto:railmet2021@gmail.com"
                     target="_blank"
                   >
-                    railmet2021@gmil.com
+                    railmet2021@gmail.com
                   </a>
                 </div>
                 <div>

@@ -141,8 +141,8 @@ const ServiceDetails = ({
                 <span className="w-14 h-14 flex justify-center items-center bg-[#FBE87E] rounded-md">
                   <Mail size={22} color="black" />
                 </span>
-                <a href="mailto:railmet2021@gmil.com" target="_blank">
-                  railmet2021@gmil.com
+                <a href="mailto:railmet2021@gmail.com" target="_blank">
+                  railmet2021@gmail.com
                 </a>
               </div>
             </div>

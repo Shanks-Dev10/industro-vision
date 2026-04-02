@@ -137,11 +137,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:railmet2021@gmil.com" target="_blank"
+                  href="mailto:railmet2021@gmail.com" target="_blank"
                   className="text-sm text-primary-foreground/60 hover:text-[#009999] transition-colors flex items-center gap-3"
                 >
                   <Mail size={16} />
-                  railmet2021@gmil.com
+                  railmet2021@gmail.com
                 </a>
               </li>
               <li>
