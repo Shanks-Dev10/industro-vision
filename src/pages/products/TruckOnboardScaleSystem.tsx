@@ -4,7 +4,8 @@ import HeadingSection from "@/components/products/HeadingSection";
 import HeroBanner from "@/components/products/HeroBanner";
 import ProductDetail from "@/components/products/ProductDetail";
 import product3 from "@/assets/VRS241.webp";
-
+import result1 from '@/assets/K2 -2.jpeg'
+import result2 from '@/assets/K2 -3.jpeg'
 const TruckOnboardScaleSystem = () => {
   const ProductDetails = {
     description1:
@@ -32,6 +33,8 @@ const TruckOnboardScaleSystem = () => {
         description3={ProductDetails.description3}
         solutionLists={ProductDetails.solutionsLists}
         headingImg={product3}
+        result1={result1}
+        result2={result2}
       />
       <Footer />
     </div>

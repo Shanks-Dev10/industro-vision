@@ -4,13 +4,14 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
-import Map from '@/assets/map.webp'
+import Map from "@/assets/map.webp";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
     phone: "",
+    product: "",
     message: "",
   });
 
@@ -195,7 +196,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Full Name*"
                   required
-                  className="py-3 mb-6 text-sm lg:text-lg w-full outline-none border-b border-[#DCE0E3]"
+                  className="py-3 mb-6 text-sm lg:text-lg w-full outline-none border-b border-[#DCE0E3] placeholder:text-black"
                 />
 
                 <input
@@ -205,7 +206,7 @@ const Contact = () => {
                   type="email"
                   placeholder="Email*"
                   required
-                  className="py-3 mb-6 text-sm lg:text-lg w-full outline-none border-b border-[#DCE0E3]"
+                  className="py-3 mb-6 text-sm lg:text-lg w-full outline-none border-b border-[#DCE0E3] placeholder:text-black"
                 />
 
                 <input
@@ -215,8 +216,28 @@ const Contact = () => {
                   type="tel"
                   placeholder="Phone*"
                   required
-                  className="py-3 mb-6 text-sm lg:text-lg w-full outline-none border-b border-[#DCE0E3]"
+                  className="py-3 mb-6 text-sm lg:text-lg w-full outline-none border-b border-[#DCE0E3] placeholder:text-black"
                 />
+
+                <select
+                  name="product"
+                  id="product"
+                  value={formData.product}
+                  onChange={handleChange}
+                  required
+                  defaultValue=""
+                  className="py-3 mb-6 text-sm lg:text-lg w-full outline-none border-b  border-[#DCE0E3] cursor-pointer"
+                >
+                  <option value="" disabled>
+                    Select Product
+                  </option>
+                  <option value="ALMS (Advanced Load Monitoring System)">
+                    ALMS (Advanced Load Monitoring System)
+                  </option>
+                  <option value="OCLS (Overload Control System)">OCLS (Overload Control System)</option>
+                  <option value="K2 Truck Onboard Scale System">K2 Truck Onboard Scale System</option>
+                  <option value="Portable Weighing System">Portable Weighing System</option>
+                </select>
 
                 <textarea
                   name="message"
@@ -224,7 +245,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Message"
                   rows={4}
-                  className="py-3 mb-6 text-sm lg:text-lg w-full outline-none border-b border-[#DCE0E3]"
+                  className="py-3 mb-6 text-sm lg:text-lg w-full outline-none border-b border-[#DCE0E3] placeholder:text-black"
                 />
 
                 <button
@@ -244,21 +265,21 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div>
             <h3 className="text-xl lg:text-3xl font-semibold mb-6">
-                Our Service Locations
-              </h3>
-              <img src={Map} alt="map" />
+              Our Service Locations
+            </h3>
+            <img src={Map} alt="map" />
           </div>
           <div>
             <h3 className="text-xl lg:text-3xl font-semibold mb-6">
-                Our Head Office
-              </h3>
+              Our Head Office
+            </h3>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62212.84844509319!2d79.96467590332033!3d12.952451216489676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f5450d2abd1f%3A0xaa30f128184e8965!2sRailmet%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1774431282727!5m2!1sen!2sin"
               className="border-0 w-full xl:h-[600px] lg:h-[450px] md:h-[340px] h-[400px]"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe> 
+            ></iframe>
           </div>
         </div>
       </section>

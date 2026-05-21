@@ -2,8 +2,8 @@ import metalCutting from "@/assets/metal-cutting.webp";
 import { ArrowRight, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 
 const ServicesSection = () => {
@@ -11,25 +11,25 @@ const ServicesSection = () => {
     {
       title: "ALMS (Asymmetric Load Measuring System)",
       description:
-        "We focus on intelligent wagon load monitoring, proactive imbalance detection, and safer railway operations through advanced weighing innovation.",
+        "ALMS detects uneven wagon loads in real time, enabling safer, smarter railway operations. It ensures accurate load monitoring and improved rail safety. ",
       href: "/service/asymmetric-load-measuring-system",
     },
     {
       title: "OCLS (Overload Control System)",
       description:
-        "OCLS ensures precise load monitoring, intelligent analytics, and superior safety performance across every railway rake.",
+        "OCLS (Overload Control System) detects overload and underload conditions through accurate load monitoring. It improves railway safety, operational efficiency, and intelligent load management.",
       href: "/service/over-load-control-system",
     },
     {
       title: "K2 (KIMAX2 AIR)",
       description:
-        "We focus on real-time load monitoring, accurate axle weight measurement, and overload alerts to ensure safer and more efficient transport operations.",
+        "We focus on intelligent air suspension load monitoring, precise axle weight calculation, and real-time overload alerts to ensure safer and more efficient railway operations.",
       href: "/service/k2-truck-onboard-scale-system",
     },
     {
       title: "Portable Weighing System",
       description:
-        "Railmet is a technology-driven company delivering advanced portable weighing solutions that enable real-time load monitoring and precise wheel and axle weight measurement for safer and more efficient rail operations.",
+        "The Portable Weighing System enables accurate wheel and axle weight measurement anywhere without fixed infrastructure. It provides real-time monitoring to detect overload and improve operational safety. ",
       href: "/service/portable-weighing-system-service",
     },
   ];
@@ -54,9 +54,9 @@ const ServicesSection = () => {
                 <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
 
                 <p className="text-gray-600 text-lg leading-relaxed max-w-md">
-                  Our team evaluates operational requirements, site conditions,
-                  and data integration needs to design and implement advanced
-                  railway weighing and automation solutions.
+                  Railmet Technologies delivers precision railway weighing,
+                  wagon load monitoring, and automation solutions for safer and
+                  smarter rail operations.
                 </p>
               </div>
               <div className="flex md:items-center pl-0 md:pl-8">

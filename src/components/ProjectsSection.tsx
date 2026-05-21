@@ -4,6 +4,8 @@ import construction from "@/assets/metal-cutting.webp";
 import { useEffect, useState, useRef } from "react";
 import { Users, Clock, MapPin, ThumbsUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import alms from '@/assets/alms1.jpeg'
+import k2 from '@/assets/K2 -1.jpeg'
 
 interface CounterProps {
   end: number;
@@ -69,21 +71,21 @@ const products = [
     title: "ALMS(Asymmetric Load Measuring System)",
     category: "Environmental",
     year: "2015",
-    image: wind,
+    image: alms,
     link:'/product/advanced-load-monitoring-system'
   },
   {
     title: "OCLS (Overload Control System)",
     category: "Machinery",
     year: "2015",
-    image: construction,
+    image: wind,
     link:'/product/overload-Control-System-product'
   },
   {
     title: "K2(KIMAX2 AIR)",
     category: "Energy",
     year: "2018",
-    image: wind,
+    image: k2,
     link:'/product/truck-onboard-scale-system'
   },
   {

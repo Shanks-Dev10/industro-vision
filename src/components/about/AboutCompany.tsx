@@ -54,8 +54,8 @@ const AboutCompany = () => {
           </div>
 
           <h2 className="text-2xl md:text-4xl lg:text-4xl font-semibold leading-tight mb-6">
-            Pushing the boundaries of technology and manufacturing to build a
-            stronger, smarter tomorrow
+            Advancing railway technology with intelligent automation and precision load monitoring for safer, faster, and more reliable rail operations.
+
           </h2>
 
           <Link to={'/contact'}>

@@ -10,32 +10,17 @@ import Jsw from "@/assets/partners/jsw.webp";
 import TataSteel from "@/assets/partners/tatasteel.webp";
 import UltraTech from "@/assets/partners/ultratech.webp";
 import Volvo from "@/assets/partners/volvo.webp";
-import IR from '@/assets/partners/Indian_Railways 2.webp'
-import NCL from '@/assets/partners/ncl-logo.webp'
+import IR from "@/assets/partners/Indian_Railways 2.webp";
+import NCL from "@/assets/partners/ncl-logo.webp";
 
-const partners = [
-  AdithyaBirla,
-  Ambuja,
-  CaterPiller,
-  Dalmia,
-  Hitachi,
-  IndianRailway,
-  IR,
-  NCL,
-  Jcb,
-  Jsw,
-  TataSteel,
-  UltraTech,
-  Volvo,
-];
+const partners = [IndianRailway, IR, NCL];
 
-const partnersLoop = [...partners, ...partners];
+// const partnersLoop = [...partners, ...partners];
 
 const OurPartners = () => {
   return (
     <section className="py-10 md:py-28 bg-[#F5F5F5]">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
-
         {/* Top Labels */}
         <div className="flex flex-col-reverse gap-4 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b pb-8">
           <span>THE FACES BEHIND INDUSTRY</span>
@@ -61,7 +46,7 @@ const OurPartners = () => {
         </div>
 
         {/* Partner Logos */}
-        <Marquee pauseOnHover className="md:[--duration:50s] [--duration:20s]">
+        {/* <Marquee pauseOnHover className="md:[--duration:50s] [--duration:20s]">
           {partnersLoop.map((logo, index) => (
             <div
               key={index}
@@ -74,8 +59,22 @@ const OurPartners = () => {
               />
             </div>
           ))}
-        </Marquee>
+        </Marquee> */}
 
+        <div className="flex md:flex-row flex-col items-center justify-center gap-4">
+           {partners.map((logo, index) => (
+            <div
+              key={index}
+              className="flex mx-4 items-center justify-center w-[220px]  h-28 rounded-2xl border bg-white hover:shadow-md transition"
+            >
+              <img
+                src={logo}
+                alt="partner logo"
+                className="max-h-20 object-contain"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

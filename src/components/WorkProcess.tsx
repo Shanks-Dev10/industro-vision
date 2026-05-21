@@ -4,23 +4,23 @@ import { Link } from "react-router-dom";
 const steps = [
   {
     num: "01",
-    title: "Consultation & inspection:",
-    desc: "Expert railway weighing consultation and inspection, ensuring accuracy, safety, and reliability.",
+    title: "Site Review & Track Inspection",
+    desc: " We evaluate railway track conditions, infrastructure setup, and operational requirements for accurate installation planning.",
   },
   {
     num: "02",
-    title: "Customized Plan:",
-    desc: "Based on inspection findings, we deliver customized plans with transparent pricing and defined project timelines and verified results",
+    title: "Sensor Installation & System Integration",
+    desc: "Sensors are securely installed and aligned on the railway track to ensure accurate load measurement and reliable performance.",
   },
   {
     num: "03",
-    title: "Installation:",
-    desc: "Precision-driven installation ensuring seamless integration, Maximum productivity, and Sustained railway dependability",
+    title: "Calibration & Accuracy Testing",
+    desc: "Each sensor is calibrated and tested to ensure precise load measurement, stable operation, and reliable performance.",
   },
   {
     num: "04",
-    title: "Execution:",
-    desc: "An advanced security framework designed to safeguard industrial control systems and critical operations.",
+    title: "Final Validation & Commissioning",
+    desc: " The complete system undergoes final inspections and performance validation before successful deployment.",
   },
 ];
 
@@ -39,35 +39,36 @@ const WorkProcess = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
-
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
               Work process
               <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
             </h2>
 
             <div className="flex flex-col gap-8">
-             <div className="flex gap-8">
-               <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
+              <div className="flex gap-8">
+                <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
 
-              <p className="text-white-600 text-lg leading-relaxed max-w-md">
-                We start with expertise in your operational demanding
-                situations, infrastructure setup, and performance desires to
-                design a clever railway automation technology solution that
-                seamlessly into your surroundings.
-              </p>
-             </div>
+                <p className="text-white-600 text-lg leading-relaxed ">
+                  Our installation process begins with a comprehensive site
+                  review and track inspection to evaluate operational and
+                  infrastructure requirements. Sensors are precisely installed
+                  on the railway track and seamlessly integrated with existing
+                  monitoring systems. The complete setup then undergoes detailed
+                  calibration and performance testing to ensure accurate
+                  measurements, reliable operation, and enhanced railway safety.
+                </p>
+              </div>
               <div className="flex md:items-center pl-0 md:pl-8">
-                <Link to={'/about/#teams'}>
-                <button className="flex items-center justify-end w-fit gap-3 bg-[#FFFF] text-black px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#009999] hover:text-[#fff]">
-                  View All Members
-                  <span className="flex items-center justify-center w-8 h-8 rounded-full border">
-                    <ArrowRight size={16} className="hover:text-[#fff]" />
-                  </span>
-                </button>
+                <Link to={"/about/#teams"}>
+                  <button className="flex items-center justify-end w-fit gap-3 bg-[#FFFF] text-black px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#009999] hover:text-[#fff]">
+                    View All Members
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full border">
+                      <ArrowRight size={16} className="hover:text-[#fff]" />
+                    </span>
+                  </button>
                 </Link>
               </div>
             </div>
-
           </div>
         </div>
 

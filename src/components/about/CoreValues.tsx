@@ -6,26 +6,26 @@ import valueInnovationImg from "@/assets/value-innovation.jpg";
 const values = [
   {
     num: "01.",
-    title: "AI-Powered Insights",
-    text: "Intelligent analysis of wagon load data to ensure balanced and accurate rail operations.",
+    title: "Railway Safety",
+    text: "Protecting rail infrastructure and operations through accurate load monitoring.",
     image: valueQualityImg,
   },
   {
     num: "02.",
-    title: "Load Precision",
-    text: "High-accuracy technology that measures wagon weight and detects load imbalance.",
+    title: "Smart load measurement",
+    text: " Smart analysis of wagon load data to ensure accurate measurements and balanced rail operations.",
     image: valueTeamworkImg,
   },
   {
     num: "03.",
-    title: "Railway Safety",
-    text: "Protecting rail infrastructure and operations through accurate load monitoring.",
+    title: "Load Precision",
+    text: " Advanced weighing technology designed for precise wagon load measurement and imbalance detection.",
     image: valueSustainabilityImg,
   },
   {
     num: "04.",
     title: "Future-Ready Innovation",
-    text: "Innovating smart systems that shape the future of wagon load management.",
+    text: " Building intelligent railway solutions that enhance the future of wagon load monitoring and management.",
     image: valueInnovationImg,
   },
 ];
@@ -55,14 +55,14 @@ const CoreValues = () => {
               <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
 
               <p className="text-gray-600 text-lg leading-relaxed max-w-md">
-                Balancing rails with brainy tech driven by innovation and precision, we build smarter solutions for safer rail operations.
+               Balancing rails with intelligent technology, we drive innovation and precision to deliver smarter solutions for safer and more efficient rail operations. 
               </p>
             </div>
 
           </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
           {values.map((val, i) => (
             <div
@@ -71,7 +71,7 @@ const CoreValues = () => {
             >
 
               {/* Top row */}
-              <div className="flex justify-between items-start mb-8">
+              <div className="flex  items-start mb-8 gap-3 md:gap-28">
 
                 <span className="text-sm text-gray-400 font-semibold">
                   {val.num}
@@ -80,7 +80,7 @@ const CoreValues = () => {
                 <img
                   src={val.image}
                   alt={val.title}
-                  className="w-[250px] h-[150px] object-cover rounded-lg"
+                  className="w-[300px] h-[150px] object-cover rounded-lg"
                 />
 
               </div>

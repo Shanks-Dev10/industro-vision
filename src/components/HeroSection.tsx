@@ -11,12 +11,11 @@ const slides = [
     label: "Innovation Focused",
     heading: (
       <>
-        Innovative <span className="text-[#009999]">Weighing Solutions</span>{" "}
-        for a for the Railway Industries.
+        Precision Beyond Limits 
       </>
     ),
     description:
-      "Our certified welders and technicians ensure every joint meets the highest standards of structural integrity.",
+      "Railmet Technologies delivers precise wagon load monitoring solutions for safer, smarter, and more efficient railway operations. ",
     image: slider2,
     alt: "Professional welder working with sparks in factory",
   },
@@ -24,12 +23,11 @@ const slides = [
     label: "Trust & Precision Focused",
     heading: (
       <>
-        Precision Weighing That Powers
-        <span className="text-[#009999]">Rail Progress.</span>
+        Advanced Load Measuring 
       </>
     ),
     description:
-      "We deliver cutting-edge metal engineering and fabrication services trusted by leading industries worldwide.",
+      "Smart railway automation and wagon load monitoring solutions built to ensure accuracy, safety, and reliable freight operations. ",
     image: slider1,
     alt: "Female industrial engineer with tablet in factory",
   },
@@ -82,7 +80,7 @@ const HeroSection = () => {
               {slide.label}
             </span>
             <h1
-              className=" font-bold leading-loose text-primary-foreground text-2xl md:text-5xl lg:text-6xl xl:text-7xl"
+              className=" font-bold  text-primary-foreground text-[26px] md:text-[48px] lg:text-[60px] xl:text-[72px] xl:leading-[80px]"
               data-aos="fade-up"
               data-aos-delay="200"
             >

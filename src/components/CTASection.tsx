@@ -49,12 +49,12 @@ const CTASection = () => {
           {/* CTA Content */}
           <div className="absolute inset-0 flex flex-col justify-center px-4 lg:px-20 text-white max-w-2xl">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
-              Moving your industry manufacturing forward
+              Moving Railway Load Monitoring Forward with Smart Automation.
             </h2>
 
             <p className="text-sm md:text-lg lg:text-lg text-white/80 mb-10">
-              Pushing the boundaries of technology and manufacturing to build a
-              stronger, smarter tomorrow
+              Pushing the boundaries of railway technology and automation to
+              build safer, smarter, and more efficient rail operations.
             </p>
 
             {/* Button */}

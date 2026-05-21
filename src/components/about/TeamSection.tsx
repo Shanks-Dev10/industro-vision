@@ -64,9 +64,9 @@ const TeamSection = () => {
               </div>
 
               {/* Plus Icon */}
-              <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-black/40 flex items-center justify-center">
+              {/* <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-black/40 flex items-center justify-center">
                 <Plus className="w-4 h-4 text-white" />
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

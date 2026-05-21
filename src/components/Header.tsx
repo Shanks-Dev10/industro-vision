@@ -80,7 +80,7 @@ const Header = () => {
                 <li key={item.item}>
                   <Link
                     to={item.href}
-                    className="text-sm font-medium text-foreground/70"
+                    className="text-sm font-medium text-black"
                   >
                     {item.item}
                   </Link>
@@ -94,12 +94,12 @@ const Header = () => {
                 target="_blank"
                 className="flex items-center gap-2 text-sm font-medium text-foreground/70"
               >
-                <Phone className="h-4 w-4 text-secondary" />
+                <Phone className="h-4 w-4 text--[#009999]" />
                 +91 90032 53007
               </a>
 
               <Link to={"/contact"}>
-                <Button variant="gold" className="rounded-full">
+                <Button  className="rounded-full bg-[#009999]">
                   Request A Quote
                 </Button>
               </Link>

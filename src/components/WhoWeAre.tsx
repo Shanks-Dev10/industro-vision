@@ -9,8 +9,8 @@ const WhoWeAre = () => {
         {/* Top Small Labels */}
 
         <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
-          <span>Fueling progress powering the future</span>
-          <span>[ OUR STORY ]</span>
+          <span>Built to Power Railway Progress. </span>
+          {/* <span>[ OUR STORY ]</span> */}
         </div>
 
         {/* Main Heading */}

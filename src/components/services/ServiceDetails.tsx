@@ -28,7 +28,7 @@ const ServiceDetails = ({
   return (
     <section className="2xl:max-w-7xl max-w-full mx-auto px-4 md:px-8">
       {/* Top Image */}
-      <img src={serviceImage} alt="service" className="w-full rounded-xl" />
+      <img src={serviceImage} alt="service" className="w-full rounded-xl h-full lg:h-[500px] object-cover" />
 
       <div className="flex flex-col lg:flex-row gap-10 py-10">
         {/* LEFT SIDE */}

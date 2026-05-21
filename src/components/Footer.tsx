@@ -10,9 +10,10 @@ import {
   MapPin,
   Mail,
   Phone,
+  TwitterIcon
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import Whatsapp from "@/assets/whatsapp.webp";
+import Whatsapp from "@/assets/whatsapp.gif";
 import { FaXTwitter } from "react-icons/fa6";
 import logo from "@/assets/railmet-logo.webp";
 
@@ -24,6 +25,7 @@ const Footer = () => {
     },
     { icon: Youtube, link: "https://www.youtube.com/@Railmet/shorts" },
     { icon: Instagram, link: "https://www.instagram.com/railmet_tech/" },
+    { icon: TwitterIcon, link: "https://x.com/Railmet_Tech" },
   ];
   const year = new Date().getFullYear();
   const NavLinks = [
@@ -200,7 +202,7 @@ const Footer = () => {
         <a
           href="https://wa.me/+918939821722"
           target="_blank"
-          className="w-16 h-16 fixed bottom-10 right-5 animate-bounce"
+          className="w-32 h-32 fixed bottom-10 lg:right-5  right-0"
         >
           <img src={Whatsapp} alt="whatsapp" className="w-full h-full" />
         </a>

@@ -3,7 +3,9 @@ import Header from "@/components/Header";
 import HeadingSection from "@/components/products/HeadingSection";
 import HeroBanner from "@/components/products/HeroBanner";
 import ProductDetail from "@/components/products/ProductDetail";
-import product1 from "@/assets/Lead-Image-Train-Weighing-System-Hire.webp";
+import product1 from "@/assets/alms1.jpeg";
+import result1 from '@/assets/alms2.jpeg'
+import result2 from '@/assets/alms3.jpeg'
 
 const AdvancedLoadMonitoringSystem = () => {
   const ProductDetails = {
@@ -32,6 +34,8 @@ const AdvancedLoadMonitoringSystem = () => {
         description3={ProductDetails.description3}
         solutionLists={ProductDetails.solutionsLists}
         headingImg={product1}
+        result1={result1}
+        result2={result2}
       />
       <Footer />
     </div>

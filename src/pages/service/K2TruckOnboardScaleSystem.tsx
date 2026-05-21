@@ -3,10 +3,11 @@ import Footer from "@/components/Footer";
 import HeroBanner from "@/components/services/HeroSection";
 import HeadingSection from "@/components/services/HeadingSection";
 import ServiceDetails from "@/components/services/ServiceDetails";
-import product1 from "@/assets/Lead-Image-Train-Weighing-System-Hire.webp";
-import product2 from "@/assets/railmet-banner-05.jpg.webp";
 
-import serviceImg from "@/assets/service_6.jpg";
+
+import serviceImg from "@/assets/VRS241.webp";
+import product1 from '@/assets/K2 -2.jpeg'
+import product2 from '@/assets/K2 -3.jpeg'
 
 const serviceData = {
   title: "K2 Truck Onboard Scale System",

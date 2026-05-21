@@ -58,7 +58,7 @@ const OurCompany = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
             <div className="bg-white rounded-md rounded-tl-[50px] p-8 border border-gray-200">
               {/* Top row */}

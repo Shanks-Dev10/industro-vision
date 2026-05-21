@@ -3,8 +3,10 @@ import Footer from "@/components/Footer";
 import { ArrowRight, ChevronRight, Cog, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import alms from '@/assets/alms1.jpeg'
+import k2 from '@/assets/K2 -1.jpeg'
+
 import servicesHero from "@/assets/services-hero.webp";
-import metalImg from "@/assets/metal-cutting.webp";
 import oilImg from "@/assets/oil-platform.webp";
 import workProcessImg from "@/assets/work-process.webp";
 import { Link } from "react-router-dom";
@@ -14,7 +16,7 @@ const services = [
     num: "01",
     title: "Asymmetric Load Measuring System",
     desc: "We focus on intelligent wagon load monitoring, proactive imbalance detection, and safer railway operations through advanced weighing innovation.",
-    image: metalImg,
+    image: alms,
     link: "/service/asymmetric-load-measuring-system",
   },
   {
@@ -28,7 +30,7 @@ const services = [
     num: "03",
     title: "K2 (KIMAX2 AIR)",
     desc: "Railmet enables real-time load monitoring, precise axle measurement, and instant alerts for safer, smarter transport.",
-    image: metalImg,
+    image: k2,
     link: "/service/k2-truck-onboard-scale-system",
   },
   {
@@ -91,8 +93,9 @@ const Services = () => {
             data-aos="fade-up"
           >
             <div>
-              <h2 className="mt-3 text-xl md:text-4xl font-semibold text-foreground ">
-                Advanced rail automation that drives safety and speed.
+              <h2 className="mt-3 text-xl md:text-4xl font-semibold text-foreground text-center">
+                Advancing railway technology with intelligent automation and precision load monitoring for safer, faster, and more reliable rail operations.
+
               </h2>
             </div>
           </div>

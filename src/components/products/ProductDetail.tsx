@@ -1,6 +1,4 @@
 import HeadingImg from "@/assets/about-hero.jpg";
-import product1 from "@/assets/Lead-Image-Train-Weighing-System-Hire.webp";
-import product2 from "@/assets/railmet-banner-05.jpg.webp";
 import { NavLink } from "react-router-dom";
 import { ArrowRight, Phone, Mail } from "lucide-react";
 
@@ -29,6 +27,8 @@ const ProductDetail = ({
   description3,
   solutionLists,
   headingImg,
+  result1,
+  result2
 }) => {
   return (
     <section>
@@ -86,12 +86,12 @@ const ProductDetail = ({
               </div>
               <div className="grid md:grid-cols-2 gap-5 py-5">
                 <img
-                  src={product1}
+                  src={result1}
                   alt="product"
                   className="rounded-xl h-[250px] object-cover w-full"
                 />
                 <img
-                  src={product2}
+                  src={result2}
                   alt="product"
                   className="rounded-xl h-[250px] object-cover w-full"
                 />

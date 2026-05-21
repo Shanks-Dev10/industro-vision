@@ -2,9 +2,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import aboutHeroImg from "@/assets/about-hero.jpg";
 import { ArrowRight, ChevronRight } from "lucide-react";
-import product1 from "@/assets/Lead-Image-Train-Weighing-System-Hire.webp";
+import product1 from "@/assets/alms1.jpeg";
 import product2 from "@/assets/railmet-banner-05.jpg.webp";
-import product3 from "@/assets/VRS241.webp";
+import product3 from "@/assets/K2 -2.jpeg";
 import product4 from "@/assets/railmet-product-06.webp";
 import { Link } from "react-router-dom";
 import {
@@ -19,14 +19,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const projects = [
   {
     num: "01",
-    title: "ALMS (Advanced Load Monitoring System)",
+    title: "ALMS(Asymmetric Load Monitoring System)",
     category: "Railway Safety and Efficiency",
     image: product1,
     link:'/product/advanced-load-monitoring-system'
   },
   {
     num: "02",
-    title: "OCLs (Overload Control System)",
+    title: "OCLS(overload Control system)",
     category: "Accurate Weight Data in Real-Time ",
     image: product2,
     link:'/product/overload-Control-System-product'
