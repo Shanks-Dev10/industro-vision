@@ -6,6 +6,8 @@ import ProductDetail from "@/components/products/ProductDetail";
 import product2 from "@/assets/railmet-banner-05.jpg.webp";
 import result1 from "@/assets/Lead-Image-Train-Weighing-System-Hire.webp";
 import result2 from "@/assets/railmet-banner-05.jpg.webp";
+import ocls from '@/assets/ocls.webp'
+import ocls1 from '@/assets/ocls2.webp'
 
 const OverloadControlSystemProduct = () => {
   const ProductDetails = {
@@ -33,8 +35,8 @@ const OverloadControlSystemProduct = () => {
         description2={ProductDetails.description2}
         description3={ProductDetails.description3}
         solutionLists={ProductDetails.solutionsLists}
-        headingImg={product2}
-        result1={result1}
+        headingImg={ocls}
+        result1={ocls1}
         result2={result2}
       />
       <Footer />

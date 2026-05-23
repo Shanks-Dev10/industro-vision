@@ -3,9 +3,9 @@ import Header from "@/components/Header";
 import aboutHeroImg from "@/assets/about-hero.jpg";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import product1 from "@/assets/alms1.jpeg";
-import product2 from "@/assets/railmet-banner-05.jpg.webp";
+import product2 from "@/assets/ocls.webp";
 import product3 from "@/assets/K2 -2.jpeg";
-import product4 from "@/assets/railmet-product-06.webp";
+import product4 from "@/assets/weighting4.webp";
 import { Link } from "react-router-dom";
 import {
   Card,

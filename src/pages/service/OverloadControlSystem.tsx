@@ -5,6 +5,8 @@ import HeadingSection from "@/components/services/HeadingSection";
 import ServiceDetails from "@/components/services/ServiceDetails";
 import product1 from "@/assets/Lead-Image-Train-Weighing-System-Hire.webp";
 import product2 from "@/assets/railmet-banner-05.jpg.webp";
+import ocls from '@/assets/ocls.webp'
+import ocls1 from '@/assets/ocls2.webp'
 
 import serviceImg from "@/assets/service_6.jpg";
 
@@ -19,7 +21,7 @@ const serviceData = {
   serviceDescription:
     "Our overload control solution is designed to eliminate the common challenges of wagon overloading and underloading in railway operations. It provides real-time weight monitoring of wagon wheels and ensures the load distribution across the entire rake.",
 
-  image: serviceImg,
+  image: ocls,
 
   points: [
     {
@@ -51,7 +53,7 @@ const serviceData = {
       "Optional System Connectivity for centralized data tracking and operational transparency.",
     ],
   },
-  product1Img: product1,
+  product1Img: ocls1,
   product2Img: product2,
 };
 

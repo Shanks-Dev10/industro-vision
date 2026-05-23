@@ -5,6 +5,8 @@ import HeadingSection from "@/components/services/HeadingSection";
 import ServiceDetails from "@/components/services/ServiceDetails";
 import product1 from "@/assets/Lead-Image-Train-Weighing-System-Hire.webp";
 import product2 from "@/assets/railmet-banner-05.jpg.webp";
+import weighting from '@/assets/weighting5.webp'
+import weighting1 from '@/assets/weighting4.webp'
 
 import serviceImg from "@/assets/service_6.jpg";
 
@@ -19,7 +21,7 @@ const serviceData = {
   serviceDescription:
     "The Portable Weighing System is a small, lightweight, and transportable system developed to accurately measure wheel weight, axle weight, and total wagon weight on site.",
 
-  image: serviceImg,
+  image: weighting,
 
   points: [
     {
@@ -55,7 +57,7 @@ const serviceData = {
       "Pre-calibrated system for accurate and consistent results",
     ],
   },
-  product1Img: product1,
+  product1Img: weighting1,
   product2Img: product2,
 };
 

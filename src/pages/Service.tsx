@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 
 import alms from '@/assets/alms1.jpeg'
 import k2 from '@/assets/K2 -1.jpeg'
+import ocls from '@/assets/ocls.webp'
+import weighting from '@/assets/weighting5.webp'
 
 import servicesHero from "@/assets/services-hero.webp";
 import oilImg from "@/assets/oil-platform.webp";
@@ -23,7 +25,7 @@ const services = [
     num: "02",
     title: "Overload Control System",
     desc: "OCLS ensures precise load monitoring, intelligent analytics, and superior safety performance across every railway rake.",
-    image: oilImg,
+    image: ocls,
     link: "/service/over-load-control-system",
   },
   {
@@ -37,7 +39,7 @@ const services = [
     num: "04",
     title: "Portable Weighing System",
     desc: "A portable weighing system lets you measure weight instantly on-site without any permanent setup.",
-    image: oilImg,
+    image: weighting,
     link: "/service/portable-weighing-system-service",
   },
 ];

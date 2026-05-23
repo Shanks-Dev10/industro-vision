@@ -6,6 +6,8 @@ import ProductDetail from "@/components/products/ProductDetail";
 import product4 from "@/assets/railmet-product-06.webp";
 import result1 from "@/assets/Lead-Image-Train-Weighing-System-Hire.webp";
 import result2 from "@/assets/railmet-banner-05.jpg.webp";
+import weighting from '@/assets/weighting5.webp'
+import weighting1 from '@/assets/weighting4.webp'
 
 const PortableWeighingSystem = () => {
   const ProductDetails = {
@@ -33,8 +35,8 @@ const PortableWeighingSystem = () => {
         description2={ProductDetails.description2}
         description3={ProductDetails.description3}
         solutionLists={ProductDetails.solutionsLists}
-        headingImg={product4}
-        result1={result1}
+        headingImg={weighting}
+        result1={weighting1}
         result2={result2}
       />
       <Footer />

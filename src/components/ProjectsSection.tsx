@@ -6,6 +6,8 @@ import { Users, Clock, MapPin, ThumbsUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import alms from '@/assets/alms1.jpeg'
 import k2 from '@/assets/K2 -1.jpeg'
+import ocls from '@/assets/ocls.webp'
+import weighting from '@/assets/weighting5.webp'
 
 interface CounterProps {
   end: number;
@@ -78,7 +80,7 @@ const products = [
     title: "OCLS (Overload Control System)",
     category: "Machinery",
     year: "2015",
-    image: wind,
+    image: ocls,
     link:'/product/overload-Control-System-product'
   },
   {
@@ -92,7 +94,7 @@ const products = [
     title: "Industrial equipment optimization",
     category: "Production",
     year: "2020",
-    image: construction,
+    image: weighting,
     link:'/product/portable-weighing-system'
   },
 ];
