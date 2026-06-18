@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
-import slider1 from "@/assets/slider_1.jpg";
-import slider2 from "@/assets/slider_2.jpg";
-import slider3 from "@/assets/railmet-banner-04.webp";
+import slider1 from "@/assets/Home_slider1.png";
+import slider2 from "@/assets/Home_slider2.png";
+import slider3 from "@/assets/Home_slider3.png";
 import { Link } from "react-router-dom";
 
 const slides = [
@@ -66,7 +66,14 @@ const HeroSection = () => {
     <section
       id="home"
       className="relative min-h-screen bg-primary dot-pattern overflow-hidden bg-no-repeat bg-center bg-cover"
-      style={{ background: `url(${slide.image})` }}
+      style={{
+    backgroundImage: `
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(${slide.image})
+    `,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
     >
       <div className=" dot-pattern overflow-hidden absolute w-full h-full ">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 pt-32 pb-20 lg:flex-row lg:pt-40 home-bg ">

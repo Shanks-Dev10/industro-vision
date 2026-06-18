@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import Service from "./pages/Service";
 import Product from "./pages/Product";
 import About from "./pages/About";
+import Projects from "./pages/ourProjects";
 import Contact from "./pages/Contact";
 import AsymmetricLoadMeasuringSystem from "./pages/service/AsymmetricLoadMeasuringSystem";
 import OverloadControlSystem from "./pages/service/OverloadControlSystem";
@@ -21,6 +22,7 @@ import K2TruckOnboardScaleSystem from "./pages/service/K2TruckOnboardScaleSystem
 import Clients from "./pages/Clients";
 import PortableWeighingSystem from "./pages/products/PortableWeighingSystem";
 import PortableWeighingSustemService from "./pages/service/PortableWeighingSystem";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +42,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
+        <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
@@ -82,6 +85,10 @@ const App = () => {
             <Route
               path="/clients"
               element={<Clients />}
+            />
+            <Route
+              path="/our-project"
+              element={<Projects />}
             />
             <Route path="*" element={<NotFound />} />
           </Routes>
