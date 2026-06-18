@@ -7,7 +7,7 @@ import product1 from "@/assets/alms1.jpeg";
 import result1 from '@/assets/alms2.jpeg'
 import result2 from '@/assets/alms3.jpeg'
 
-const AdvancedLoadMonitoringSystem = () => {
+const AsymmetricLoadMeasuringSystem = () => {
   const ProductDetails = {
     description1:
       "Trains carry heavy loads, and any imbalance can cause a significant issue to the railway system. Wagons carrying overloaded and unbalanced loads exert pressure on the railway track, which can cause damage to the track and pose safety hazards as well as raise the cost of track maintenance. The operators face difficulty in taking the required actions due to the lack of monitoring systems that can detect the overload conditions during train operation. The operators require a reliable system that can help them detect the unbalanced conditions in real time.",
@@ -26,8 +26,8 @@ const AdvancedLoadMonitoringSystem = () => {
   return (
     <div>
       <Header />
-      <HeroBanner title={"Advanced Load Monitoring System"} />
-      <HeadingSection heading={"ALMS (Advanced Load Monitoring System)"} />
+      <HeroBanner title={"Asymmetric Load Monitoring System"} />
+      <HeadingSection heading={"ALMS (Asymmetric Load Monitoring System)"} />
       <ProductDetail
         description1={ProductDetails.description1}
         description2={ProductDetails.description2}
@@ -41,4 +41,4 @@ const AdvancedLoadMonitoringSystem = () => {
     </div>
   );
 };
-export default AdvancedLoadMonitoringSystem;
+export default AsymmetricLoadMeasuringSystem;

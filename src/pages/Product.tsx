@@ -22,7 +22,7 @@ const projects = [
     title: "ALMS(Asymmetric Load Monitoring System)",
     category: "Railway Safety and Efficiency",
     image: product1,
-    link:'/product/advanced-load-monitoring-system'
+    link:'/product/asymmetric-load-monitoring-system'
   },
   {
     num: "02",

@@ -14,7 +14,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AsymmetricLoadMeasuringSystem from "./pages/service/AsymmetricLoadMeasuringSystem";
 import OverloadControlSystem from "./pages/service/OverloadControlSystem";
-import AdvancedLoadMonitoringSystem from "./pages/products/AdvancedLoadMonitoringSystem";
+import AsymmetricLoadMeasuringSystem1 from "./pages/products/AdvancedLoadMonitoringSystem";
 import OverloadControlSystemProduct from "./pages/products/OverloadControlSystemProduct";
 import TruckOnboardScaleSystem from "./pages/products/TruckOnboardScaleSystem";
 import K2TruckOnboardScaleSystem from "./pages/service/K2TruckOnboardScaleSystem";
@@ -68,8 +68,8 @@ const App = () => {
               element={<OverloadControlSystemProduct />}
             />
             <Route
-              path="/product/advanced-load-monitoring-system"
-              element={<AdvancedLoadMonitoringSystem />}
+              path="/product/asymmetric-load-monitoring-system"
+              element={<AsymmetricLoadMeasuringSystem1/>}
             />
             <Route
               path="/product/truck-onboard-scale-system"
