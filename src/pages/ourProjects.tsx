@@ -13,6 +13,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
+import Hero from "@/components/project/Hero";
+import SectionIntro from "@/components/project/SectionIntro";
+import CompletedProjects from "@/components/project/CompletedProjects";
+import ProjectImpact from "@/components/project/ProjectImpact";
+import InstallationProcess from "@/components/project/InstallationProcess";
+import ProjectGallery from "@/components/project/ProjectGallery";
 
 const projects = [
   {
@@ -72,7 +78,7 @@ export default function Projects() {
     <>
     <Header/>
       {/* Hero Section */}
-      <section className="relative h-[420px] overflow-hidden">
+      {/* <section className="relative h-[420px] overflow-hidden">
               <div className="absolute inset-0">
                 <img
                   src={aboutHeroImg}
@@ -95,10 +101,10 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-            </section>
+            </section> */}
 
       {/* Projects Gallery */}
-      <section className="py-24 bg-white">
+      {/* <section className="py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
 
           <div className="text-center mb-16">
@@ -140,7 +146,14 @@ export default function Projects() {
 
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <Hero/>
+      <SectionIntro />
+      <CompletedProjects/>
+      <ProjectImpact />
+      <InstallationProcess />
+      <ProjectGallery />
       <Footer/>
     </>
   );
