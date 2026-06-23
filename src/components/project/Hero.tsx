@@ -1,10 +1,11 @@
-import { ArrowRight, Users } from "lucide-react";
+import { ArrowRight, Users,ChevronRight } from "lucide-react";
 import TrackPhoto from "./TrackPhoto";
 import aboutHeroImg from "@/assets/about-hero.jpg";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section className="relative h-[600px] md:h-[700px] overflow-hidden ">
+    <section className="relative h-[420px] overflow-hidden ">
       <div className="absolute inset-0">
         <img
           src={aboutHeroImg}
@@ -15,7 +16,7 @@ export default function Hero() {
         <div className="absolute inset-0 dot-pattern opacity-30" />
       </div>
 
-      <div className="relative h-full mx-auto flex max-w-7xl flex-col items-center justify-center  gap-10 px-5 py-4 md:flex-row md:items-center md:px-8 md:py-8">
+      {/* <div className="relative h-full mx-auto flex max-w-7xl flex-col items-center justify-center  gap-10 px-5 py-4 md:flex-row md:items-center md:px-8 md:py-8">
         <div className="max-w-xl">
           <h1 className="font-display md:text-4xl font-bold leading-tight text-white text-2xl">
             Projects
@@ -51,7 +52,19 @@ export default function Hero() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
+       <div className="relative z-10 mx-auto flex h-full max-w-7xl items-end px-6 pb-2">
+                <div data-aos="fade-up">
+                  <h1 className="text-5xl font-extrabold text-primary-foreground md:text-6xl">
+                    Our Projects
+                  </h1>
+                  <div className="my-4 flex items-center gap-2 text-sm text-primary-foreground/60">
+                    <Link to={"/"}>Home</Link>
+                    <ChevronRight className="h-3 w-3" />
+                    <span className="text-[#009999]">OurProjects</span>
+                  </div>
+                </div>
+              </div>
     </section>
   );
 }

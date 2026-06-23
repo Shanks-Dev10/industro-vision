@@ -1,5 +1,6 @@
 import { Trophy, Target, Shield, MapPin } from "lucide-react";
 import { impactStats, projectLocations } from "@/data/content";
+import MapImg from "@/assets/our_projects/map.jpg"
 
 const icons = {
   trophy: Trophy,
@@ -45,11 +46,9 @@ export default function ProjectImpact() {
           </h3>
           <div className="flex gap-4">
             <div className="relative hidden h-44 w-44 flex-shrink-0 items-center justify-center rounded-lg bg-gray-50 sm:flex">
-              <svg viewBox="0 0 200 230" className="h-full w-full text-gray-300" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M70 10 L130 12 L150 40 L145 70 L160 95 L150 130 L160 160 L130 200 L100 220 L80 200 L60 160 L40 130 L50 95 L35 60 L50 30 Z" />
-              </svg>
-              <MapPin className="absolute bottom-10 left-1/2 h-5 w-5 -translate-x-1/2 fill-brand-green text-red-700" />
-              <MapPin className="absolute bottom-6 left-[58%] h-5 w-5 -translate-x-1/2 fill-brand-green text-red-700" />
+              <img src={MapImg} alt="map" />
+              <MapPin className="absolute bottom-[85px]  left-[30%] h-5 w-5 -translate-x-1/2 fill-brand-green text-red-700 " />
+              <MapPin className="absolute bottom-[85px]  left-[40%] h-5 w-5 -translate-x-1/2 fill-brand-green text-red-700" />
             </div>
 
             <div className="flex-1 space-y-3 rounded-lg border border-gray-100 p-3">
@@ -57,8 +56,8 @@ export default function ProjectImpact() {
                 <div key={loc.id} className="flex items-start gap-2 rounded-md p-2 hover:bg-gray-50">
                   <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
                   <div className="text-xs">
-                    <p className="font-semibold text-navy-900">
-                      {loc.id} <span className="ml-1">{loc.title}</span>
+                    <p className="font-semibold  text-green-500">
+                      {loc.id} <span className="ml-1 text-black">{loc.title}</span>
                     </p>
                     <p className="text-gray-500">{loc.subtitle}</p>
                     <p className="font-semibold text-green-500">{loc.status}</p>

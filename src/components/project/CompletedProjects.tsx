@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle2, MapPin } from "lucide-react";
 import TrackPhoto from "./TrackPhoto";
 import { completedProjects } from "@/data/content";
+import { Link } from "react-router-dom";
 
 
 export default function CompletedProjects() {
@@ -11,13 +12,13 @@ export default function CompletedProjects() {
           <h3 className="font-display text-xl font-bold text-navy-900 sm:text-2xl">
             Completed Projects
           </h3>
-          <a
+          {/* <a
             href="#"
             className="hidden items-center gap-2 rounded-md border border-brand-green px-4 py-2 text-xs font-semibold text-brand-green-dark transition-colors hover:bg-brand-green/10 sm:inline-flex"
           >
             VIEW ALL PROJECTS
             <ArrowRight className="h-3.5 w-3.5" />
-          </a>
+          </a> */}
         </div>
 
         <div className="grid gap-6 lg:grid-cols-2">
@@ -49,22 +50,22 @@ export default function CompletedProjects() {
                   </span>
                 </div>
 
-                <p className="mt-3 text-sm leading-relaxed text-gray-500">
+                <p className="mt-3 text-sm leading-relaxed text-black">
                   {project.description}
                 </p>
 
                 <div className="mt-4 grid grid-cols-4 gap-2">
                   {project.thumbs.map((thumb, i) => (
                     <div key={i} className="h-16 overflow-hidden rounded-md">
-                      <img src={thumb}  className="h-full w-full" />
+                      <img src={thumb}  className="h-full w-full object-cover" />
                     </div>
                   ))}
                 </div>
 
-                <button className="mt-4 inline-flex items-center gap-2 rounded-md border border-gray-200 px-4 py-2 text-xs font-semibold text-navy-900 transition-colors hover:border-brand-green hover:text-brand-green-dark">
+                <a href={project.link} className="mt-4 inline-flex items-center gap-2 rounded-md border border-gray-200 px-4 py-2 text-xs font-semibold text-navy-900 transition-colors hover:border-brand-green hover:text-brand-green-dark">
                   VIEW GALLERY
                   <ArrowRight className="h-3.5 w-3.5" />
-                </button>
+                </a>
               </div>
             </article>
           ))}

@@ -1,13 +1,3 @@
-import project1 from "../assets/our_projects/Our_project1.jpeg";
-import project2 from "../assets/our_projects/Our_project2.jpeg";
-import project3 from "../assets/our_projects/Our_project3.jpeg";
-import project4 from "../assets/our_projects/Our_project4.jpeg";
-import project5 from "../assets/our_projects/Our_project5.jpeg";
-import project6 from "../assets/our_projects/Our_project6.jpeg";
-import project7 from "../assets/our_projects/Our_project7.jpeg";
-import project8 from "../assets/our_projects/Our_project8.jpeg";
-import project9 from "../assets/our_projects/Our_project9.jpeg";
-import project10 from "../assets/our_projects/Our_project10.jpeg";
 import aboutHeroImg from "@/assets/about-hero.jpg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -20,58 +10,6 @@ import ProjectImpact from "@/components/project/ProjectImpact";
 import InstallationProcess from "@/components/project/InstallationProcess";
 import ProjectGallery from "@/components/project/ProjectGallery";
 
-const projects = [
-  {
-    id: 1,
-    title: "Track Load Monitoring System",
-    image: project1,
-  },
-  {
-    id: 2,
-    title: "Railway Sensor Installation",
-    image: project2,
-  },
-  {
-    id: 3,
-    title: "TrackLink Monitoring Unit",
-    image: project3,
-  },
-  {
-    id: 4,
-    title: "Rail Weight Calibration",
-    image: project4,
-  },
-  {
-    id: 5,
-    title: "Railway Load Cell Integration",
-    image: project5,
-  },
-  {
-    id: 6,
-    title: "Track Railway Sensor Setup",
-    image: project6,
-  },
-  {
-    id: 7,
-    title: "TrackLink Field Deployment",
-    image: project7,
-  },
-  {
-    id: 8,
-    title: "Railway Monitoring Dashboard",
-    image: project8,
-  },
-  {
-    id: 9,
-    title: "ALMS Calibration System",
-    image: project9,
-  },
-  {
-    id: 10,
-    title: "Railway Weight Measurement",
-    image: project10,
-  },
-];
 
 export default function Projects() {
   return (

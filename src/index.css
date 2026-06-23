@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -84,26 +84,44 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-body antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading font-bold;
   }
 }
 
 /* Dot grid pattern */
 .dot-pattern {
-  background-image: radial-gradient(circle, hsl(var(--card) / 0.11) 2px, transparent 1px);
+  background-image: radial-gradient(
+    circle,
+    hsl(var(--card) / 0.11) 2px,
+    transparent 1px
+  );
   background-size: 24px 24px;
 }
 
 .dot-pattern-light {
-  background-image: radial-gradient(circle, hsl(var(--muted-foreground) / 0.1) 1px, transparent 1px);
+  background-image: radial-gradient(
+    circle,
+    hsl(var(--muted-foreground) / 0.1) 1px,
+    transparent 1px
+  );
   background-size: 24px 24px;
 }
-html,body{
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -116,17 +134,15 @@ html,body{
   }
 }
 
-
 .animate-marquee {
   animation: marquee var(--duration, 4s) linear infinite;
 }
 
 .custom-pagination .swiper-pagination-bullet {
-  background: #0B2B3F;
-  opacity: 1; 
+  background: #0b2b3f;
+  opacity: 1;
 }
 
 .custom-pagination .swiper-pagination-bullet-active {
-  background: #FBE87E;
+  background: #fbe87e;
 }
-
