@@ -4,8 +4,8 @@ import { ArrowRight, Phone, Mail } from "lucide-react";
 
 const service = [
   {
-    name: "ALMS (Asymmetric Load Monitoring System)",
-    href: "/product/asymmetric-load-monitoring-system",
+    name: "ALMS (Asymmetric Load Measuring System)",
+    href: "/product/asymmetric-load-measuring-system",
   },
   {
     name: "OCLs (Overload Control System)",

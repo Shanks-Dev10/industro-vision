@@ -23,7 +23,7 @@ const slides = [
     label: "Trust & Precision Focused",
     heading: (
       <>
-        Advanced Load Measuring 
+        Asymmetric Load Measuring System
       </>
     ),
     description:

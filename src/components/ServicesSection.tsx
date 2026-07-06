@@ -40,7 +40,7 @@ const ServicesSection = () => {
         {/* Top Row */}
         <div className="flex flex-col  mb-10 ">
           <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
-            <span>Tailored solutions for industry growth</span>
+            <span>Tailored solutions for Railway industry growth</span>
             <span>[ our solutions ]</span>
           </div>
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">

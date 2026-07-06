@@ -71,7 +71,7 @@ const App = () => {
               element={<OverloadControlSystemProduct />}
             />
             <Route
-              path="/product/asymmetric-load-monitoring-system"
+              path="/product/asymmetric-load-measuring-system"
               element={<AsymmetricLoadMeasuringSystem1/>}
             />
             <Route

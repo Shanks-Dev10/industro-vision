@@ -19,10 +19,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const projects = [
   {
     num: "01",
-    title: "ALMS(Asymmetric Load Monitoring System)",
+    title: "ALMS(Asymmetric Load Measuring System)",
     category: "Railway Safety and Efficiency",
     image: product1,
-    link:'/product/asymmetric-load-monitoring-system'
+    link:'/product/asymmetric-load-measuring-system'
   },
   {
     num: "02",

@@ -5,7 +5,7 @@ const values = [
     num: "01.",
     title: "Company Profile",
     text1:
-      "Railmet Technology is a company that specializes in providing precise and advanced railway weighing and load monitoring solutions. With a strong focus on providing precise solutions, Railmet is revolutionizing the field of modern rail operations with regard to accuracy in load management and operations. Railmet provides specialized solutions such as the Asymmetric Wagon Wheel Load Measuring System (ALMS), Overload Control System (OCLS), and Portable Weighing System, among others, to provide better insights and efficient rail operations. These solutions are designed to provide real-time insights, identify any imbalance in the distribution of loads, and provide safe and efficient railway services.",
+      "Railmet Technology is a company that specializes in providing precise and advanced railway weighing and load monitoring solutions. With a strong focus on providing precise solutions, Railmet is revolutionizing the field of modern rail operations with regard to accuracy in load management and operations. Railmet provides specialized solutions such as the Asymmetric Asymmetric Load Measuring System (ALMS), Overload Control System (OCLS), and Portable Weighing System, among others, to provide better insights and efficient rail operations. These solutions are designed to provide real-time insights, identify any imbalance in the distribution of loads, and provide safe and efficient railway services.",
     text2:
       "Railmet Technology’s products are designed to be strong, durable, and user-friendly. Railmet Technology’s products are designed to withstand harsh conditions, such as high loads, vibrations, and harsh weather conditions.",
   },
