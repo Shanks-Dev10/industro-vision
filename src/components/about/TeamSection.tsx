@@ -18,22 +18,26 @@ const TeamSection = () => {
     <section className="py-5 md:py-28 lg:py-28 bg-[#F5F5F5]">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
         {/* Top Labels */}
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
-          <span>THE FACES BEHIND INDUSTRY</span>
-          <span>[ MEET OUR EXPERTS ]</span>
+        <div className="flex flex-wrap gap-2 justify-between items-center border-b pb-7">
+          <h3 className="text-[#009999] text-[16px] font-semibold uppercase">
+            THE FACES BEHIND INDUSTRY
+          </h3>
+
+          <h4 className="text-[#009999] text-[16px] font-semibold uppercase animate-none md:animate-bounce">
+            [ MEET OUR EXPERTS ]
+          </h4>
         </div>
 
         {/* Title + Description */}
-        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
-            The team
-            <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
+        <div className="flex flex-col justify-center items-center gap-4 py-10">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">
+            The Team
           </h2>
 
           <div className="flex gap-8">
-            <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
+            {/* <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span> */}
 
-            <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+            <p className="text-gray-600 text-[16px] leading-relaxed max-w-2xl text-center">
               We integrate hands-on understanding with clever planning to ensure
               each challenge runs easily, remains on track, and grants exactly
               what you imagined

@@ -63,11 +63,11 @@ const Contact = () => {
         <div className="max-w-screen-xl mx-auto px-4 lg:px-6 flex flex-col gap-12 ">
           {/* Top heading */}
           <div className="flex flex-wrap gap-2 justify-between items-center border-b pb-7">
-            <h3 className="text-[#8C8C8C] text-[14px] font-medium uppercase">
+            <h3 className="text-[#009999] text-[16px] font-semibold uppercase">
               Let’s Build the Future of Railways
             </h3>
 
-            <h4 className="text-[#8C8C8C] text-[14px] font-medium uppercase">
+            <h4 className="text-[#009999] text-[16px] font-semibold uppercase animate-none md:animate-bounce">
               [ get in touch ]
             </h4>
           </div>
@@ -122,14 +122,14 @@ const Contact = () => {
                     Visit us
                   </p>
                   <p className="text-black font-medium ">
-                    No, 1/295, 1/308, Melathur, Somangalam, Tamil Nadu 600069
+                    No. 1/295, 1/308, Melathur, <br /> Somangalam, Chennai, Tamil Nadu – 600069.
                   </p>
                 </div>
                 <div>
                   <p className="text-[#8C8C8C] text-[14px] font-medium ">
                     Working time (Mon – Fri)
                   </p>
-                  <p className="text-black font-medium ">09:00 am – 05:00pm</p>
+                  <p className="text-black font-medium ">09:00 AM – 05:00 PM</p>
                 </div>
               </div>
               {/* <div>

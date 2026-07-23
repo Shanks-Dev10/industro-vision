@@ -17,7 +17,7 @@ const services = [
   {
     num: "01",
     title: "Asymmetric Load Measuring System",
-    desc: "We focus on intelligent wagon load monitoring, proactive imbalance detection, and safer railway operations through advanced weighing innovation.",
+    desc: "We focus on intelligent wagon load monitoring  and safer railway operations through advanced weighing innovation.",
     image: alms,
     link: "/service/asymmetric-load-measuring-system",
   },
@@ -49,13 +49,13 @@ const processSteps = [
     num: "01",
     title: "High Performance",
     desc: "Our commitment is to provide reliable rail technology solutions with maximize safety, efficiency, and Lifetime railway operational stability.",
-    icon: <Cog size={48} />,
+    icon: <Cog size={22} />,
   },
   {
     num: "02",
     title: "Personalized Strategies",
     desc: "A tailored rail cybersecurity strategy built to secure and protect operational data, and keep railway networks Adaptive against evolving Cyber risks.",
-    icon: <Shield size={48} />,
+    icon: <Shield size={22} />,
   },
 ];
 
@@ -126,12 +126,12 @@ const Services = () => {
               {processSteps.map((step, i) => (
                 <div
                   key={step.num}
-                  className="relative flex justify-between flex-col-reverse md:flex-row  gap-6 pb-7  border-b border-b-[#DCE0E3]"
+                  className="relative flex  flex-col-reverse md:flex-row  gap-6 pb-7  border-b border-b-[#DCE0E3]"
                 >
                   {/* Line */}
                   <div className="md:flex flex-col items-center hidden">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#009999] text-sm font-bold text-[#fff]">
-                      {step.num}
+                      {step.icon}
                     </div>
                   </div>
                   <div className="pt-1 max-w-md">
@@ -142,9 +142,9 @@ const Services = () => {
                       {step.desc}
                     </p>
                   </div>
-                  <div className="bg-[#F2F5FB] w-16 h-16 flex items-center justify-center rounded-lg">
+                  {/* <div className="bg-[#F2F5FB] w-16 h-16 flex items-center justify-center rounded-lg">
                     {step.icon}
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>
@@ -166,29 +166,29 @@ const Services = () => {
               <div key={s.num}>
                 <Link
                   to={s.link}
-                  className="group flex flex-col items-center  gap-6 py-8  md:gap-8 h-[644px]"
+                  className="group flex flex-col items-center border rounded-[8px] shadow-sm hover:shadow-md transition-all duration-300"
                   data-aos="fade-up"
                   data-aos-delay={i * 80}
                 >
-                  <div className="h-[350px] w-full overflow-hidden rounded-md ">
+                  <div className="h-[250px] w-full overflow-hidden rounded-md ">
                     <div
                       className="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-125"
                       style={{ backgroundImage: `url(${s.image})` }}
                     ></div>
                   </div>
-                  <div className="flex  justify-between items-center w-full">
-                    <h3 className="shrink-0 text-xl font-semibold text-foreground md:w-48 w-44">
+                  <div className="p-4">
+                    <h3 className="shrink-0 text-xl font-semibold text-foreground ">
                       {s.title}
                     </h3>
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border text-sm font-bold text-muted-foreground transition-colors group-hover:border-[#009999] group-hover:text-[#009999]">
+                    {/* <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border text-sm font-bold text-muted-foreground transition-colors group-hover:border-[#009999] group-hover:text-[#009999]">
                       {s.num}
-                    </div>
-                  </div>
-                  <p className="flex-1 text-sm text-muted-foreground leading-relaxed ">
+                    </div> */}
+                    <p className="flex-1 text-sm text-muted-foreground leading-relaxed pt-3">
                     {s.desc}
                   </p>
+                  </div>
+                  
                 </Link>
-                <hr />
               </div>
             ))}
           </div>

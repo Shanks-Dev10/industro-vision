@@ -31,7 +31,7 @@ export default function ProjectGallery() {
               onClick={() => setActive(filter)}
               className={`rounded-md px-4 py-2 text-xs font-semibold transition-colors ${
                 active === filter
-                  ? "bg-green-500 text-white"
+                  ? "bg-[#009999] text-white"
                   : "border border-gray-200 bg-white text-gray-600 hover:border-brand-green hover:text-brand-green-dark"
               }`}
             >

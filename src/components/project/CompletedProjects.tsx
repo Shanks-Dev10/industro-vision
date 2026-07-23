@@ -44,7 +44,7 @@ export default function CompletedProjects() {
                     <MapPin className="h-3.5 w-3.5 text-brand-green-dark" />
                     {project.location}
                   </span>
-                  <span className="flex items-center gap-1 font-semibold text-green-500">
+                  <span className="flex items-center gap-1 font-semibold text-[#009999]">
                     <CheckCircle2 className="h-3.5 w-3.5" />
                     {project.status}
                   </span>

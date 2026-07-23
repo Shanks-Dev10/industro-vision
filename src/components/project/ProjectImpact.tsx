@@ -1,13 +1,22 @@
 import { Trophy, Target, Shield, MapPin } from "lucide-react";
 import { impactStats, projectLocations } from "@/data/content";
-import MapImg from "@/assets/our_projects/map.jpg"
+import MapImg from "@/assets/our_projects/map.jpg";
 
 const icons = {
   trophy: Trophy,
   target: Target,
   rail: ({ className }: { className?: string }) => (
-    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={2}>
-      <path d="M4 4h16M4 9h16M4 14h16M4 19h16M8 4v15M16 4v15" strokeLinecap="round" />
+    <svg
+      viewBox="0 0 24 24"
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path
+        d="M4 4h16M4 9h16M4 14h16M4 19h16M8 4v15M16 4v15"
+        strokeLinecap="round"
+      />
     </svg>
   ),
   shield: Shield,
@@ -31,8 +40,12 @@ export default function ProjectImpact() {
                   className="rounded-xl border border-gray-200 bg-white p-5 text-center shadow-sm"
                 >
                   <Icon className="mx-auto mb-3 h-7 w-7 text-navy-900" />
-                  <p className="font-display text-2xl font-bold text-navy-900">{stat.value}</p>
-                  <p className="mt-1 text-xs leading-snug text-gray-500">{stat.label}</p>
+                  <p className="font-display text-2xl font-bold text-navy-900">
+                    {stat.value}
+                  </p>
+                  <p className="mt-1 text-xs leading-snug text-gray-500">
+                    {stat.label}
+                  </p>
                 </div>
               );
             })}
@@ -53,14 +66,17 @@ export default function ProjectImpact() {
 
             <div className="flex-1 space-y-3 rounded-lg border border-gray-100 p-3">
               {projectLocations.map((loc) => (
-                <div key={loc.id} className="flex items-start gap-2 rounded-md p-2 hover:bg-gray-50">
-                  <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
+                <div
+                  key={loc.id}
+                  className="flex items-start gap-2 rounded-md p-2 hover:bg-gray-50"
+                >
+                  <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#009999]" />
                   <div className="text-xs">
-                    <p className="font-semibold  text-green-500">
-                      {loc.id} <span className="ml-1 text-black">{loc.title}</span>
+                    <p className="font-semibold  text-[#009999]">
+                      <span className=" text-black">{loc.title}</span>
                     </p>
                     <p className="text-gray-500">{loc.subtitle}</p>
-                    <p className="font-semibold text-green-500">{loc.status}</p>
+                    <p className="font-semibold text-[#009999]">{loc.status}</p>
                   </div>
                 </div>
               ))}
