@@ -10,7 +10,7 @@ import {
   MapPin,
   Mail,
   Phone,
-  TwitterIcon
+  TwitterIcon,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Whatsapp from "@/assets/whatsapp.gif";
@@ -128,18 +128,15 @@ const Footer = () => {
               Contact Us
             </h4>
             <ul className="space-y-5 mb-4">
-              <li>
-                <a
-                  href="/"
-                  className="text-sm text-primary-foreground/60 hover:text-[#009999] transition-colors flex items-center gap-3"
-                >
-                  <MapPin size={30} />
-                  No, 1/295, 1/308, Melathur, Somangalam, Tamil Nadu 600069
-                </a>
+              <li className="text-sm text-primary-foreground/60  transition-colors flex items-center gap-3">
+                <MapPin size={30} />
+                No. 1/295, 1/308, Melathur, Somangalam, Chennai, Tamil Nadu –
+                600069
               </li>
               <li>
                 <a
-                  href="mailto:railmet2021@gmail.com" target="_blank"
+                  href="mailto:railmet2021@gmail.com"
+                  target="_blank"
                   className="text-sm text-primary-foreground/60 hover:text-[#009999] transition-colors flex items-center gap-3"
                 >
                   <Mail size={16} />
@@ -148,7 +145,8 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="tel:+918939821722" target="_blank"
+                  href="tel:+918939821722"
+                  target="_blank"
                   className="text-sm text-primary-foreground/60 hover:text-[#009999] transition-colors flex items-center gap-3"
                 >
                   <Phone size={16} />
