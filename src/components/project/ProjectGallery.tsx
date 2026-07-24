@@ -12,6 +12,35 @@ export default function ProjectGallery() {
   const [active, setActive] = useState<(typeof galleryFilters)[number]>("All");
   const [popupImage, setPopupImage] = useState(null);
 
+  const videos = [
+    {
+      id: "wN-ubZ_GzEo",
+      title: "Welcome to Railmet | Smart Rail Automation Begins Here",
+    },
+    {
+      id: "Q1ztUKKGZCc",
+      title:
+        "Overload Is Operational Risk | Real-Time Rail Weight Monitoring by Railmet",
+    },
+    {
+      id: "Omb9TmI3-ng",
+      title:
+        "One overloaded wagon can silently damage railway tracks, wagons, and freight operations.",
+    },
+    {
+      id: "Orm7AhTNEso",
+      title: "Railmet Video 4",
+    },
+    {
+      id: "uMmTAjV8jqs",
+      title: "Railmet Video 5",
+    },
+    {
+      id: "Yy_IDtgHlKs",
+      title: "Railmet Video 6",
+    },
+  ];
+
   const filtered =
     active === "All"
       ? galleryItems
@@ -84,6 +113,29 @@ export default function ProjectGallery() {
           VIEW FULL GALLERY
           <ArrowRight className="h-3.5 w-3.5" />
         </button> */}
+      </div>
+
+      <div className="mx-auto max-w-7xl py-10">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {videos.map((video) => (
+            <div
+              key={video.id}
+              className="overflow-hidden rounded-xl shadow-lg"
+            >
+              <div className="relative w-full aspect-video">
+                <iframe
+                  src={`https://www.youtube.com/embed/${video.id}`}
+                  title={video.title}
+                  className="absolute inset-0 h-full w-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
