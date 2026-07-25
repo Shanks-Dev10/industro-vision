@@ -33,64 +33,44 @@ const partnersLoop = [...partners, ...partners];
 const CTASection = () => {
   return (
     <section className="py-5 md:py-28 lg:py-28 bg-[#F5F5F5]">
-      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
+      <div className="max-w-full 2xl:max-w-screen-xl mx-auto md:px-6 px-2">
         {/* CTA Container */}
-        <div className="relative rounded-2xl overflow-hidden">
-          {/* Background Image */}
-          <img
-            src={ctaBg}
-            alt="Industrial Plant"
-            className="w-full md:h-[600px] h-[400px]  object-cover"
-          />
-
+        <div
+          className="relative overflow-hidden rounded-[30px] bg-cover bg-center bg-no-repeat h-full  p-4 py-20" 
+          style={{
+            backgroundImage: `url(${ctaBg})`,
+          }}
+        >
+           <div className="absolute inset-0 bg-black/60"></div>
           {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0E3347]/90 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B2434]/90 via-[#0B2434]/60 to-transparent"></div>
 
-          {/* CTA Content */}
-          <div className="absolute inset-0 flex flex-col justify-center px-4 lg:px-20 text-white max-w-2xl">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
-              Moving Railway Load Monitoring Forward with Smart Automation.
-            </h2>
+          {/* Content */}
+          <div className="relative z-10 flex h-full items-center justify-center md:px-6 px-2">
+            <div className="max-w-4xl text-center text-white">
 
-            <p className="text-sm md:text-lg lg:text-lg text-white/80 mb-10">
-              Pushing the boundaries of railway technology and automation to
-              build safer, smarter, and more efficient rail operations.
-            </p>
-
-            {/* Button */}
-            <Link to={"/contact"}>
-              <button className="flex items-center gap-3 bg-[#009999] text-[#fff] font-semibold px-6 py-3 rounded-full w-fit mb-20 ">
-                Let’s Talk
-                <span className="flex items-center justify-center w-8 h-8 rounded-full border">
-                  <ArrowRight size={16} />
+              <h2 className="text-2xl md:text-5xl  font-bold leading-tight">
+                Moving Railway Load Monitoring
+                <span className="block text-[#00D6D6]">
+                  Forward with Smart Automation.
                 </span>
-              </button>
-            </Link>
-          </div>
+              </h2>
 
-          {/* Partner Strip */}
-          {/* <div className="absolute bottom-0 left-0 right-0 bg-white backdrop-blur-sm  overflow-hidden">
-            <div className="flex md:flex-row flex-col items-center  gap-2 md:gap-16 px-4 md:px-12">
-              <span className="text-sm font-semibold uppercase tracking-widest md:text-start text-center text-black">
-                Trusted partners and satisfied clients
-              </span>
+              <p className="mt-3 text-base md:text-lg text-white/80 md:max-w-2xl mx-auto leading-8">
+                Pushing the boundaries of railway technology and automation to
+                build safer, smarter, and more efficient rail operations.
+              </p>
 
-              <Marquee pauseOnHover className="md:[--duration:50s] [--duration:30s]  flex-1 ">
-                {partnersLoop.map((logo, index) => (
-                  <div
-                    key={index}
-                    className="flex  items-center justify-center md:w-[220px] w-[180px] h-28 rounded-2xl transition"
-                  >
-                    <img
-                      src={logo}
-                      alt="partner logo"
-                      className="max-h-24 object-contain"
-                    />
-                  </div>
-                ))}
-              </Marquee>
+              <Link to="/contact">
+                <button className="group mt-5 inline-flex items-center gap-4 rounded-full bg-[#009999] px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-[#00B3B3]">
+                  Let's Talk
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white transition-all group-hover:bg-white group-hover:text-[#009999]">
+                    <ArrowRight size={18} />
+                  </span>
+                </button>
+              </Link>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

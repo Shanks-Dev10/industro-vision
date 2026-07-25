@@ -4,10 +4,10 @@ import construction from "@/assets/metal-cutting.webp";
 import { useEffect, useState, useRef } from "react";
 import { Users, Clock, MapPin, ThumbsUp } from "lucide-react";
 import { Link } from "react-router-dom";
-import alms from '@/assets/alms1.jpeg'
-import k2 from '@/assets/K2 -1.jpeg'
-import ocls from '@/assets/ocls.webp'
-import weighting from '@/assets/weighting5.webp'
+import alms from "@/assets/alms1.jpeg";
+import k2 from "@/assets/K2 -1.jpeg";
+import ocls from "@/assets/ocls.webp";
+import weighting from "@/assets/weighting5.webp";
 
 interface CounterProps {
   end: number;
@@ -74,36 +74,36 @@ const products = [
     category: "Environmental",
     year: "2015",
     image: alms,
-    link:'/product/advanced-load-monitoring-system'
+    link: "/product/advanced-load-monitoring-system",
   },
   {
     title: "OCLS (Overload Control System)",
     category: "Machinery",
     year: "2015",
     image: ocls,
-    link:'/product/overload-Control-System-product'
+    link: "/product/overload-Control-System-product",
   },
   {
     title: "K2(KIMAX2 AIR)",
     category: "Energy",
     year: "2018",
     image: k2,
-    link:'/product/truck-onboard-scale-system'
+    link: "/product/truck-onboard-scale-system",
   },
   {
     title: "Industrial equipment optimization",
     category: "Production",
     year: "2020",
     image: weighting,
-    link:'/product/portable-weighing-system'
+    link: "/product/portable-weighing-system",
   },
 ];
 
 const stats = [
-  { value: 30, label: "Years of experience",suffix:'+' },
-  { value: 75, label: "Global Locations",suffix:'+' },
-  { value: 500, label: "Total Employee",suffix:'+' },
-  { value: 5, label: "Annual Revenue",suffix:'B+' },
+  { value: 30, label: "Years of experience", suffix: "+" },
+  { value: 75, label: "Global Locations", suffix: "+" },
+  { value: 500, label: "Total Employee", suffix: "+" },
+  { value: 5, label: "Annual Revenue", suffix: "B+" },
 ];
 
 const ProductsSection = () => {
@@ -111,33 +111,37 @@ const ProductsSection = () => {
     <section className="py-24 bg-white">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
         {/* Header */}
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
-          <span>Showcasing our engineering expertise</span>
-          <span>[ our work ]</span>
+        <div className="flex flex-col  mb-10 ">
+          <div className="flex flex-wrap gap-2 justify-between items-center border-b pb-7">
+            <h3 className="text-[#009999] text-[16px] font-semibold uppercase">
+              Showcasing our engineering expertise
+            </h3>
+
+            <h4 className="text-[#009999] text-[16px] font-semibold uppercase animate-none md:animate-bounce">
+              [ our work ]
+            </h4>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start  pt-2 pb-16 border-b mb-8">
-
+        <div className="flex flex-col gap-3 justify-center items-center pt-2 pb-16 border-b mb-8">
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             Products
-            <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
           </h2>
 
           <div className="flex gap-8">
-            <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
 
-            <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+            <p className="text-gray-600 text-lg leading-relaxed max-w-2xl text-center">
               Our work is a blend of innovative thinking and practical
               solutions, ensuring they are both unique and effective.
             </p>
           </div>
-
         </div>
 
         {/* Product Rows */}
         <div className="divide-y">
           {products.map((product, index) => (
-            <Link to={product.link}
+            <Link
+              to={product.link}
               key={index}
               className="group grid md:grid-cols-3 lg:grid-cols-[260px_1fr__80px] items-center gap-10 py-10 cursor-pointer"
             >

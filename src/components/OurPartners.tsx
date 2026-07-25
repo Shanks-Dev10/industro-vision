@@ -22,22 +22,27 @@ const OurPartners = () => {
     <section className="py-10 md:py-28 bg-[#F5F5F5]">
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
         {/* Top Labels */}
-        <div className="flex flex-col-reverse gap-4 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b pb-8">
-          <span>THE FACES BEHIND INDUSTRY</span>
-          <span>[ MEET OUR EXPERTS ]</span>
+         <div className="flex flex-col  mb-10 ">
+          <div className="flex flex-wrap gap-2 justify-between items-center border-b pb-7">
+            <h3 className="text-[#009999] text-[16px] font-semibold uppercase">
+             THE FACES BEHIND INDUSTRY
+            </h3>
+
+            <h4 className="text-[#009999] text-[16px] font-semibold uppercase animate-none md:animate-bounce">
+              [ MEET OUR EXPERTS ]
+            </h4>
+          </div>
         </div>
 
         {/* Title + Description */}
-        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16 pb-5 pt-2">
+        <div className="flex flex-col gap-3 justify-center items-center  mb-16 pb-5 pt-2">
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
             Our Partners
-            <span className="w-2 h-2 bg-[#009999] rounded-full ml-2"></span>
           </h2>
 
           <div className="flex gap-8">
-            <span className="hidden md:block w-[4px] bg-[#009999]"></span>
 
-            <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+            <p className="text-gray-600 text-lg leading-relaxed max-w-3xl text-center]">
               We integrate hands-on understanding with clever planning to ensure
               each challenge runs easily, remains on track, and grants exactly
               what you imagined.

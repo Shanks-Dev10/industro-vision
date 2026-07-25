@@ -13,18 +13,7 @@ const TestimonialSection = () => {
       quotes:
         "“Their precision engineering and attention to detail have significantly improved our production line. We highly recommend them to any business.”",
     },
-    {
-      name: "Charles Clark",
-      designation: "Assistant Project Manager",
-      quotes:
-        "“Their precision engineering and attention to detail have significantly improved our production line. We highly recommend them to any business.”",
-    },
-    {
-      name: "Charles Clark",
-      designation: "Assistant Project Manager",
-      quotes:
-        "“Their precision engineering and attention to detail have significantly improved our production line. We highly recommend them to any business.”",
-    },
+
   ];
 
   return (
@@ -32,9 +21,16 @@ const TestimonialSection = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-6">
         {/* Top labels */}
 
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
-          <span>OUR HAPPY CLIENTS</span>
-          <span>[ WHAT CLIENTS SAY ]</span>
+        {/* Top labels */}
+
+        <div className="flex flex-wrap gap-2 justify-between items-center border-b pb-7">
+          <h3 className="text-[#009999] text-[16px] font-semibold uppercase">
+            OUR HAPPY CLIENTS
+          </h3>
+
+          <h4 className="text-[#009999] text-[16px] font-semibold uppercase animate-none md:animate-bounce">
+            [ WHAT CLIENTS SAY ]
+          </h4>
         </div>
 
         {/* Layout */}
@@ -43,8 +39,7 @@ const TestimonialSection = () => {
           <div className="space-y-10">
             {/* Quote */}
             <Swiper
-              modules={[Autoplay, Pagination]}
-              pagination={{ clickable: true, el: ".custom-pagination" }}
+              modules={[Autoplay]}
               autoplay={{
                 delay: 2000,
                 disableOnInteraction: false,
@@ -54,35 +49,37 @@ const TestimonialSection = () => {
               slidesPerView={1}
               loop={true}
             >
-              {testimonial.map((items, index) => (
-                <SwiperSlide key={index} className="w-full flex flex-col gap-4">
-                  <blockquote className="md:text-xl lg:text-3xl font-semibold">
-                    {items.quotes}
-                  </blockquote>
+              <SwiperSlide className="w-full flex flex-col gap-4">
+                <blockquote className="md:text-xl lg:text-4xl font-semibold leading-tight">
+                  “Their precision engineering and attention to detail have
+                  significantly improved our production line. We highly
+                  recommend them to any business.”
+                </blockquote>
 
-                  <div>
-                    <p className="font-bold text-lg">{items.name}</p>
-                    <p className="text-sm text-gray-500">{items.designation}</p>
-                  </div>
-                </SwiperSlide>
-              ))}
+                {/* Client */}
+                <div>
+                  <p className="font-bold text-lg">Charles Clark</p>
+                  <p className="text-sm text-gray-500">
+                    Assistant Project Manager
+                  </p>
+                </div>
+              </SwiperSlide>
             </Swiper>
 
-            {/* <div className="custom-pagination mt-5 flex justify-center"></div> */}
 
             {/* Bottom row */}
-            <div className="flex md:flex-row flex-col gap-6 items-center justify-between">
+            <div className="flex items-center justify-between">
               {/* Rating */}
-              {/* <div className="flex items-center gap-2 bg-[#009999] text-[#fff]  px-5 py-2 rounded-full text-sm font-semibold">
-                <Star className="w-4 h-4  text-[#fff]" />
-                4.9 Rating From 12k+ Reviews
-              </div> */}
+              {/* <div className="flex items-center gap-2 bg-[#FBE87E] md:px-1 px-5 py-2 rounded-full text-sm font-semibold">
+                  <Star className="w-4 h-4 fill-black text-black" />
+                  4.9 Rating From 12k+ Reviews
+                </div> */}
 
               {/* Button */}
               <button className="flex items-center gap-3 font-semibold">
                 View All Reviews
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#009999]">
-                  <ArrowRight size={16} className="text-[#fff]"/>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#009999] text-[#fff]">
+                  <ArrowRight size={16} />
                 </span>
               </button>
             </div>

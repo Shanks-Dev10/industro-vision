@@ -82,11 +82,23 @@ const Footer = () => {
               Precision-engineered solutions for rail systems and industries.
               Built for performance, trusted for excellence.
             </p>
+            <div className="flex gap-3">
+              {socialIcons.map(({ icon: Icon, link }, i) => (
+                <a
+                  key={i}
+                  href={link}
+                  target="_blank"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-foreground/10 text-primary-foreground/60 hover:bg-[#009999] hover:text-[#fff] transition-colors"
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Page Links */}
-          <div>
-            <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-primary-foreground">
+          <div className="flex flex-col md:items-center items-start">
+            <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-primary-foreground  pr-8">
               Pages
             </h4>
             <ul className="space-y-3">
@@ -154,19 +166,6 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-
-            <div className="flex gap-3">
-              {socialIcons.map(({ icon: Icon, link }, i) => (
-                <a
-                  key={i}
-                  href={link}
-                  target="_blank"
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-foreground/10 text-primary-foreground/60 hover:bg-[#009999] hover:text-[#fff] transition-colors"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
       </div>

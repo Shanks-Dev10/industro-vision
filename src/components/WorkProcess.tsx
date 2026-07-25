@@ -10,7 +10,7 @@ const steps = [
   {
     num: "02",
     title: "Sensor Installation & System Integration",
-    desc: "Sensors are securely installed and aligned on the railway track to ensure accurate load measurement and reliable performance.",
+    desc: "Sensors are securely installed and aligned on the railway track to ensure accurate load measurement .",
   },
   {
     num: "03",
@@ -33,22 +33,27 @@ const WorkProcess = () => {
       <div className="relative max-w-full 2xl:max-w-screen-xl mx-auto px-4 md:px-6">
         {/* Top header */}
         <div className="flex flex-col mb-20">
-          <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-[#fff] mb-8 border-b-[1px] pb-8">
-            <span>WE GET IT RIGHT THE FIRST TIME</span>
-            <span>[ how we work ]</span>
+          <div className="flex flex-col  mb-10 ">
+            <div className="flex flex-wrap gap-2 justify-between items-center border-b pb-7">
+              <h3 className="text-[#fff] text-[16px] font-semibold uppercase">
+                WE GET IT RIGHT THE FIRST TIME
+              </h3>
+
+              <h4 className="text-[#fff] text-[16px] font-semibold uppercase animate-none md:animate-bounce">
+                [ how we work ]
+              </h4>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
+          <div className="flex flex-col gap-3 justify-center items-center mb-16  pb-5 pt-2">
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
               Work process
-              <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
             </h2>
 
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col items-center gap-8">
               <div className="flex gap-8">
-                <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
 
-                <p className="text-white-600 text-lg leading-relaxed ">
+                <p className="text-white-600 text-lg leading-relaxed text-center">
                   Our installation process begins with a comprehensive site
                   review and track inspection to evaluate operational and
                   infrastructure requirements. Sensors are precisely installed
@@ -59,7 +64,7 @@ const WorkProcess = () => {
                 </p>
               </div>
               <div className="flex md:items-center pl-0 md:pl-8">
-                <Link to={"/about/#teams"}>
+                <Link to={"/"}>
                   <button className="flex items-center justify-end w-fit gap-3 bg-[#FFFF] text-black px-3 md:px-6 lg:px-6 py-3 rounded-full font-semibold hover:bg-[#009999] hover:text-[#fff]">
                     View All Members
                     <span className="flex items-center justify-center w-8 h-8 rounded-full border">
@@ -73,12 +78,12 @@ const WorkProcess = () => {
         </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 items-center md:grid-cols-2  lg:grid-cols-4 gap-16 lg:gap-6 xl:gap-16">
+        <div className="grid grid-cols-1 items-center justify-center md:grid-cols-2  lg:grid-cols-4 gap-16 lg:gap-6 xl:gap-16">
           {steps.map((step) => (
             <div key={step.num} className=" px-2">
               {/* number box */}
-              <div className="relative mb-6">
-                <div className="flex justify-center items-end w-28 h-28 bg-[#009999] rounded-md rounded-tr-[30px]">
+              <div className=" mb-6">
+                <div className="flex justify-center items-end pb-2 w-28 h-28 bg-[#009999] rounded-md rounded-tr-[30px]">
                   <span className=" text-6xl font-extrabold text-[#fff]">
                     {step.num}
                   </span>

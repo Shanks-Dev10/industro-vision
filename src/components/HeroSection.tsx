@@ -76,7 +76,7 @@ const HeroSection = () => {
   }}
     >
       <div className=" dot-pattern overflow-hidden absolute w-full h-full ">
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 pt-32 pb-20 lg:flex-row lg:pt-40 home-bg ">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 pt-32 pb-20 lg:flex-row  home-bg ">
           {/* Left */}
           <div className="flex-1 space-y-8 max-w-3xl " key={current}>
             <span

@@ -12,9 +12,14 @@ const TestimonialSection = () => {
 
         {/* Top labels */}
 
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
-          <span>OUR HAPPY CLIENTS</span>
-          <span>[ WHAT CLIENTS SAY ]</span>
+         <div className="flex flex-wrap gap-2 justify-between items-center border-b pb-7">
+          <h3 className="text-[#009999] text-[16px] font-semibold uppercase">
+           OUR HAPPY CLIENTS
+          </h3>
+
+          <h4 className="text-[#009999] text-[16px] font-semibold uppercase animate-none md:animate-bounce">
+            [ WHAT CLIENTS SAY ]
+          </h4>
         </div>
 
 
@@ -52,42 +57,12 @@ const TestimonialSection = () => {
                 </p>
               </div>
               </SwiperSlide>
-              <SwiperSlide className="w-full flex flex-col gap-4">
-              <blockquote className="md:text-xl lg:text-4xl font-semibold leading-tight">
-                “Their precision engineering and attention to detail have
-                significantly improved our production line. We highly recommend
-                them to any business.”
-              </blockquote>
-
-              {/* Client */}
-              <div>
-                <p className="font-bold text-lg">Charles Clark</p>
-                <p className="text-sm text-gray-500">
-                  Assistant Project Manager
-                </p>
-              </div>
-              </SwiperSlide>
-              <SwiperSlide className="w-full flex flex-col gap-4">
-              <blockquote className="md:text-xl lg:text-4xl font-semibold leading-tight">
-                “Their precision engineering and attention to detail have
-                significantly improved our production line. We highly recommend
-                them to any business.”
-              </blockquote>
-
-              {/* Client */}
-              <div>
-                <p className="font-bold text-lg">Charles Clark</p>
-                <p className="text-sm text-gray-500">
-                  Assistant Project Manager
-                </p>
-              </div>
-              </SwiperSlide>
               </Swiper>
 
               {/* Pagination */}
-              <div className="flex items-center justify-between border-b-[1px] pt-20">
+              {/* <div className="flex items-center justify-between border-b-[1px] pt-20">
 
-              </div>
+              </div> */}
 
               {/* Bottom row */}
               <div className="flex items-center justify-between">

@@ -1,89 +1,167 @@
 import weldingImg from "@/assets/h2_img-1.webp";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ShieldCheck, Cpu, Target, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const WhoWeAre = () => {
+const features = [
+  {
+    icon: Target,
+    title: "Precision",
+    desc: "Engineered",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Reliable",
+    desc: "& Robust",
+  },
+  {
+    icon: Cpu,
+    title: "Smart",
+    desc: "Automation",
+  },
+  {
+    icon: BarChart3,
+    title: "Future",
+    desc: "Ready",
+  },
+];
+
+export default function WhoWeAre() {
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-4 md:px-6">
-        {/* Top Small Labels */}
+    <section className="relative overflow-hidden bg-white py-24">
+      {/* Background Shape */}
+      <div className="absolute left-1/2 top-40 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-cyan-100 blur-[130px] opacity-30"></div>
 
-        <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
-          <span>Built to Power Railway Progress. </span>
-          {/* <span>[ OUR STORY ]</span> */}
+      <div className="max-w-7xl mx-auto md:px-6 px-4">
+        {/* Top */}
+        <div className="flex justify-between items-center border-b pb-7">
+          <span className="uppercase text-[#009999] font-semibold tracking-wider">
+            Built to Power Railway Progress.
+          </span>
+
+          <span className="uppercase text-[#009999] font-semibold animate-none md:animate-bounce">
+            [ Our Story ]
+          </span>
         </div>
 
-        {/* Main Heading */}
+        {/* Heading */}
+        <h2 className="text-4xl lg:text-7xl font-bold text-slate-900 mt-10 mb-16">
+          Who we are
+        </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
-            Who we are
-            <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
-          </h2>
-        </div>
-
-        {/* Layout */}
-        <div className="grid lg:grid-cols-[1fr_1.2fr_1fr] gap-12 items-center">
-          {/* Left Content */}
-          <div>
-            <h3 className="text-xl md:text-2xl lg:text-4xl  font-semibold  text-gray-900 mb-8">
-              Transforming Rail Operations with Advanced Weighing Technology.
+        {/* Main Grid */}
+        <div className="grid lg:grid-cols-12 gap-10 items-center">
+          {/* LEFT */}
+          <div className="lg:col-span-6">
+            <h3 className="text-3xl font-bold leading-tight text-slate-900">
+              Transforming Rail Operations with{" "}
+              <span className="text-[#009999]">
+                Advanced Weighing Technology.
+              </span>
             </h3>
 
-            <Link to={'/about'}>
-            <button className="group flex items-center gap-4 bg-[#009999] px-6 py-3 rounded-full font-semibold text-[#fff]  transition ">
-              Explore now
-              <span className="flex items-center justify-center group-hover:border group-hover:border-white  border  w-8 h-8 rounded-full  text-white">
-                <ArrowRight size={16} />
-              </span>
-            </button>
-            </Link>
-          </div>
+            <p className="mt-6 text-gray-600 leading-8">
+              We deliver intelligent railway weighing systems that improve
+              operational efficiency, safety, automation and data-driven
+              decision making.
+            </p>
 
-          {/* Image */}
-          <div className="overflow-hidden rounded-2xl rounded-tr-[50px] md:h-[400px] h-full lg:h-full">
-            <img
-              src={weldingImg}
-              alt="Welding"
-              className="w-full h-full object-cover"
-            />
-          </div>
+            {/* Features */}
 
-          {/* Right Card */}
-          <div className="bg-[#0F2F45] text-white rounded-2xl rounded-tr-[90px] xl:p-10 p-5  relative h-full flex flex-col justify-between">
-            <div>
-              <p className=" text-sm font-semibold mb-4">
-                Technology-Oriented
-              </p>
+            <div className="grid grid-cols-2 gap-6 mt-10">
+              {features.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-4 rounded-xl border p-4 hover:shadow-xl transition"
+                >
+                  <item.icon className="text-[#009999]" size={28} />
 
-              <h3 className="xl:text-3xl text-2xl font-bold mb-6 leading-snug">
-                Driving the Future of Industrial Automation Worldwide Setting
-                Global Standards in Industrial Automation
-              </h3>
-
-              <div className="border-t border-white/20 mb-6"></div>
-
-              <p className="text-sm text-white/80 leading-relaxed">
-                Explore advanced solutions engineered for excellence in railway
-                weighing and automation. We integrate intelligent generation
-                with deep enterprise know-how to deliver precision without
-                compromise.
-              </p>
+                  <div>
+                    <h5 className="font-semibold">{item.title}</h5>
+                    <p className="text-sm text-gray-500">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
 
-            <Link to={'/product'}>
-            <button className="flex items-center gap-3 font-semibold mt-5 border w-fit p-3 rounded-[99px] hover:bg-[#009999] transition duration-300">
-              View Projects
-              <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white text-black">
-                <ArrowRight size={16} />
-              </span>
-            </button>
-            </Link>
+            <div className="flex gap-5 mt-10">
+              <Link to="/about">
+                <button className="group flex items-center gap-4 rounded-full bg-[#009999] px-7 py-4 font-semibold text-white transition hover:bg-[#007f7f]">
+                  Explore Now
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white transition group-hover:bg-white group-hover:text-[#009999]">
+                    <ArrowRight size={18} />
+                  </span>
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          {/* CENTER IMAGE */}
+
+          <div className="relative lg:col-span-6">
+
+            <div className="rounded-[40px] bg-[#0E2438] p-6 md:p-10 text-white shadow-2xl">
+              <div className="mb-5 flex items-center gap-4">
+                <div className="rounded-xl bg-cyan-500/20 p-4">
+                  <Cpu className="text-cyan-400" />
+                </div>
+
+                <span className="text-[#26D0CE] font-semibold">
+                  Technology-Oriented
+                </span>
+              </div>
+
+              <h3 className="text-4xl font-bold leading-tight">
+                Driving the Future of Industrial Automation
+              </h3>
+
+              <div className="my-8 h-px bg-white/20"></div>
+
+              {/* <p className="text-white/70 leading-8">
+                We combine intelligent automation, precision engineering and
+                industry expertise to create advanced railway weighing
+                technologies trusted worldwide.
+              </p> */}
+
+              <div className="space-y-6 mt-10">
+                <div>
+                  <h5 className="font-semibold text-lg">Global Standards</h5>
+
+                  <p className="text-white/60">
+                    International quality compliance and proven reliability.
+                  </p>
+                </div>
+
+                <div>
+                  <h5 className="font-semibold text-lg">
+                    AI-powered Monitoring
+                  </h5>
+
+                  <p className="text-white/60">
+                    Real-time analytics for better operational decisions.
+                  </p>
+                </div>
+
+                <div>
+                  <h5 className="font-semibold text-lg">End-to-End Support</h5>
+
+                  <p className="text-white/60">
+                    Consultation, installation and lifetime maintenance.
+                  </p>
+                </div>
+              </div>
+
+              <Link to="/our-project">
+                <button className="group mt-10 flex items-center gap-4 rounded-full border border-cyan-500 px-6 py-4 font-semibold transition hover:bg-[#009999]">
+                  View Projects
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black transition ">
+                    <ArrowRight size={18} />
+                  </span>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default WhoWeAre;
+}

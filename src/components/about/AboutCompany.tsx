@@ -75,14 +75,14 @@ const AboutCompany = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className={`${stat.bg} ${stat.text} rounded-md rounded-tr-[90px] p-6 border border-gray-200 h-[320px] flex flex-col justify-between`}
+              className={`${stat.bg} ${stat.text} rounded-md rounded-tr-[90px] p-6 border border-[#009999] h-[320px] flex flex-col justify-between`}
             >
 
               <p className="text-[20px] font-extrabold">
                 {stat.title}
               </p>
 
-              <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
                 <stat.icon className="w-7 h-7 opacity-80" />
                 <span className="text-[25px] font-extrabold">
                   {stat.value}

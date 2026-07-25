@@ -39,21 +39,24 @@ const ServicesSection = () => {
       <div className="max-w-full 2xl:max-w-screen-xl mx-auto px-4 md:px-6">
         {/* Top Row */}
         <div className="flex flex-col  mb-10 ">
-          <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row justify-between text-xs uppercase tracking-widest text-gray-800 mb-8 border-b-[1px] pb-8">
-            <span>Tailored solutions for Railway industry growth</span>
-            <span>[ our solutions ]</span>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16  pb-5 pt-2">
+          <div className="flex flex-wrap gap-2 justify-between items-center border-b pb-7">
+          <h3 className="text-[#009999] text-[16px] font-semibold uppercase">
+           Tailored solutions for Railway industry growth
+          </h3>
+
+          <h4 className="text-[#009999] text-[16px] font-semibold uppercase animate-none md:animate-bounce">
+           [ our solutions ]
+          </h4>
+        </div>
+          <div className="flex flex-col gap-5 justify-center items-center mb-16  pb-5 pt-2">
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold flex items-end">
               Services
-              <span className="w-2 h-2 bg-[#009999] rounded-full"></span>
             </h2>
 
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col justify-center items-center gap-8">
               <div className="flex gap-8">
-                <span className="hidden md:flex w-[10px] xl:w-[4px] bg-[#009999]"></span>
 
-                <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+                <p className="text-gray-600 text-lg leading-relaxed text-center max-w-3xl">
                   Railmet Technologies delivers precision railway weighing,
                   wagon load monitoring, and automation solutions for safer and
                   smarter rail operations.
@@ -82,24 +85,24 @@ const ServicesSection = () => {
             <Link
               key={index}
               to={item.href}
-              className=" bg-white border rounded-2xl  p-5 md:p-8 flex flex-col justify-between  shadow-xl group"
+              className=" bg-white border rounded-2xl hover:bg-[#009999]  p-5 md:p-8 flex flex-col justify-between  shadow-xl group"
             >
               {/* Icon */}
               <div
                 className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-6 
-  group-hover:bg-[#009999] transition"
+  group-hover:bg-[#fff] transition"
               >
-                <Settings className="group-hover:text-[#fff]" />
+                <Settings  />
               </div>
 
-              <h3 className="text-xl md:text-2xl  font-bold mb-6">
+              <h3 className="text-xl md:text-2xl  font-bold mb-6 group-hover:text-white">
                 {item.title}
               </h3>
 
-              <p className="text-gray-500 text-sm mb-8">{item.description}</p>
+              <p className="text-gray-500 text-sm mb-8 group-hover:text-white">{item.description}</p>
 
               <div className="flex items-center justify-between border-t pt-5">
-                <span className="font-semibold text-sm">Find Out More</span>
+                <span className="font-semibold text-sm group-hover:text-white">Find Out More</span>
 
                 {/* Arrow */}
                 <span
