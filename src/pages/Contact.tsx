@@ -96,13 +96,6 @@ const Contact = () => {
                     >
                       +91 89398 21722
                     </a>
-                    <a
-                      href="tel:918939821709"
-                      target="_blank"
-                      className="text-black font-medium underline underline-offset-[5px]"
-                    >
-                      +91 89398 21709
-                    </a>
                   </div>
                 </div>
                 <div>
