@@ -62,6 +62,17 @@ export const completedProjects = [
     thumbs: [wcr1, wcr2, wcr3, wcr4],
     link:'#gallery'
   },
+  {
+    id: "03",
+    title: "Asymmetric Load Measuring System (ALMS)",
+    location: "Manikgarh, Maharashtra",
+    status: "Successfully Completed",
+    description:
+      "Railmet Technologies Pvt. Ltd. successfully installed the Asymmetric Load Measuring System (ALMS) at Manikgarh, Maharashtra. The system enables accurate wagon load monitoring and helps detect uneven load distribution for safer and more efficient railway operations.",
+    photo: NCL,
+    thumbs: [wcr1, wcr2, wcr3, wcr4],
+    link:'#gallery'
+  },
 ];
 
 export const impactStats = [

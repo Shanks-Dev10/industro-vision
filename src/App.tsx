@@ -23,6 +23,8 @@ import Clients from "./pages/Clients";
 import PortableWeighingSystem from "./pages/products/PortableWeighingSystem";
 import PortableWeighingSustemService from "./pages/service/PortableWeighingSystem";
 import ScrollToTop from "./components/ScrollToTop";
+import CornerForceMeasurementSystem from "./pages/products/CornerForceMeasurementSystem";
+import Auxilium from "./pages/products/Auxilium";
 
 const queryClient = new QueryClient();
 
@@ -81,6 +83,14 @@ const App = () => {
             <Route
               path="/product/portable-weighing-system"
               element={<PortableWeighingSystem />}
+            />
+            <Route
+              path="/product/corner-force-measurement-system"
+              element={<CornerForceMeasurementSystem />}
+            />
+            <Route
+              path="/product/auxilium"
+              element={<Auxilium />}
             />
             <Route
               path="/clients"

@@ -6,6 +6,7 @@ import product1 from "@/assets/alms1.jpeg";
 import product2 from "@/assets/ocls.webp";
 import product3 from "@/assets/K2 -2.jpeg";
 import product4 from "@/assets/weighting4.webp";
+import product5 from "@/assets/corner force5.webp";
 import { Link } from "react-router-dom";
 import {
   Card,
@@ -44,6 +45,20 @@ const projects = [
     category: "Aerospace",
     image: product4,
     link:'/product/portable-weighing-system'
+  },
+  {
+    num: "05",
+    title: "Corner Force Measurement System",
+    category: "Aerospace",
+    image: product5,
+    link:'/product/corner-force-measurement-system'
+  },
+  {
+    num: "06",
+    title: "AUXILIUM ",
+    category: "Aerospace",
+    image: product5,
+    link:'/product/auxilium'
   },
 ];
 

@@ -19,6 +19,14 @@ const service = [
     name: "Portable Weighing System",
     href: "/product/portable-weighing-system",
   },
+  {
+    name: "Corner Force Measurement System",
+    href: "/product/corner-force-measurement-system",
+  },
+  {
+    name: "AUXILIUM ",
+    href: "/product/Auxilium",
+  },
 ];
 
 const ProductDetail = ({
