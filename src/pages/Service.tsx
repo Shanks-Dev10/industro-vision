@@ -3,15 +3,21 @@ import Footer from "@/components/Footer";
 import { ArrowRight, ChevronRight, Cog, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import alms from '@/assets/alms1.jpeg'
-import k2 from '@/assets/K2 -1.jpeg'
-import ocls from '@/assets/ocls.webp'
-import weighting from '@/assets/weighting5.webp'
+import alms from "@/assets/alms1.jpeg";
+import k2 from "@/assets/K2 -2.jpeg";
+import ocls from "@/assets/ocls.webp";
+import weighting from "@/assets/weighting4.webp";
 
 import servicesHero from "@/assets/services-hero.webp";
 import oilImg from "@/assets/oil-platform.webp";
 import workProcessImg from "@/assets/work-process.webp";
 import { Link } from "react-router-dom";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const services = [
   {
@@ -34,6 +40,20 @@ const services = [
     desc: "Railmet enables real-time load monitoring, precise axle measurement, and instant alerts for safer, smarter transport.",
     image: k2,
     link: "/service/k2-truck-onboard-scale-system",
+  },
+  {
+    num: "04",
+    title: "Portable Weighing System",
+    desc: "A portable weighing system lets you measure weight instantly on-site without any permanent setup.",
+    image: weighting,
+    link: "/service/portable-weighing-system-service",
+  },
+  {
+    num: "04",
+    title: "Portable Weighing System",
+    desc: "A portable weighing system lets you measure weight instantly on-site without any permanent setup.",
+    image: weighting,
+    link: "/service/portable-weighing-system-service",
   },
   {
     num: "04",
@@ -96,8 +116,9 @@ const Services = () => {
           >
             <div>
               <h2 className="mt-3 text-xl md:text-4xl font-semibold text-foreground text-center">
-                Advancing railway technology with intelligent automation and precision load monitoring for safer, faster, and more reliable rail operations.
-
+                Advancing railway technology with intelligent automation and
+                precision load monitoring for safer, faster, and more reliable
+                rail operations.
               </h2>
             </div>
           </div>
@@ -161,37 +182,71 @@ const Services = () => {
             </h2>
           </div>
 
-          <div className="space-y-0 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2  gap-10">
+          <Swiper
+            modules={[Pagination, Autoplay]}
+            spaceBetween={24}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+              },
+              1280: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+              },
+            }}
+            className="services-swiper !pb-12"
+          >
             {services.map((s, i) => (
-              <div key={s.num}>
+              <SwiperSlide key={s.num}>
                 <Link
                   to={s.link}
-                  className="group flex flex-col items-center border rounded-[8px] shadow-sm hover:shadow-md transition-all duration-300"
+                  className="group block overflow-hidden rounded-[8px] border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                   data-aos="fade-up"
                   data-aos-delay={i * 80}
                 >
-                  <div className="h-[250px] w-full overflow-hidden rounded-md ">
+                  {/* Image */}
+                  <div className="h-[250px] w-full overflow-hidden">
                     <div
-                      className="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-125"
-                      style={{ backgroundImage: `url(${s.image})` }}
-                    ></div>
+                      className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                      style={{
+                        backgroundImage: `url(${s.image})`,
+                      }}
+                    />
                   </div>
-                  <div className="p-4">
-                    <h3 className="shrink-0 text-xl font-semibold text-foreground ">
+
+                  {/* Content */}
+                  <div className="p-5">
+                    <h3 className="text-xl font-semibold text-foreground">
                       {s.title}
                     </h3>
-                    {/* <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border text-sm font-bold text-muted-foreground transition-colors group-hover:border-[#009999] group-hover:text-[#009999]">
-                      {s.num}
-                    </div> */}
-                    <p className="flex-1 text-sm text-muted-foreground leading-relaxed pt-3">
-                    {s.desc}
-                  </p>
+
+                    <p className="pt-3 text-sm leading-relaxed text-muted-foreground">
+                      {s.desc}
+                    </p>
+
+                    <div className="mt-5 flex items-center text-sm font-medium text-[#009999] transition-all duration-300 group-hover:gap-2">
+                      Explore Service
+                      <span className="ml-1 transition-transform duration-300 group-hover:translate-x-1">
+                        →
+                      </span>
+                    </div>
                   </div>
-                  
                 </Link>
-              </div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
       </section>
 

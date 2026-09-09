@@ -38,6 +38,13 @@ import wcr16 from "../assets/our_projects/wcr/wcr17.jpeg";
 import wcr17 from "../assets/our_projects/wcr/wcr18.jpeg";
 import wcr18 from "../assets/our_projects/wcr/wcr19.jpeg";
 import wcr19 from "../assets/our_projects/wcr/wcr20.jpeg";
+import Manikgarh1 from "../assets/our_projects/Manikgarh/Manikgarh1.webp";
+import Manikgarh2 from "../assets/our_projects/Manikgarh/Manikgarh2.webp";
+import Manikgarh3 from "../assets/our_projects/Manikgarh/Manikgarh3.webp";
+import Manikgarh4 from "../assets/our_projects/Manikgarh/Manikgarh4.webp";
+import Manikgarh5 from "../assets/our_projects/Manikgarh/Manikgarh5.webp";
+import Manikgarh6 from "../assets/our_projects/Manikgarh/Manikgarh6.webp";
+import Manikgarh7 from "../assets/our_projects/Manikgarh/Manikgarh7.webp";
 
 export const completedProjects = [
   {
@@ -49,7 +56,7 @@ export const completedProjects = [
       "Railmet Technologies Pvt. Ltd. successfully installed an Asymmetric Load Measuring System (ALMS) at WCR Gosalpur. The system provides accurate monitoring of wagon load distribution, helping detect uneven loading, improve freight safety, reduce maintenance costs, and enhance overall railway operational efficiency.",
     photo: WCR,
     thumbs: [Ncl1, Ncl2, Ncl3, Ncl4],
-    link:'#gallery'
+    link: "#gallery",
   },
   {
     id: "02",
@@ -60,7 +67,7 @@ export const completedProjects = [
       "Railmet Technologies Pvt. Ltd. successfully installed an Asymmetric Load Measuring System (ALMS) at NCL Singrauli. The system enables accurate monitoring of wagon load distribution, helping detect uneven loading, improve freight safety, optimize loading efficiency, and support reliable railway operations.",
     photo: NCL,
     thumbs: [wcr1, wcr2, wcr3, wcr4],
-    link:'#gallery'
+    link: "#gallery",
   },
   {
     id: "03",
@@ -69,9 +76,17 @@ export const completedProjects = [
     status: "Successfully Completed",
     description:
       "Railmet Technologies Pvt. Ltd. successfully installed the Asymmetric Load Measuring System (ALMS) at Manikgarh, Maharashtra. The system enables accurate wagon load monitoring and helps detect uneven load distribution for safer and more efficient railway operations.",
-    photo: NCL,
-    thumbs: [wcr1, wcr2, wcr3, wcr4],
-    link:'#gallery'
+    photo: Manikgarh1,
+    thumbs: [
+      Manikgarh1,
+      Manikgarh2,
+      Manikgarh3,
+      Manikgarh4,
+      Manikgarh5,
+      Manikgarh6,
+      Manikgarh7,
+    ],
+    link: "#gallery",
   },
 ];
 
@@ -105,7 +120,7 @@ export const installationSteps = [
   { label: "Support & Maintenance", icon: "headset" as const },
 ];
 
-export const galleryFilters = ["All", "WCR", "NCL"] as const;
+export const galleryFilters = ["All", "WCR", "NCL", "Manikgarh"] as const;
 
 export const galleryItems = [
   { photo: Ncl1, category: "NCL" },
@@ -146,4 +161,11 @@ export const galleryItems = [
   { photo: wcr17, category: "WCR" },
   { photo: wcr18, category: "WCR" },
   { photo: wcr19, category: "WCR" },
+  { photo: Manikgarh1, category: "Manikgarh" },
+  { photo: Manikgarh2, category: "Manikgarh" },
+  { photo: Manikgarh3, category: "Manikgarh" },
+  { photo: Manikgarh4, category: "Manikgarh" },
+  { photo: Manikgarh5, category: "Manikgarh" },
+  { photo: Manikgarh6, category: "Manikgarh" },
+  { photo: Manikgarh7, category: "Manikgarh" },
 ];
