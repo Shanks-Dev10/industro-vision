@@ -32,6 +32,18 @@ const ServicesSection = () => {
         "The Portable Weighing System enables accurate wheel and axle weight measurement anywhere without fixed infrastructure. It provides real-time monitoring to detect overload and improve operational safety. ",
       href: "/service/portable-weighing-system-service",
     },
+    {
+      title: "Corner Force Measurement System",
+      description:
+        "RailMet fCORN accurately measures corner forces for real-time load balance monitoring, improving railway safety and maintenance efficiency.",
+      href: "/service/portable-weighing-system-service",
+    },
+    {
+      title: "AUXILIUM",
+      description:
+        "it is a portable static weighing system for accurate railway wheel, axle, bogie, wagon, locomotive, and metro coach weighing.  ",
+      href: "/service/portable-weighing-system-service",
+    },
   ];
 
   return (
@@ -85,7 +97,7 @@ const ServicesSection = () => {
             <Link
               key={index}
               to={item.href}
-              className=" bg-white border rounded-2xl hover:bg-[#009999]  p-5 md:p-8 flex flex-col justify-between  shadow-xl group"
+              className=" bg-white border rounded-2xl hover:bg-[#009999]  p-5 md:p-4 flex flex-col justify-between  shadow-xl group"
             >
               {/* Icon */}
               <div

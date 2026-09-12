@@ -7,6 +7,8 @@ import alms from "@/assets/alms1.jpeg";
 import k2 from "@/assets/K2 -2.jpeg";
 import ocls from "@/assets/ocls.webp";
 import weighting from "@/assets/weighting4.webp";
+import product5 from "@/assets/corner force5.webp";
+import product6 from "@/assets/Home_slider2.png";
 
 import servicesHero from "@/assets/services-hero.webp";
 import oilImg from "@/assets/oil-platform.webp";
@@ -49,18 +51,18 @@ const services = [
     link: "/service/portable-weighing-system-service",
   },
   {
-    num: "04",
-    title: "Portable Weighing System",
-    desc: "A portable weighing system lets you measure weight instantly on-site without any permanent setup.",
-    image: weighting,
-    link: "/service/portable-weighing-system-service",
+    num: "05",
+    title: "Corner Force Measurement System",
+    desc: "RailMet fCORN accurately measures corner forces for real-time load balance monitoring, improving railway safety and maintenance efficiency.",
+    image: product5,
+    link: "/service/corner-force-measurement-system",
   },
   {
-    num: "04",
-    title: "Portable Weighing System",
-    desc: "A portable weighing system lets you measure weight instantly on-site without any permanent setup.",
-    image: weighting,
-    link: "/service/portable-weighing-system-service",
+    num: "06",
+    title: "AUXILIUM ",
+    desc: "it is a portable static weighing system for accurate railway wheel, axle, bogie, wagon, locomotive, and metro coach weighing. ",
+    image: product6,
+    link: "/service/auxilium",
   },
 ];
 
@@ -184,6 +186,7 @@ const Services = () => {
 
           <Swiper
             modules={[Pagination, Autoplay]}
+            loop={true}
             spaceBetween={24}
             slidesPerView={1}
             navigation
@@ -202,7 +205,7 @@ const Services = () => {
                 spaceBetween: 24,
               },
               1280: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 24,
               },
             }}

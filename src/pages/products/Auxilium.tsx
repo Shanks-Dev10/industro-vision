@@ -3,9 +3,9 @@ import Header from "@/components/Header";
 import HeadingSection from "@/components/products/HeadingSection";
 import HeroBanner from "@/components/products/HeroBanner";
 import ProductDetail from "@/components/products/ProductDetail";
-import product1 from "@/assets/corner force12.webp";
-import result1 from '@/assets/corner force11.webp'
-import result2 from '@/assets/corner force2.webp'
+import product1 from "@/assets/K2 -2.jpeg";
+import result1 from '@/assets/K2 -3.jpeg'
+import result2 from '@/assets/K2 -4.jpeg'
 
 const Auxilium = () => {
   const ProductDetails = {

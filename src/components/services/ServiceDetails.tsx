@@ -23,6 +23,14 @@ const ServiceDetails = ({
       name: "Portable Weighing System",
       link: "/service/portable-weighing-system-service",
     },
+    {
+      name: "Corner Force Measurement System",
+      link: "/service/corner-force-measurement-system",
+    },
+    {
+      name: "Auxilium",
+      link: "/service/auxilium",
+    },
   ];
 
   return (

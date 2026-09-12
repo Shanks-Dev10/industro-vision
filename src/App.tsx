@@ -25,6 +25,8 @@ import PortableWeighingSustemService from "./pages/service/PortableWeighingSyste
 import ScrollToTop from "./components/ScrollToTop";
 import CornerForceMeasurementSystem from "./pages/products/CornerForceMeasurementSystem";
 import Auxilium from "./pages/products/Auxilium";
+import CornerForceMeasurementSystemService from "./pages/service/CornerForceMeasurementSystem";
+import AuxiliumService from "./pages/service/Auxilium";
 
 const queryClient = new QueryClient();
 
@@ -71,6 +73,15 @@ const App = () => {
             <Route
               path="/product/overload-Control-System-product"
               element={<OverloadControlSystemProduct />}
+            />
+
+             <Route
+              path="/service/corner-force-measurement-system"
+              element={<CornerForceMeasurementSystemService />}
+            />
+            <Route
+              path="/service/auxilium"
+              element={<AuxiliumService />}
             />
             <Route
               path="/product/asymmetric-load-measuring-system"
