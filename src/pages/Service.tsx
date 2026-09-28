@@ -44,13 +44,6 @@ const services = [
     link: "/service/k2-truck-onboard-scale-system",
   },
   {
-    num: "04",
-    title: "Portable Weighing System",
-    desc: "A portable weighing system lets you measure weight instantly on-site without any permanent setup.",
-    image: weighting,
-    link: "/service/portable-weighing-system-service",
-  },
-  {
     num: "05",
     title: "Corner Force Measurement System",
     desc: "RailMet fCORN accurately measures corner forces for real-time load balance monitoring, improving railway safety and maintenance efficiency.",
@@ -59,10 +52,10 @@ const services = [
   },
   {
     num: "06",
-    title: "AUXILIUM ",
+    title: "AXLIUM",
     desc: "it is a portable static weighing system for accurate railway wheel, axle, bogie, wagon, locomotive, and metro coach weighing. ",
     image: product6,
-    link: "/service/auxilium",
+    link: "/service/axlium",
   },
 ];
 

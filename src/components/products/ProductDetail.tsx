@@ -12,20 +12,20 @@ const service = [
     href: "/product/overload-Control-System-product",
   },
   {
-    name: "K2 Truck Onboard Scale System",
+    name: "K2 (KIMAX2 AIR)",
     href: "/product/truck-onboard-scale-system",
   },
-  {
-    name: "Portable Weighing System",
-    href: "/product/portable-weighing-system",
-  },
+  // {
+  //   name: "Portable Weighing System",
+  //   href: "/product/portable-weighing-system",
+  // },
   {
     name: "Corner Force Measurement System",
     href: "/product/corner-force-measurement-system",
   },
   {
-    name: "AUXILIUM ",
-    href: "/product/Auxilium",
+    name: "AXLIUM",
+    href: "/product/axlium",
   },
 ];
 

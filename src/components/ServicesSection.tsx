@@ -26,23 +26,23 @@ const ServicesSection = () => {
         "We focus on intelligent air suspension load monitoring, precise axle weight calculation, and real-time overload alerts to ensure safer and more efficient railway operations.",
       href: "/service/k2-truck-onboard-scale-system",
     },
-    {
-      title: "Portable Weighing System",
-      description:
-        "The Portable Weighing System enables accurate wheel and axle weight measurement anywhere without fixed infrastructure. It provides real-time monitoring to detect overload and improve operational safety. ",
-      href: "/service/portable-weighing-system-service",
-    },
+    // {
+    //   title: "Portable Weighing System",
+    //   description:
+    //     "The Portable Weighing System enables accurate wheel and axle weight measurement anywhere without fixed infrastructure. It provides real-time monitoring to detect overload and improve operational safety. ",
+    //   href: "/service/portable-weighing-system-service",
+    // },
     {
       title: "Corner Force Measurement System",
       description:
         "RailMet fCORN accurately measures corner forces for real-time load balance monitoring, improving railway safety and maintenance efficiency.",
-      href: "/service/portable-weighing-system-service",
+      href: "service/corner-force-measurement-system",
     },
     {
-      title: "AUXILIUM",
+      title: "AXLIUM",
       description:
         "it is a portable static weighing system for accurate railway wheel, axle, bogie, wagon, locomotive, and metro coach weighing.  ",
-      href: "/service/portable-weighing-system-service",
+      href: "/service/axlium",
     },
   ];
 
@@ -92,7 +92,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Services */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
           {serviceBox.map((item, index) => (
             <Link
               key={index}

@@ -24,9 +24,9 @@ import PortableWeighingSystem from "./pages/products/PortableWeighingSystem";
 import PortableWeighingSustemService from "./pages/service/PortableWeighingSystem";
 import ScrollToTop from "./components/ScrollToTop";
 import CornerForceMeasurementSystem from "./pages/products/CornerForceMeasurementSystem";
-import Auxilium from "./pages/products/Auxilium";
+import AXLIUM from "./pages/products/Axlium";
 import CornerForceMeasurementSystemService from "./pages/service/CornerForceMeasurementSystem";
-import AuxiliumService from "./pages/service/Auxilium";
+import AXLIUMService from "./pages/service/Axlium";
 
 const queryClient = new QueryClient();
 
@@ -66,10 +66,10 @@ const App = () => {
               path="/service/k2-truck-onboard-scale-system"
               element={<K2TruckOnboardScaleSystem />}
             />
-            <Route
+            {/* <Route
               path="/service/portable-weighing-system-service"
               element={<PortableWeighingSustemService />}
-            />
+            /> */}
             <Route
               path="/product/overload-Control-System-product"
               element={<OverloadControlSystemProduct />}
@@ -80,8 +80,8 @@ const App = () => {
               element={<CornerForceMeasurementSystemService />}
             />
             <Route
-              path="/service/auxilium"
-              element={<AuxiliumService />}
+              path="/service/axlium"
+              element={<AXLIUMService />}
             />
             <Route
               path="/product/asymmetric-load-measuring-system"
@@ -91,24 +91,24 @@ const App = () => {
               path="/product/truck-onboard-scale-system"
               element={<TruckOnboardScaleSystem />}
             />
-            <Route
+            {/* <Route
               path="/product/portable-weighing-system"
               element={<PortableWeighingSystem />}
-            />
+            /> */}
             <Route
               path="/product/corner-force-measurement-system"
               element={<CornerForceMeasurementSystem />}
             />
             <Route
-              path="/product/auxilium"
-              element={<Auxilium />}
+              path="/product/axlium"
+              element={<AXLIUM/>}
             />
             <Route
               path="/clients"
               element={<Clients />}
             />
             <Route
-              path="/our-project"
+              path="/our-clients"
               element={<Projects />}
             />
             <Route path="*" element={<NotFound />} />

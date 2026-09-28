@@ -1,32 +1,32 @@
-import valueQualityImg from "@/assets/value-quality.jpg";
-import valueTeamworkImg from "@/assets/value-teamwork.jpg";
-import valueSustainabilityImg from "@/assets/value-sustainability.jpg";
-import valueInnovationImg from "@/assets/value-innovation.jpg";
+import railwaysafety from "@/assets/railway-safety.webp"
+import smartloadmeasurement from "@/assets/Smart load measurement.webp"
+import loadprecision from "@/assets/weighting5.webp"
+import featureready from "@/assets/value-innovation.jpg"
 
 const values = [
   {
     num: "01.",
     title: "Railway Safety",
     text: "Protecting rail infrastructure and operations through accurate load monitoring.",
-    image: valueQualityImg,
+    image: railwaysafety,
   },
   {
     num: "02.",
     title: "Smart load measurement",
     text: " Smart analysis of wagon load data to ensure accurate measurements and balanced rail operations.",
-    image: valueTeamworkImg,
+    image: smartloadmeasurement,
   },
   {
     num: "03.",
     title: "Load Precision",
     text: " Advanced weighing technology designed for precise wagon load measurement and imbalance detection.",
-    image: valueSustainabilityImg,
+    image: loadprecision,
   },
   {
     num: "04.",
     title: "Future-Ready Innovation",
     text: " Building intelligent railway solutions that enhance the future of wagon load monitoring and management.",
-    image: valueInnovationImg,
+    image: featureready,
   },
 ];
 

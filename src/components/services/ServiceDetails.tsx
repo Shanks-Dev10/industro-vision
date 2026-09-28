@@ -19,17 +19,17 @@ const ServiceDetails = ({
       link: "/service/over-load-control-system",
     },
     { name: "KIMAX2 AIR", link: "/service/k2-truck-onboard-scale-system" },
-    {
-      name: "Portable Weighing System",
-      link: "/service/portable-weighing-system-service",
-    },
+    // {
+    //   name: "Portable Weighing System",
+    //   link: "/service/portable-weighing-system-service",
+    // },
     {
       name: "Corner Force Measurement System",
       link: "/service/corner-force-measurement-system",
     },
     {
-      name: "Auxilium",
-      link: "/service/auxilium",
+      name: "AXLIUM",
+      link: "/service/axlium",
     },
   ];
 

@@ -8,6 +8,7 @@ import alms from "@/assets/alms1.jpeg";
 import k2 from "@/assets/K2 -1.jpeg";
 import ocls from "@/assets/ocls.webp";
 import weighting from "@/assets/weighting5.webp";
+import cornerforce from "@/assets/corner force5.webp"
 
 interface CounterProps {
   end: number;
@@ -74,7 +75,7 @@ const products = [
     category: "Environmental",
     year: "2015",
     image: alms,
-    link: "/product/advanced-load-monitoring-system",
+    link: "product/asymmetric-load-measuring-system",
   },
   {
     title: "OCLS (Overload Control System)",
@@ -91,11 +92,18 @@ const products = [
     link: "/product/truck-onboard-scale-system",
   },
   {
-    title: "Industrial equipment optimization",
+    title: "Corner Force Measurement System",
+    category: "Production",
+    year: "2020",
+    image: cornerforce,
+    link: "product/corner-force-measurement-system",
+  },
+  {
+    title: "Axlium",
     category: "Production",
     year: "2020",
     image: weighting,
-    link: "/product/portable-weighing-system",
+    link: "product/axlium",
   },
 ];
 

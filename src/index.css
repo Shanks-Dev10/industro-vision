@@ -146,3 +146,20 @@ body {
 .custom-pagination .swiper-pagination-bullet-active {
   background: #fbe87e;
 }
+
+@keyframes infinite-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: infinite-marquee 15s linear infinite;
+  will-change: transform;
+}

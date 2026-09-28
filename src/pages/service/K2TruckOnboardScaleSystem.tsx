@@ -10,9 +10,9 @@ import product1 from '@/assets/K2 -2.jpeg'
 import product2 from '@/assets/K2 -3.jpeg'
 
 const serviceData = {
-  title: "K2 Truck Onboard Scale System",
+  title: "K2 (KIMAX2 AIR)",
 
-  heading: "K2 Truck Onboard Scale System",
+  heading: "K2 (KIMAX2 AIR)",
 
   description:
     "Railmet is a technology-driven company that provides advanced K2 System solutions, delivering real-time load monitoring and accurate axle weight measurement for safer and more efficient transport operations.",

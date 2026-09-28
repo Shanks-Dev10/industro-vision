@@ -25,8 +25,8 @@ const TruckOnboardScaleSystem = () => {
   return (
     <div>
       <Header />
-      <HeroBanner title={"K2 Truck Onboard Scale System"} />
-      <HeadingSection heading={"K2 Truck Onboard Scale System"} />
+      <HeroBanner title={"K2 (KIMAX2 AIR)"} />
+      <HeadingSection heading={"K2 (KIMAX2 AIR)"} />
       <ProductDetail
         description1={ProductDetails.description1}
         description2={ProductDetails.description2}

@@ -228,7 +228,7 @@ const Contact = () => {
                     ALMS (Advanced Load Monitoring System)
                   </option>
                   <option value="OCLS (Overload Control System)">OCLS (Overload Control System)</option>
-                  <option value="K2 Truck Onboard Scale System">K2 Truck Onboard Scale System</option>
+                  <option value="K2 (KIMAX2 AIR)">K2 (KIMAX2 AIR)</option>
                   <option value="Portable Weighing System">Portable Weighing System</option>
                 </select>
 

@@ -35,18 +35,18 @@ const projects = [
   },
   {
     num: "03",
-    title: "K2 Truck Onboard Scale System",
+    title: "K2 (KIMAX2 AIR)",
     category: "Efficient Pressure sensors and a Digital Display",
     image: product3,
     link:'/product/truck-onboard-scale-system'
   },
-  {
-    num: "04",
-    title: "Portable Weighing System",
-    category: "Weighing",
-    image: product4,
-    link:'/product/portable-weighing-system'
-  },
+  // {
+  //   num: "04",
+  //   title: "Portable Weighing System",
+  //   category: "Weighing",
+  //   image: product4,
+  //   link:'/product/portable-weighing-system'
+  // },
   {
     num: "05",
     title: "Corner Force Measurement System",
@@ -56,10 +56,10 @@ const projects = [
   },
   {
     num: "06",
-    title: "AUXILIUM ",
-    category: "AUXILIUM",
+    title: "AXLIUM",
+    category: "AXLIUM",
     image: product6,
-    link:'/product/auxilium'
+    link:'/product/axlium'
   },
 ];
 
